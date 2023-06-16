@@ -1,4 +1,4 @@
-import Image from "next/Image";
+import Image from "next/image";
 import {
     MenuIcon,
     SearchIcon,
@@ -28,7 +28,7 @@ function Header() {
                 onClick={() => router.push("/")}
                 src='https://links.papareact.com/f90'
                 width = {150}
-                height = {40 }
+                height = {40}
                 objectFit="contain"
                 className='cursor-pointer'
                 />
