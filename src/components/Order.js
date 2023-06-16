@@ -1,5 +1,5 @@
 import moment from "moment";
-import Currency from "react-currency-format";
+
 
 function Order({ id, amount, items, timestamp, images }) {
   return (

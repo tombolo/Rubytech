@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { StarIcon } from "@heroicons/react/solid";
-import CurrencyFormat from "react-currency-format";
 import { useDispatch } from "react-redux";
 import { addToBasket } from "../slices/basketSlice";
 
