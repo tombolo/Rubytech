@@ -7,17 +7,25 @@
     "start": "next start"
   },
   "dependencies": {
+    "@firebase/app": "^0.9.12",
+    "@firebase/firestore": "^3.12.2",
     "@heroicons/react": "^1.0.6",
     "@reduxjs/toolkit": "^1.9.5",
+    "@stripe/stripe-js": "^1.54.0",
     "@tailwindcss/line-clamp": "^0.2.2",
-    "firebase": "^9.8.2",
-    "firebase-admin": "^10.0.1",
+    "axios": "^1.4.0",
+    "firebase": "^9.22.2",
+    "firebase-admin": "^10.3.0",
+    "micro": "^10.0.1",
+    "moment": "^2.29.4",
     "next": "^12.0.9",
+    "next-auth": "",
     "react": "^18.2.0",
     "react-currency-format": "",
     "react-dom": "^18.2.0",
     "react-redux": "^7.2.5",
-    "react-responsive-carousel": "^3.2.23"
+    "react-responsive-carousel": "^3.2.23",
+    "stripe": "^12.9.0"
   },
   "license": "MIT",
   "devDependencies": {

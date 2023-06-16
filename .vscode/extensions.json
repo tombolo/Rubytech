@@ -1,6 +1,7 @@
 {
     "recommendations": [
         "appcypher.simple",
-        "burkeholland.simple-react-snippets"
+        "burkeholland.simple-react-snippets",
+        "irongeek.vscode-env"
     ]
 }

@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "rubytech-organization",
+  "private_key_id": "02f905f2d897eb6ea4c276208b673013c2612495",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCqBapBK/IZvC2X\nOLEtSU7pob4nJ53iBeDMgob8P9VxE2UNVpq1KPbCm1leeLpb4bQkFz81lbEYJCOa\n1BjaHrAdUlpTg0GVdijZg1oJJ2Hi428/OJlJqEyHdPjljqsBhpmwo6O2+g/mjUz1\noFXGfPviulKFF95jUGe8Si/gohuH9aDVagqmoeqcUQKGS6dwMn5ocYGJY06VLo57\nKZZMKQlwEdhdkq+9My62PN/H6mq27g+IzXB10VSvVoKQptbJbMgwo7+SH3xiFDnW\n1eNJH+MpKixe8CtpONdcKpoG8VtMfnu4UR3UxNcfB3feRpNKHZOQjYaRStTPAdhV\nqTmaGXhTAgMBAAECggEAQMQ5r+vSpLUHVPS2oX6sfdksO3Qe84uzr5QFYa/bWeC+\nfM9BzcLWBRnyeEdbDkczPRBR9tKYDI8vtPoYoXZRNko5uFhmsk25j+o2cQg8hJaI\nuTeRRPrEdFE9wwyO3dztTNl5MumdBwFKkMLMCflwZlT9vE90Wra1XYeRJ2v5Otfa\nsGCRSTac/Dr4sNli0SugK6OA8rwdPa+SuQi6TPQBgELD9JlpYNYAgL3+M9pMTnW8\nYL6F0Tqj/s0RCl6k5gw7BI0/KBocKUZn/K8AuyAfWHnGivgsLmA2gR71kg8sxHhp\nUblG65Lsy7ZrWfi3qQlZWi9E9xpISt9ucoTS2aOI6QKBgQDXBu1a08SEjG+vF/1j\nx1YwTNQtYIjsMuDjKQWmsIYmZ24eCvS3FVK8iiVnNlIJPd3Sk5nWAdnu0HpGABrg\nbsjqvoCFsHHRtSPQsKgXIVY6PVeXLjosQz4fueoX4ZDW4f10zPK/MoRtkCA2P3bH\nPT13ZM6nLwoD9H9bi7CO5nmqjwKBgQDKa2Lmiw37VheaX1LE9hoiqE7DnJqFOvg3\nKd3tEXIHyvo1+exi+Gu6ONKP8KNCTVlC1CHeJ6DWrzfKAj1xJJPrOD0hsB3I/mTW\nBMpy85L1UfxJfCe3R7uP3S3T/v9hJ6oOjrmDl47S1+mC+kUEtUhaEio0EhpEAiVI\nRuMbva4H/QKBgD1dVbl4+/lT1r+iWgbyqU8pbdfxV8IIlxNc7qbuc6pcFBnwyHvD\nUxRJXHlDEFBg3oAs7VccuiQkTPDTMNhh5WbQrP76JtFRH4J8F8xaEDCYtvmHEMT2\n/7CwLvVXwyz/24RMxO35rb9SxU6V+ADOIk+DblJZ40LTsNDgYae2cHxTAoGAEhSx\niuJU52RzS0jEfe91ui7KilKMwuXXkiXdOvXZ97Q70WJ3qQeDp+i3dkAKdTuvg3ar\nZ8qmZUbVdufoURjxVYt6em3e2ztOCof3BXmYYO1n2bCLY6W2rU0WcN9QNH90g0Rg\ncc6x5UeABkEQtTD0O4dv2aLcUcLXTbN3Sd0RlIkCgYBHnyqvQMR5dV5vquiToQnf\nCPXRU/0CywYGs0XfvHatvbeeBi3nf5M1MwaVVolf8hi6qbGB6IQRprRAadwB+R/c\n9DWInEaq/yArbKxCHMZ5HYecRJxXYvFZ844hNKspWj+EBJd1+kQqKaWkMKAeXUDS\nLZYZOOE2IMoGgq6bTaVQ5w==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-wrpgv@rubytech-organization.iam.gserviceaccount.com",
+  "client_id": "110284814123310916588",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-wrpgv%40rubytech-organization.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
