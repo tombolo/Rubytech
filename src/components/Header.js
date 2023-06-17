@@ -27,8 +27,8 @@ function Header() {
                 <Image 
                 onClick={() => router.push("/")}
                 src='https://links.papareact.com/f90'
-                width = {150}
-                height = {40}
+                width = {250}
+                height = {70}
                 objectFit="contain"
                 className='cursor-pointer'
                 />

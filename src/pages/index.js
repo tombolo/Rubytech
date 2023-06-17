@@ -1,3 +1,4 @@
+import { MyShop } from "../components/MyShop";
 import Head from "next/head";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
@@ -5,7 +6,11 @@ import ProductFeed from "../components/ProductFeed";
 import { getSession } from "next-auth/react";
 
 
-export default function Home({ products }) {
+export default function Home() {
+
+  console.log("MyShop array:", MyShop);
+
+  
   return (
     <div className="bg-gray-100">
       <Head>
@@ -21,7 +26,8 @@ export default function Home({ products }) {
         {/*Banner*/}
         <Banner />
 
-        <ProductFeed products={products} />
+        <ProductFeed products={MyShop} />
+        
 
 
       </main>
@@ -33,16 +39,12 @@ export default function Home({ products }) {
 
 export async function getServerSideProps(context) {
   const session = await getSession(context);
-  const products = await fetch("https://fakestoreapi.com/products").then(
-    (res) => res.json()
-  );
+  
 
   return { 
     props: {
-      products,
       session,
   },
 };
 }
 
-//Get >>> https://fakestoreapi.com/products
