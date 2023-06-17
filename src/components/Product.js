@@ -33,44 +33,53 @@ function Product({ id, title, price, description, category, image }) {
     };
 
   return (
-    <div className="relative flex flex-col m-5 bg-white z-30 p-10">
-        <p className="absolute top-2 right-2 italic text-gray-400">{category}</p>
+    <div className="relative flex flex-col m-3 bg-white z-30 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
 
-        <Image src={image} height={200} width={200} objectFit="contain" />
+<p className="absolute top-2 right-2 italic text-gray-400">{category}</p>
+   
 
-        <h4 className="my-3 font-semibold">{title}</h4>
-
-        <div className="flex">
-            {Array(rating)
-            .fill()
-            .map((_, i) => (
-                <StarIcon className="h-5 text-yellow-500" />
-            ))}
-        </div>
+    <div className="relative overflow-hidden top-5  flex items-center justify-center">
 
         
-    <p className="text-xs my-2 line-clamp-2">{description}</p>
-
-    <div className="mb-5">
-        {price}
+        <Image
+            src={image}
+            height={200}
+            width={320}
+            objectFit="cover"
+            className="transition duration-200 transform hover:scale-110 rounded-lg w-auto"
+        />
     </div>
 
+    <h4 className="my-7 font-bold">{title}</h4>
+
+    <div className="flex">
+        {Array(rating)
+            .fill()
+            .map((_, i) => (
+                <StarIcon key={i} className="h-5 text-yellow-500" />
+            ))}
+    </div>
+
+    <p className="text-xs my-2 line-clamp-2 font-semibold">{description}</p>
+
+    <div className="mb-3">{price}</div>
+
     {hasPrime && (
-        <div className="flex items-center space-x-2 -mt-5">
+        <div className="flex items-center space-x-2">
             <img
-            src="https://links.papareact.com/f90" alt=""
-            width={12} 
-            height={12}
-            objectFit="contain"
+                src="https://links.papareact.com/f90"
+                alt=""
+                width={12}
+                height={12}
+                objectFit="contain"
             />
-            <p className="text-xs text-gray-500">Free Next-day Delovery</p>
+            <p className="text-xs text-gray-500">Free Next-day Delivery</p>
         </div>
     )}
 
-     <button onClick={addItemToBasket} className="mg-auto button">Add to Basket</button>
+    <button onClick={addItemToBasket} className="mx-auto bg-blue-900 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-200 top-3 m-2">Add to Basket</button>
+</div>
 
-        
-    </div>
   );
 }
 
