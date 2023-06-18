@@ -88,17 +88,17 @@ function Product({ id, title, price, description, category, image }) {
         </div>
       )}
 
-      <div className="flex flex-wrap justify-center gap-2">
+      <div className="flex gap-2 justify-center">
         <button
           onClick={handleWhatsAppClick}
-          className="flex-grow-0 flex-shrink-0 w-auto sm:w-auto bg-green-500 text-white py-1.5 px-5 sm:px-5 rounded-md hover:bg-green-600 transition duration-200 m-1"
+          className="flex-grow-0 flex-shrink-0 w-auto sm:w-auto bg-green-500 text-white py-1.5 px-2 rounded-md hover:bg-green-600 transition duration-200 m-1"
         >
           WhatsApp
         </button>
 
         <button
           onClick={addItemToBasket}
-          className="flex-grow-0 flex-shrink-0 w-auto sm:w-auto bg-blue-900 text-white py-1.5 px-5 sm:px-5 rounded-md hover:bg-blue-600 transition duration-200 m-1"
+          className="flex-grow-0 flex-shrink-0 w-auto sm:w-auto bg-blue-900 text-white py-1.5 px-2 rounded-md hover:bg-blue-600 transition duration-200 m-1"
         >
           Add to Basket
         </button>

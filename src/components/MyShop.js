@@ -3,6 +3,18 @@ import Image2 from '../components/Myimages/image2.jpg';
 import Image3 from '../components/Myimages/image3.jpg';
 import Image4 from '../components/Myimages/image4.webp';
 import Banner2 from '../components/Myimages/banner2.jpg';
+import Banner1 from '../components/Myimages/banner1.jpg';
+import Image6 from '../components/Myimages/image6.jpg';
+import Image7 from '../components/Myimages/image7.webp';
+import Image8 from '../components/Myimages/image8.webp';
+import Image9 from '../components/Myimages/image9.webp';
+import Image10 from '../components/Myimages/image10.webp';
+import Image11 from '../components/Myimages/image11.webp';
+import Image12 from '../components/Myimages/image12.webp';
+import Image13 from '../components/Myimages/image13.webp';
+import Image14 from '../components/Myimages/image14.webp';
+import Image15 from '../components/Myimages/image15.webp';
+import Image16 from '../components/Myimages/image16.webp';
 
 export const MyShop = [
   {
@@ -18,9 +30,9 @@ export const MyShop = [
   },
   {
     id: 2,
-    title: 'Product 2',
+    title: 'UF Water Purification System',
     price: 19.99,
-    description: 'This is product 2.',
+    description: 'GET THIS Water Purification System UF 3in 1 Water Purification System In Kenya at a very discounted rate from the accredited sellers of water purification machines in Kenya.',
     category: 'pLumbing',
     image: Image2,
     rating: 3.8,
@@ -29,9 +41,9 @@ export const MyShop = [
   },
   {
     id: 3,
-    title: 'Product 3',
+    title: 'Reverse Osmosis Water Purifier',
     price: 19.99,
-    description: 'This is product 3.',
+    description: 'GET THIS 500LPH Water Purification System In Kenya at a very discounted rate from the accredited sellers of water purification machines in Kenya.',
     category: 'Water treatment',
     image: Image3,
     rating: 3.8,
@@ -40,9 +52,9 @@ export const MyShop = [
   },
   {
     id: 4,
-    title: 'Product 4',
+    title: 'Undersink Water Purifier',
     price: 19.99,
-    description: 'This is product 4.',
+    description: 'Reverse Osmosis, commonly referred to as RO, is a process where you demineralize or deionize water by pushing it under pressure through a semi-permeable Reverse Osmosis Membrane. .',
     category: 'Category 2',
     image: Image4,
     rating: 3.8,
@@ -51,11 +63,145 @@ export const MyShop = [
   },
   {
     id: 5,
-    title: 'Product 5',
+    title: 'Water Purification Systems',
     price: 19.99,
-    description: 'This is product 5.',
+    description: 'Phynetech drinking water purifier & treatment machines are the leading drinking water treatment machines in Kenya. We use innovative solutions that make use of reliable filters to treat water. Our design is simple but effective. Hence, you can smoothly run the machine without any technical knowledge background.',
     category: 'Category 2',
     image: Banner2,
+    rating: 3.8,
+    reviews: 5,
+    isNew: true,
+  },
+
+  {
+    id: 6,
+    title: 'Water Purification Systems',
+    price: 19.99,
+    description: 'Phynetech drinking water purifier & treatment machines are the leading drinking water treatment machines in Kenya. We use innovative solutions that make use of reliable filters to treat water. Our design is simple but effective. Hence, you can smoothly run the machine without any technical knowledge background.',
+    category: 'Category 2',
+    image: Banner1,
+    rating: 3.8,
+    reviews: 5,
+    isNew: true,
+  },
+
+  {
+    id: 7,
+    title: 'Water Purification Systems',
+    price: 19.99,
+    description: 'Phynetech drinking water purifier & treatment machines are the leading drinking water treatment machines in Kenya. We use innovative solutions that make use of reliable filters to treat water. Our design is simple but effective. Hence, you can smoothly run the machine without any technical knowledge background.',
+    category: 'Category 2',
+    image: Image6,
+    rating: 3.8,
+    reviews: 5,
+    isNew: true,
+  },
+  {
+    id: 8,
+    title: 'Water Purification Systems',
+    price: 19.99,
+    description: 'Phynetech drinking water purifier & treatment machines are the leading drinking water treatment machines in Kenya. We use innovative solutions that make use of reliable filters to treat water. Our design is simple but effective. Hence, you can smoothly run the machine without any technical knowledge background.',
+    category: 'Category 2',
+    image: Image7,
+    rating: 3.8,
+    reviews: 5,
+    isNew: true,
+  },
+  {
+    id: 9,
+    title: 'Water Purification Systems',
+    price: 19.99,
+    description: 'Phynetech drinking water purifier & treatment machines are the leading drinking water treatment machines in Kenya. We use innovative solutions that make use of reliable filters to treat water. Our design is simple but effective. Hence, you can smoothly run the machine without any technical knowledge background.',
+    category: 'Category 2',
+    image: Image8,
+    rating: 3.8,
+    reviews: 5,
+    isNew: true,
+  },
+  {
+    id: 10,
+    title: 'Water Purification Systems',
+    price: 19.99,
+    description: 'Phynetech drinking water purifier & treatment machines are the leading drinking water treatment machines in Kenya. We use innovative solutions that make use of reliable filters to treat water. Our design is simple but effective. Hence, you can smoothly run the machine without any technical knowledge background.',
+    category: 'Category 2',
+    image: Image9,
+    rating: 3.8,
+    reviews: 5,
+    isNew: true,
+  },
+  {
+    id: 11,
+    title: 'Water Purification Systems',
+    price: 19.99,
+    description: 'Phynetech drinking water purifier & treatment machines are the leading drinking water treatment machines in Kenya. We use innovative solutions that make use of reliable filters to treat water. Our design is simple but effective. Hence, you can smoothly run the machine without any technical knowledge background.',
+    category: 'Category 2',
+    image: Image10,
+    rating: 3.8,
+    reviews: 5,
+    isNew: true,
+  },
+  {
+    id: 12,
+    title: 'Water Purification Systems',
+    price: 19.99,
+    description: 'Phynetech drinking water purifier & treatment machines are the leading drinking water treatment machines in Kenya. We use innovative solutions that make use of reliable filters to treat water. Our design is simple but effective. Hence, you can smoothly run the machine without any technical knowledge background.',
+    category: 'Category 2',
+    image: Image11,
+    rating: 3.8,
+    reviews: 5,
+    isNew: true,
+  },
+  {
+    id: 13,
+    title: 'Water Purification Systems',
+    price: 19.99,
+    description: 'Phynetech drinking water purifier & treatment machines are the leading drinking water treatment machines in Kenya. We use innovative solutions that make use of reliable filters to treat water. Our design is simple but effective. Hence, you can smoothly run the machine without any technical knowledge background.',
+    category: 'Category 2',
+    image: Image12,
+    rating: 3.8,
+    reviews: 5,
+    isNew: true,
+  },
+  {
+    id: 14,
+    title: 'Water Purification Systems',
+    price: 19.99,
+    description: 'Phynetech drinking water purifier & treatment machines are the leading drinking water treatment machines in Kenya. We use innovative solutions that make use of reliable filters to treat water. Our design is simple but effective. Hence, you can smoothly run the machine without any technical knowledge background.',
+    category: 'Category 2',
+    image: Image13,
+    rating: 3.8,
+    reviews: 5,
+    isNew: true,
+  },
+  {
+    id: 15,
+    title: 'Water Purification Systems',
+    price: 19.99,
+    description: 'Phynetech drinking water purifier & treatment machines are the leading drinking water treatment machines in Kenya. We use innovative solutions that make use of reliable filters to treat water. Our design is simple but effective. Hence, you can smoothly run the machine without any technical knowledge background.',
+    category: 'Category 2',
+    image: Image14,
+    rating: 3.8,
+    reviews: 5,
+    isNew: true,
+  },
+  {
+    id: 16,
+    title: 'Water Purification Systems',
+    price: 19.99,
+    description: 'Phynetech drinking water purifier & treatment machines are the leading drinking water treatment machines in Kenya. We use innovative solutions that make use of reliable filters to treat water. Our design is simple but effective. Hence, you can smoothly run the machine without any technical knowledge background.',
+    category: 'Category 2',
+    image: Image15,
+    rating: 3.8,
+    reviews: 5,
+    isNew: true,
+  },
+  {
+    id: 17,
+    title: 'Water Purification Systems',
+    price: 19.99,
+    description: 'Phynetech drinking water purifier & treatment machines are the leading drinking water treatment machines in Kenya. We use innovative solutions that make use of reliable filters to treat water. Our design is simple but effective. Hence, you can smoothly run the machine without any technical knowledge background.',
+    category: 'Category 2',
+    image: Image16,
     rating: 3.8,
     reviews: 5,
     isNew: true,
