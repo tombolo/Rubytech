@@ -8,7 +8,6 @@ import { getSession } from "next-auth/react";
 
 export default function Home() {
 
-  console.log("MyShop array:", MyShop);
 
   
   return (
@@ -48,3 +47,17 @@ export async function getServerSideProps(context) {
 };
 }
 
+{/*<div className="z-50">
+
+           <div className="absolute bottom-0 left-0 right-0 bg-transparent text-white text-center p-8 z-50">
+              <Typist
+                className="text-4xl opacity-100"
+                startDelay={1000}
+                avgTypingDelay={50}
+                onTypingDone={handleTypingDone} >
+                <span className="text-white mt-36">Welcome to Rubytech, where</span>
+                <br />
+                <span className="text-blue-500">great things happen.</span>
+              </Typist>
+            </div>
+</div>*/}
