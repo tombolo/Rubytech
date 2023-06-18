@@ -2,7 +2,7 @@ import Image1 from '../components/Myimages/image1.jpg';
 import Image2 from '../components/Myimages/image2.jpg';
 import Image3 from '../components/Myimages/image3.jpg';
 import Image4 from '../components/Myimages/image4.webp';
-import Banner2 from '../components/Myimages/Banner2.jpg';
+import Banner2 from '../components/Myimages/banner2.jpg';
 
 export const MyShop = [
   {
