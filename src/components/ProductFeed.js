@@ -7,7 +7,9 @@ function ProductFeed({products}) {
 
 
   return (
-    <div className="custom-margin-top grid grid-flow-row-dense md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:-mt-200 mx-auto">
+    <div>
+      <h3 className="font-bold text-3xl text-center">Our Products</h3>
+    <div className="custom-margin-top grid grid-flow-row-dense md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mx-auto">
       {products.slice(0, 4).map((product) => (
         <Product key={product.id} {...product} />
       ))}
@@ -27,6 +29,7 @@ function ProductFeed({products}) {
       {products.slice(5, products.length).map((product) => (
         <Product key={product.id} {...product} />
       ))}
+    </div>
     </div>
   );
 }

@@ -29,7 +29,7 @@ function Services() {
 
   return (
     <div className="lg:mt-48 shadow-md m-7 bg-gray-200 text-center">
-      <h2 className="text-3xl font-bold">Our Services</h2>
+      <h2 className="text-3xl font-bold p-2">Our Services</h2>
       <div className="flex flex-wrap justify-center my-2">
         {services.map((service, index) => (
           <div
