@@ -69,7 +69,7 @@ function Product({ id, title, price, description, category, image }) {
           ))}
       </div>
 
-      <p className="text-xs my-2 line-clamp-2 bg-blue-50 px-3 hover:bg-blue-200 transition duration-300 rounded-md">
+      <p className="text-xs line-clamp-3 my-1 transition duration-300 rounded-md">
         {description}
       </p>
 

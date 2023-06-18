@@ -2,7 +2,7 @@ import Image1 from '../components/Myimages/image1.jpg';
 import Image2 from '../components/Myimages/image2.jpg';
 import Image3 from '../components/Myimages/image3.jpg';
 import Image4 from '../components/Myimages/image4.webp';
-import Image5 from '../components/Myimages/image5.webp';
+import Banner2 from '../components/Myimages/Banner2.jpg';
 
 export const MyShop = [
   {
@@ -55,7 +55,7 @@ export const MyShop = [
     price: 19.99,
     description: 'This is product 5.',
     category: 'Category 2',
-    image: Image5,
+    image: Banner2,
     rating: 3.8,
     reviews: 5,
     isNew: true,
