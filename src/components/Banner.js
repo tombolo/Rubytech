@@ -1,6 +1,5 @@
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Typist from 'react-typist';
 import Image from "next/image";
 import Banner4 from './Myimages/banner4.jpg';
 import Banner5 from './Myimages/banner5.jpg';
@@ -27,17 +26,6 @@ function Banner() {
         <Image
         src={Banner4} loading="lazy" className="w-screen h-auto" alt="Banner" />
 
-            <div className="absolute bottom-28 left-0 right-0 bg-transparent text-white text-center p-8 z-50 sm:mt-74">
-              <Typist
-                className="text-4xl opacity-100"
-                startDelay={3000}
-                avgTypingDelay={50}
-                onTypingDone={handleTypingDone} >
-                <span className="text-white">Welcome to Rubytech, where</span>
-                <br />
-                <span className="text-blue-500">great things happen.</span>
-              </Typist>
-            </div>
         </div>
 
 
