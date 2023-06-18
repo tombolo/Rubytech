@@ -30,13 +30,13 @@ function Banner() {
 
 
 
-        <div>
+        {/*<div>
         <Image
         src={Banner5} loading="lazy" className="w-screen h-auto" alt="Banner" />
         </div>
         <div>
           <img loading="lazy" src="https://links.papareact.com/7ma" alt="" />
-        </div>
+  </div>*/}
       </Carousel>
     </div>
   );

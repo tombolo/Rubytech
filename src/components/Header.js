@@ -1,4 +1,4 @@
-import rubytech from './Myimages/rubytech.png';
+import rubytech1 from './Myimages/rubytech1.png';
 import Image from "next/image";
 
 
@@ -24,7 +24,7 @@ function Header() {
           <div className="mt-2 flex items-center flex-grow sm:flex-grow-0">
           <Image
                 onClick={() => router.push("/")}
-                src={rubytech}
+                src={rubytech1}
                 width={200}
                 height={60}
                 objectFit="contain"
