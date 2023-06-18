@@ -12,7 +12,7 @@ function Banner() {
     // You can modify this function to suit your specific requirements
   };
   return (
-    <div className="relative mt-28">
+    <div className="relative mt-24">
       <div className="absolute w-full z-10" />
       <Carousel
         autoPlay={true}

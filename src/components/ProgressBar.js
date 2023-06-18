@@ -30,13 +30,13 @@ const ProgressBar = () => {
   };
 
   return (
-<div className="mt-2 py-6 sm:-mb-36 flex justify-center relative">
+    <div className="mt-2 py-6 sm:-mb-36 relative flex items-center justify-center">
       <div className="flex space-x-8 sm:space-x-36">
         {[0, 1, 2].map((index) => (
           <div
             key={index}
             className="w-12 sm:w-10 md:w-20 lg:w-40 relative"
-             // Apply translucent overlay to the enclosing div
+            // Apply translucent overlay to the enclosing div
           >
             <div className="relative w-full h-32">
               <div
@@ -52,9 +52,15 @@ const ProgressBar = () => {
             </div>
           </div>
         ))}
-        <div className="absolute top-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-black text-lg font-bold">
-          {message}
+
+        <div className="absolute sm:text-2xl font-bold text-xs pr-14 text-blue-900">
+          <span>
+            {message}
+          </span>
         </div>
+
+
+
       </div>
     </div>
   );

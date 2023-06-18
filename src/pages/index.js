@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Banner from "../components/Banner";
 import ProductFeed from "../components/ProductFeed";
 import ProgressBar from "../components/ProgressBar";
+import Services from "../components/Services";
 import { getSession } from "next-auth/react";
 
 
@@ -30,8 +31,12 @@ export default function Home() {
           {/* Progress Bar */}
           <ProgressBar />
 
+          <Services />
+
           {/* Product Feed */}
           <ProductFeed products={MyShop} />
+
+          
         </div>
 
        
