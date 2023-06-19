@@ -16,6 +16,11 @@ function Header() {
   const router = useRouter();
   const items = useSelector(selectItems);
 
+ 
+
+
+  
+
   return (
     <div className="fixed top-0 left-0 w-full z-50 bg-white">
       <header>
@@ -26,7 +31,7 @@ function Header() {
                 onClick={() => router.push("/")}
                 src={rubytech1}
                 width={200}
-                height={60}
+                height={70}
                 objectFit="contain"
                 className="cursor-pointer"
                 />
