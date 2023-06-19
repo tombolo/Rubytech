@@ -38,14 +38,14 @@ function Checkout() {
         {/*Left*/}
         <div className="flex-grow m-5 shadow-sm">
           <Image
-            src="https://links.papareact.com/ikj"
+            src={Image}
             width={1720}
             height={250}
             objectFit="contain"
           />
 
           <div className="flex flex-col p-5 space-y-10 bg-white">
-            <h1 className="text-3xl border-b-4">
+            <h1 className="text-3xl border-b-4 border-blue-900">
               {items.length === 0
                 ? "Your Amazon Basket is empty."
                 : "Shopping Basket"}
@@ -76,6 +76,8 @@ function Checkout() {
                 <span className="font-bold">{total}</span>
               </h2>
 
+
+             <div className="mt-24 fixed">
               <button
                 role="link"
                 onClick={createCheckoutSession}
@@ -87,6 +89,9 @@ function Checkout() {
               >
                 {!session ? "Sign in to checkout" : "Proceed to checkout"}
               </button>
+              </div>
+
+
             </>
           )}
         </div>
