@@ -1,4 +1,5 @@
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import Image from "next/image";
 import CheckoutProduct from "../components/CheckoutProduct";
 import { useSelector } from "react-redux";
@@ -96,6 +97,8 @@ function Checkout() {
           )}
         </div>
       </main>
+
+      <Footer />
     </div>
   );
 }
