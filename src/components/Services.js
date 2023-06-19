@@ -32,7 +32,7 @@ function Services() {
   
 
   return (
-    <div className="lg:mt-48 shadow-md m-7 bg-gray-300 text-center"
+    <div className="lg:mt-48 shadow-md m-7 bg-gray-300 text-center rounded-sm"
    
       >
 
