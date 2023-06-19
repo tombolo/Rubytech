@@ -47,7 +47,7 @@ function Header() {
               <p className="font-extrabold md:text-sm">Account & Lists</p>
             </div>
 
-            <div onClick={() => router.push("/orders")} className="cursor-pointer link">
+            <div onClick={() => router.push("/order")} className="cursor-pointer link">
               <p>Returns</p>
               <p className="font-extrabold md:text-sm">& Orders</p>
             </div>
@@ -68,11 +68,11 @@ function Header() {
             <MenuIcon className="h-6 mr-1" />
             All
           </p>
-          <p className="link">Prime Video</p>
-          <p className="link">Amazon Bisiness</p>
+          <p className="link">Ruby Shops</p>
+          <p className="link">Ruby Business</p>
           <p className="link">Today's Deals</p>
           <p className="link hidden lg:inline-flex">Electronics</p>
-          <p className="link hidden lg:inline-flex">Food & Grocery</p>
+          <p className="link hidden lg:inline-flex">Our Services</p>
           <p className="link hidden lg:inline-flex">Prime</p>
           <p className="link hidden lg:inline-flex">Buy Again</p>
           <p className="link hidden lg:inline-flex">Shopper Toolkit</p>

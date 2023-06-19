@@ -1,6 +1,8 @@
 
 import React, { useEffect, useState } from 'react';
 
+
+
 function Services() {
   const services = [
     {
@@ -27,8 +29,13 @@ function Services() {
     setIsVisible(true);
   }, []);
 
+  
+
   return (
-    <div className="lg:mt-48 shadow-md m-7 bg-gray-200 text-center">
+    <div className="lg:mt-48 shadow-md m-7 bg-gray-300 text-center"
+   
+      >
+
       <h2 className="text-3xl font-bold p-2">Our Services</h2>
       <div className="flex flex-wrap justify-center my-2">
         {services.map((service, index) => (
@@ -42,6 +49,10 @@ function Services() {
               animationFillMode: 'forwards',
               animationName: isVisible ? 'fadeIn' : '',
             }}
+
+
+            
+
           >
             <div className="bg-white rounded-lg shadow p-3">
               <h3 className="text-lg font-bold mb-2">{service.title}</h3>
