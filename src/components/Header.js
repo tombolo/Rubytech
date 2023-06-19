@@ -1,25 +1,38 @@
+import React, { useState, useEffect } from "react";
 import rubytech1 from './Myimages/rubytech1.png';
 import Image from "next/image";
-
-
 import { MenuIcon, SearchIcon, ShoppingCartIcon } from "@heroicons/react/outline";
 import { signIn, signOut, useSession } from "next-auth/react";
 import { useRouter } from "next/router";
 import { useSelector } from "react-redux";
 import { selectItems } from "../slices/basketSlice";
 
-
-
 function Header() {
-
   const { data: session } = useSession();
   const router = useRouter();
   const items = useSelector(selectItems);
 
- 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 640); // Adjust the breakpoint as needed
+    };
 
-  
+    // Call handleResize on initial render
+    handleResize();
+
+    // Attach event listener for window resize
+    window.addEventListener("resize", handleResize);
+
+    // Clean up event listener on component unmount
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const handleMenuClick = () => {
+    setIsMenuOpen((prevValue) => !prevValue);
+  };
 
   return (
     <div className="fixed top-0 left-0 w-full z-50 bg-white">
@@ -27,14 +40,14 @@ function Header() {
         {/*top nav*/}
         <div className="flex items-center p-1 py-2">
           <div className="mt-2 flex items-center flex-grow sm:flex-grow-0">
-          <Image
-                onClick={() => router.push("/")}
-                src={rubytech1}
-                width={200}
-                height={70}
-                objectFit="contain"
-                className="cursor-pointer"
-                />
+            <Image
+              onClick={() => router.push("/")}
+              src={rubytech1}
+              width={200}
+              height={70}
+              objectFit="contain"
+              className="cursor-pointer"
+            />
           </div>
 
           {/*search*/}
@@ -68,15 +81,47 @@ function Header() {
         </div>
 
         {/*bottom nav*/}
-        <div className="flex items-center space-x-3 p-2 pl-6 bg-amazon_blue-light text-white text-sm">
-          <p className="link flex items-center">
+        {isSmallScreen && isMenuOpen && (
+          <div className="flex flex-col text-center text-white text-sm bg-blue-500 transition-all duration-2000">
+            <p className="link border-b border-white p-2" onClick={handleMenuClick}>
+              Home
+            </p>
+            <p className="link border-b border-white p-2" onClick={handleMenuClick}>
+              Our Services
+            </p>
+            <p className="link border-b border-white p-2" onClick={handleMenuClick}>
+              Electronics
+            </p>
+            <p className="link border-b border-white p-2" onClick={handleMenuClick}>
+              Buy Again
+            </p>
+          </div>
+        )}
+
+        <div className={`flex items-center space-x-3 p-2 pl-6 bg-amazon_blue-light text-white text-sm transition-all duration-2000 ${isMenuOpen ? "menu-open" : ""}`}>
+          <p className="link flex items-center" onClick={handleMenuClick}>
             <MenuIcon className="h-6 mr-1" />
             All
           </p>
           <p className="link">Ruby Shops</p>
           <p className="link">Ruby Business</p>
           <p className="link">Today's Deals</p>
-          <p className="link hidden lg:inline-flex">Electronics</p>
+          {isSmallScreen && !isMenuOpen && (
+            <>
+              <p className="link hidden" onClick={handleMenuClick}>
+                Home
+              </p>
+              <p className="link hidden" onClick={handleMenuClick}>
+                Our Services
+              </p>
+              <p className="link hidden" onClick={handleMenuClick}>
+                Electronics
+              </p>
+              <p className="link hidden" onClick={handleMenuClick}>
+                Buy Again
+              </p>
+            </>
+          )}
           <p className="link hidden lg:inline-flex">Our Services</p>
           <p className="link hidden lg:inline-flex">Prime</p>
           <p className="link hidden lg:inline-flex">Buy Again</p>
