@@ -67,8 +67,8 @@ function CheckoutProduct({
       </div>
 
       <div className="flex flex-col space-y-2 my-auto justify-self-end">
-      <button className="button" onClick={addItemToBasket}>Add to Basket</button>
-      <button className="button" onClick={removeItemFromBasket}>Remove from Basket</button>
+      <button className="bg-blue-900 rounded-md flex-shrink-0 w-auto sm:w-auto py-1.5 px-2 hover:bg-blue-600 transition duration-200 m-1 text-white text-xs" onClick={addItemToBasket}>Add to Basket</button>
+      <button className="bg-blue-900 rounded-md flex-shrink-0 w-auto sm:w-auto py-1.5 px-2 hover:bg-blue-600 transition duration-200 m-1 text-white text-xs" onClick={removeItemFromBasket}>Remove from Basket</button>
       </div>
 
 

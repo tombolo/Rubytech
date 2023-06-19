@@ -34,7 +34,7 @@ function Checkout() {
     <div className="bg-gray-100">
       <Header />
 
-      <main className="lg:flex max-w-screen-2xl mx-auto">
+      <main className="lg:flex max-w-screen-2xl mx-auto mt-16 lg:-mt-10">
         {/*Left*/}
         <div className="flex-grow m-5 shadow-sm">
           <Image
@@ -77,12 +77,12 @@ function Checkout() {
               </h2>
 
 
-             <div className="mt-24 fixed">
+             <div className="lg:mt-32 lg:fixed">
               <button
                 role="link"
                 onClick={createCheckoutSession}
                 disabled={!session}
-                className={`button mt-2 ${
+                className={`bg-blue-900 rounded-md flex-shrink-0 w-auto sm:w-auto py-1.5 px-2 hover:bg-blue-600 transition duration-200 m-1 text-white mt-2 ${
                   !session &&
                   "from-gray-300 to-gray-500 border-gray-200 text-gray-300 cursor-not-allowed"
                 }`}
