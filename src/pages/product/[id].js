@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { MyShop } from '../../components/MyShop';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import FixedFooter from '../../components/FixedFooter';
 import Image from "next/image";
 import { StarIcon } from "@heroicons/react/solid";
 
@@ -61,6 +62,7 @@ const Product = () => {
 
     </div>
     <Footer />
+    <FixedFooter />
     </div>
   );
 };
