@@ -1,15 +1,15 @@
-import MyShop from './MyShop';
 import { useEffect, useState } from "react";
 import { StarIcon } from "@heroicons/react/solid";
 import { useDispatch } from "react-redux";
 import { addToBasket } from "../slices/basketSlice";
+import { useRouter } from 'next/router';
 
 const MAX_RATING = 5;
 const MIN_RATING = 1;
 
 function Product({ id, title, price, description, category, image }) {
+  
   const dispatch = useDispatch();
-  const [product, setProduct] = useState({});
   const [rating] = useState(
     Math.floor(Math.random() * (MAX_RATING - MIN_RATING + 1)) + MIN_RATING,
   );
@@ -31,6 +31,18 @@ function Product({ id, title, price, description, category, image }) {
     dispatch(addToBasket(product));
   };
 
+  const router = useRouter();
+
+  const handleProductClick = () => {
+  
+        
+    if (typeof window !== 'undefined') {
+      // Check if the code is running on the client-side
+      router.push(`/product/${id}`);
+    }
+  };
+
+
   const handleWhatsAppClick = () => {
     // Replace the '1234567890' with your actual WhatsApp number
     const phoneNumber = "1234567890";
@@ -46,8 +58,10 @@ function Product({ id, title, price, description, category, image }) {
   };
 
   return (
-      
-    <div className="relative flex flex-col m-5 bg-white z-20 p-6 rounded-lg shadow-lg transition duration-300 hover:bg-gray-300 transform hover:scale-95 xl:mt-10">
+    <div
+  className="relative flex flex-col m-5 bg-white z-20 p-6 rounded-lg shadow-lg transition duration-300 hover:bg-gray-300 transform hover:scale-95 xl:mt-10"
+  onClick={() => handleProductClick(id)}
+>
       <p className="absolute top-2 right-2 text-gray-400">{category}</p>
 
       <div className="relative overflow-hidden top-5 flex items-center justify-center border-2  rounded-md h-300 w-300 transition duration-500 transform hover:scale-105">
@@ -89,13 +103,13 @@ function Product({ id, title, price, description, category, image }) {
       )}
 
       <div className="flex gap-12 justify-center">
-        <button
+
+      <button
           onClick={handleWhatsAppClick}
           className="flex-grow-0 flex-shrink-0 w-auto sm:w-auto bg-green-500 text-white py-1.5 px-2 rounded-md hover:bg-green-600 transition duration-200 m-1"
         >
           WhatsApp
         </button>
-
         <button
           onClick={addItemToBasket}
           className="flex-grow-0 flex-shrink-0 w-auto sm:w-auto bg-blue-900 text-white py-1.5 px-2 rounded-md hover:bg-blue-600 transition duration-200 m-1"

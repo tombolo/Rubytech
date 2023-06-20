@@ -82,7 +82,7 @@ function Header() {
 
         {/*bottom nav*/}
         {isSmallScreen && isMenuOpen && (
-          <div className="flex flex-col text-center text-white text-sm bg-blue-500 transition-all duration-2000">
+          <div className="flex flex-col text-center text-white text-sm bg-blue-500 transition-all duration-5000">
             <p className="link border-b border-white p-2" onClick={handleMenuClick}>
               Home
             </p>

@@ -208,5 +208,4 @@ export const MyShop = [
   },
   // Add more products as needed
 ];
-
-export default MyShop;
+ 
