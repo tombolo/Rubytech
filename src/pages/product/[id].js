@@ -4,6 +4,7 @@ import { MyShop } from '../../components/MyShop';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import FixedFooter from '../../components/FixedFooter';
+import ProductFeed from '../../components/ProductFeed';
 import Image from "next/image";
 import { StarIcon } from "@heroicons/react/solid";
 
@@ -103,13 +104,23 @@ const Product = () => {
 
   </div>
 
-
-
-
-
 </div>
 
 
+
+<div className="m-6 border-b-2 border-gray-300">
+  <div className="mb-5 flex flex-row justify-between items-center">
+    <p className="text-xs font-bold">Customer reviews</p>
+    <select className="text-xs bg-transparent border-none focus:outline-none">
+      <option value="Nairobi, Umoja">View All</option>
+    </select>
+  </div>
+  </div>
+
+  <div>
+    <h1 className="text-xs font-bold mx-6 mb-1">Also From Store</h1>
+  <ProductFeed products={MyShop} />
+</div>
 
 
 

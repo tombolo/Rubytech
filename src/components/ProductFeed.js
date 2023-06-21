@@ -4,7 +4,7 @@ import Link from 'next/link';
 function ProductFeed({ products }) {
   return (
     <div className="">
-      <h3 className="font-bold text-2xl text-center">Our Products</h3>
+      <h3 className="font-bold text-2xl text-center"></h3>
       <div className="mx-auto flex overflow-x-auto bg-gray-100 mr-3">
         {products.slice(1, 17).map((product, index) => (
           <Link href={`/product/${product.id}`} key={product.id}>
