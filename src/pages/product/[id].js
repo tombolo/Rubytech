@@ -61,7 +61,7 @@ const Product = () => {
       
     </div>
 
-    <div className="relative m-4 bg-white border-t-2 border-yellow-900 p-2 rounded shadow-lg transition">
+    <div className="relative m-6 bg-white border-t-2 border-yellow-900 p-2 rounded shadow-lg transition">
   <div className="flex flex-row justify-between items-center">
     <p className="text-xs font-bold">Shipping to</p>
     <select className="text-xs bg-transparent border-none focus:outline-none">
