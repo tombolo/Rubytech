@@ -16,6 +16,16 @@ import Image14 from '../components/Myimages/image14.webp';
 import Image15 from '../components/Myimages/image15.webp';
 import Image16 from '../components/Myimages/image16.webp';
 
+import pipe1 from '../components/Myimages/pipe1.jpg';
+import pipe2 from '../components/Myimages/pipe2.webp';
+import pipe3 from '../components/Myimages/pipe3.jpg';
+import pipe4 from '../components/Myimages/pipe4.jpg';
+import pipe5 from '../components/Myimages/pipe5.jpg';
+import pipe6 from '../components/Myimages/pipe6.jpg';
+import pipe8 from '../components/Myimages/pipe8.jpg';
+import pipe9 from '../components/Myimages/pipe9.jpg';
+import pipe10 from '../components/Myimages/pipe10.jpg';
+
 export const MyShop = [
   {
     id: 1,
@@ -202,6 +212,109 @@ export const MyShop = [
     description: 'Phynetech drinking water purifier & treatment machines are the leading drinking water treatment machines in Kenya. We use innovative solutions that make use of reliable filters to treat water. Our design is simple but effective. Hence, you can smoothly run the machine without any technical knowledge background.',
     category: 'Category 2',
     image: Image16,
+    rating: 3.8,
+    reviews: 5,
+    isNew: true,
+  },
+
+
+
+  {
+    id: 18,
+    title: 'Reverse Osmosis Water Purifier',
+    price: 19.99,
+    description: 'GET THIS 500LPH Water Purification System In Kenya at a very discounted rate from the accredited sellers of water purification machines in Kenya.',
+    category: 'Water treatment',
+    image: pipe1,
+    rating: 3.8,
+    reviews: 5,
+    isNew: true,
+  },
+  {
+    id: 19,
+    title: 'Reverse Osmosis Water Purifier',
+    price: 19.99,
+    description: 'GET THIS 500LPH Water Purification System In Kenya at a very discounted rate from the accredited sellers of water purification machines in Kenya.',
+    category: 'Water treatment',
+    image: pipe2,
+    rating: 3.8,
+    reviews: 5,
+    isNew: true,
+  },
+  {
+    id: 20,
+    title: 'Reverse Osmosis Water Purifier',
+    price: 19.99,
+    description: 'GET THIS 500LPH Water Purification System In Kenya at a very discounted rate from the accredited sellers of water purification machines in Kenya.',
+    category: 'Water treatment',
+    image: pipe3,
+    rating: 3.8,
+    reviews: 5,
+    isNew: true,
+  },
+  {
+    id: 21,
+    title: 'Reverse Osmosis Water Purifier',
+    price: 19.99,
+    description: 'GET THIS 500LPH Water Purification System In Kenya at a very discounted rate from the accredited sellers of water purification machines in Kenya.',
+    category: 'Water treatment',
+    image: pipe4,
+    rating: 3.8,
+    reviews: 5,
+    isNew: true,
+  },
+  {
+    id: 22,
+    title: 'Reverse Osmosis Water Purifier',
+    price: 19.99,
+    description: 'GET THIS 500LPH Water Purification System In Kenya at a very discounted rate from the accredited sellers of water purification machines in Kenya.',
+    category: 'Water treatment',
+    image: pipe5,
+    rating: 3.8,
+    reviews: 5,
+    isNew: true,
+  },
+
+  {
+    id: 23,
+    title: 'Reverse Osmosis Water Purifier',
+    price: 19.99,
+    description: 'GET THIS 500LPH Water Purification System In Kenya at a very discounted rate from the accredited sellers of water purification machines in Kenya.',
+    category: 'Water treatment',
+    image: pipe6,
+    rating: 3.8,
+    reviews: 5,
+    isNew: true,
+  },
+  {
+    id: 24,
+    title: 'Reverse Osmosis Water Purifier',
+    price: 19.99,
+    description: 'GET THIS 500LPH Water Purification System In Kenya at a very discounted rate from the accredited sellers of water purification machines in Kenya.',
+    category: 'Water treatment',
+    image: pipe8,
+    rating: 3.8,
+    reviews: 5,
+    isNew: true,
+  },
+  {
+    id: 25,
+    title: 'Reverse Osmosis Water Purifier',
+    price: 19.99,
+    description: 'GET THIS 500LPH Water Purification System In Kenya at a very discounted rate from the accredited sellers of water purification machines in Kenya.',
+    category: 'Water treatment',
+    image: pipe9,
+    rating: 3.8,
+    reviews: 5,
+    isNew: true,
+  },
+  {
+    id: 26,
+    title: 'Reverse Osmosis Water Purifier',
+    price: 19.99,
+    description: 'GET THIS 500LPH Water Purification System In Kenya at a very discounted rate from the accredited sellers of water purification machines in Kenya.',
+    category: 'Water treatment',
+    image: pipe10,
     rating: 3.8,
     reviews: 5,
     isNew: true,
