@@ -59,9 +59,7 @@ function Product({ id, title, price, description, category, image }) {
 
   return (
     <div
-  className="relative flex flex-col m-5 bg-white z-20 p-6 rounded-lg shadow-lg transition duration-300 hover:bg-gray-300 transform hover:scale-95 xl:mt-10"
-  onClick={() => handleProductClick(id)}
->
+  className="relative flex flex-col m-5 bg-white z-20 p-6 rounded-lg shadow-lg transition duration-300 hover:bg-gray-300 transform hover:scale-95 xl:mt-10">
       <p className="absolute top-2 right-2 text-gray-400">{category}</p>
 
       <div className="relative overflow-hidden top-5 flex items-center justify-center border-2  rounded-md h-300 w-300 transition duration-500 transform hover:scale-105">
@@ -70,10 +68,13 @@ function Product({ id, title, price, description, category, image }) {
           style={{ height: "200px", width: "100%" }}
           alt={title}
           className="rounded-md"
+          onClick={() => handleProductClick(id)}
         />
       </div>
 
-      <h4 className="my-7 font-bold">{title}</h4>
+      <h4 className="my-7 font-bold">{title}
+      onClick={() => handleProductClick(id)}
+      </h4>
 
       <div className="flex -mt-5">
         {Array(rating)
@@ -85,6 +86,7 @@ function Product({ id, title, price, description, category, image }) {
 
       <p className="text-xs line-clamp-3 my-1 transition duration-300 rounded-md">
         {description}
+        onClick={() => handleProductClick(id)}
       </p>
 
       <div className="mb-3">{price}</div>

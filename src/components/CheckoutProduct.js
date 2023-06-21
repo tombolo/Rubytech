@@ -34,13 +34,15 @@ function CheckoutProduct({
     };
 
   return (
-    <div className="grid grid-cols-5">
-      <Image src={image} height={200} width={200} objectfit="contain" />
+    <div className="grid grid-cols-5 lg:grid-cols-5 flex-grow items-center border-b-2 border-yellow-700">
+      <div className="lg:block flex">
+        <Image src={image} height={250} width={250} objectFit="contain" className="rounded" />
+      </div>
 
       {/*Middle*/}
 
       <div className="col-span-3 mx-5">
-        <p>{title}</p>
+        <p className="text-xs font-semibold">{title}</p>
         <div className="flex">
         {Array(rating)
                 .fill()
@@ -60,7 +62,7 @@ function CheckoutProduct({
                   src=""
                   alt=""
                   />
-                  <p className="text-sm text-gray-500">FREE Next-day Delivery</p>
+                  <p className="text-xs text-gray-500">FREE Next-day Delivery</p>
                   </div>
                 
         )}

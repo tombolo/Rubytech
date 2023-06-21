@@ -35,22 +35,20 @@ function Checkout() {
     <div className="bg-gray-100">
       <Header />
 
-      <main className="lg:flex max-w-screen-2xl mx-auto mt-16 lg:-mt-10">
+      <main className="lg:flex max-w-screen-2xl mx-auto mt-32 lg:-mt-10">
         {/*Left*/}
-        <div className="flex-grow m-5 shadow-sm">
-          <Image
-            src={Image}
-            width={1720}
-            height={250}
-            objectFit="contain"
-          />
-
-          <div className="flex flex-col p-5 space-y-10 bg-white">
-            <h1 className="text-3xl border-b-4 border-blue-900">
+        <div className="flex-grow shadow-sm items-center">
+        <div className="border-b-2 border-yellow-900 flex items-center mx-3">
+            <h1 className="flex text-xl font-bold py-2">
               {items.length === 0
                 ? "Your Rubytech Basket is empty."
                 : "Shopping Basket"}
             </h1>
+            </div>
+         
+
+          <div className="flex flex-col p-2 space-y-5 bg-white items-center">
+          
 
             {items.map((item, i) => (
               <CheckoutProduct
