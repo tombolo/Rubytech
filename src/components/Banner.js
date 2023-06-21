@@ -3,6 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Image from "next/image";
 import Banner4 from './Myimages/banner4.jpg';
 import Kioko from './Myimages/kioko.jpg';
+import Kioko5 from './Myimages/kioko5.jpg';
 
 
 function Banner() {
@@ -20,7 +21,7 @@ function Banner() {
         showStatus={false}
         showIndicators={false}
         showThumbs={false}
-        interval={10000}
+        interval={3000}
       >
         <div className="relative w-full h-500">
         <Image
@@ -35,10 +36,14 @@ function Banner() {
         src={Kioko} loading="lazy" className="w-full h-auto" alt="Banner" />
         </div>
 
-        {/*}
         <div>
-          <img loading="lazy" src="https://links.papareact.com/7ma" alt="" />
-  </div>*/}
+        <Image
+        src={Kioko5} loading="lazy" className="w-full h-auto" alt="Banner" />
+        </div>
+
+        
+
+
       </Carousel>
     </div>
   );
