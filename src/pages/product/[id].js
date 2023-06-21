@@ -59,8 +59,60 @@ const Product = () => {
       </div>
       <p>KSH{product.price}</p>
       
+    </div>
+
+    <div className="relative m-4 bg-white border-t-2 border-gray-300 p-2 rounded shadow-lg transition">
+  <div className="flex flex-row justify-between items-center">
+    <p className="text-xs font-bold">Shipping to</p>
+    <select className="text-xs bg-transparent border-none focus:outline-none">
+      <option value="Nairobi, Umoja">Nairobi, Umoja</option>
+      <option value="Mombasa">Mombasa</option>
+      <option value="Kisumu">Kisumu</option>
+      {/* Add more options for different parts of the country */}
+    </select>
+  </div>
+
+  <div className="relative m-2 border-b-2 border-gray-300">
+    <h1 className="text-xs font-bold text-blue-900 py-2">Fullfilled By Rubytech</h1>
+    <p className="text-xs">The product Ships from Rubytech local warehouse. Get it between date... to date...</p>
+    <p className="text-xs font-semibold text-blue-900 py-2">Free shipping for amount over KSH 20,000</p>
+  </div>
+
+
+  <div className="relative m-2 border-b-2 border-gray-300">
+    <h1 className="text-xs font-semibold text-blue-900 py-2">Return policy</h1>
+    <p className="text-xs py-2">Easy Return, Quick Refund</p>
+  </div>
+
+
+  <div className="relative m-2 border-b-2 border-gray-300">
+    <h1 className="text-xs font-semibold text-blue-900 py-2">Shopping Security</h1>
+
+    <div className="flex justify-between items-center px-2 mb-2">
+      <div className="flex-col text-xs">
+          <p className="list-item">Safe Payments</p>
+          <p className="list-item">Secure Privacy</p>
+      </div>
+
+      <div className="flex flex-col text-xs">
+          <p className="list-item">Secure Logistics</p>
+          <p className="list-item">Purchase Protection</p>
+      </div>
 
     </div>
+
+  </div>
+
+
+
+
+
+</div>
+
+
+
+
+
     <Footer />
     <FixedFooter />
     </div>
