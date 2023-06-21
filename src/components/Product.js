@@ -68,13 +68,14 @@ function Product({ id, title, price, description, category, image }) {
           style={{ height: "200px", width: "100%" }}
           alt={title}
           className="rounded-md"
-          onClick={() => handleProductClick(id)}
         />
-      </div>
 
+
+      </div>
+      <div  onClick={() => handleProductClick(id)}>
       <h4 className="my-7 font-bold">{title}
-      onClick={() => handleProductClick(id)}
       </h4>
+      </div>
 
       <div className="flex -mt-5">
         {Array(rating)
@@ -86,7 +87,6 @@ function Product({ id, title, price, description, category, image }) {
 
       <p className="text-xs line-clamp-3 my-1 transition duration-300 rounded-md">
         {description}
-        onClick={() => handleProductClick(id)}
       </p>
 
       <div className="mb-3">{price}</div>
