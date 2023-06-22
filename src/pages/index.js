@@ -6,6 +6,8 @@ import ProductFeed from "../components/ProductFeed";
 import ProgressBar from "../components/ProgressBar";
 import Services from "../components/Services";
 import Footer from "../components/Footer";
+import Control from "../components/Control";
+import About from "../components/About";
 import { getSession } from "next-auth/react";
 
 
@@ -37,6 +39,11 @@ export default function Home() {
           {/* Product Feed */}
           <ProductFeed products={MyShop} />
 
+
+
+        <Control />
+
+        <About />
           
         </div>
 

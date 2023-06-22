@@ -32,16 +32,14 @@ function Services() {
   
 
   return (
-    <div className="lg:mt-48 shadow-md m-7 bg-gray-300 text-center rounded-sm"
-   
-      >
+    <div className="lg:mt-48 shadow-md m-6 bg-gray-100 text-center rounded-md">
 
-      <h2 className="text-3xl font-bold p-2">Our Services</h2>
+      <h2 className="text-2xl font-bold p-1">Our Services</h2>
       <div className="flex flex-wrap justify-center my-2">
         {services.map((service, index) => (
           <div
             key={index}
-            className={`w-full md:w-1/2 lg:w-1/4 mb-3 p-2 ${
+            className={`w-full md:w-1/2 lg:w-1/4 mb-2 p-2 ${
               isVisible ? 'opacity-0' : 'opacity-1'
             } transform transition-opacity duration-1000`}
             style={{
