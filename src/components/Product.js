@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import { StarIcon } from "@heroicons/react/solid";
-import { useDispatch } from "react-redux";
-import { addToBasket } from "../slices/basketSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { addToBasket, removeFromBasket } from "../slices/basketSlice";
 import { useRouter } from 'next/router';
 
 const MAX_RATING = 5;
@@ -9,10 +9,17 @@ const MIN_RATING = 1;
 
 function Product({ id, title, price, description, category, image }) {
   const dispatch = useDispatch();
+  const basket = useSelector(state => state.basket.items);
   const [rating] = useState(
     Math.floor(Math.random() * (MAX_RATING - MIN_RATING + 1)) + MIN_RATING
   );
   const [hasPrime] = useState(Math.random() < 0.5);
+  const [isInBasket, setIsInBasket] = useState(false);
+
+  useEffect(() => {
+    const itemInBasket = basket.find(item => item.id === id);
+    setIsInBasket(!!itemInBasket);
+  }, [basket, id]);
 
   const addItemToBasket = () => {
     const product = {
@@ -26,7 +33,14 @@ function Product({ id, title, price, description, category, image }) {
       hasPrime,
     };
     dispatch(addToBasket(product));
+    setIsInBasket(true);
   };
+
+  
+
+  const removeItemFromBasket = () => {
+    dispatch(removeFromBasket({ id }));
+};
 
   const router = useRouter();
 
@@ -36,7 +50,6 @@ function Product({ id, title, price, description, category, image }) {
       router.push(`/product/${id}`);
     }
   };
-
 
   const imageRef = useRef();
   const titleRef = useRef();
@@ -50,21 +63,6 @@ function Product({ id, title, price, description, category, image }) {
     e.stopPropagation();
     handleProductClick();
   };
-
-
-  {/*const handleWhatsAppClick = () => {
-    // Replace the '1234567890' with your actual WhatsApp number
-    const phoneNumber = "1234567890";
-    const message = `Hello, I'm interested in the product "${title}".`;
-
-    // Generate the WhatsApp URL
-    const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
-      message
-    )}`;
-
-    // Open WhatsApp in a new window or tab
-    window.open(whatsappURL, "_blank");
-  };*/}
 
   return (
     <div className="w-full bg-white z-20 rounded shadow-lg m-4">
@@ -103,10 +101,12 @@ function Product({ id, title, price, description, category, image }) {
 
       <div className="flex justify-center -mt-3">
         <button
-          onClick={addItemToBasket}
-          className="flex-grow-0 flex-shrink-0 w-auto sm:w-auto bg-blue-900 text-white  rounded-md hover:bg-blue-600 transition duration-200 m-5 text-xs px-2 py-1"
+          onClick={isInBasket ? removeItemFromBasket : addItemToBasket}
+          className={`flex-grow-0 flex-shrink-0 w-auto sm:w-auto rounded-md transition duration-200 m-5 text-xs px-2 py-1 ${
+            isInBasket ? 'bg-gray-600 text-white hover:bg-gray-400' : 'bg-blue-900 text-white hover:bg-blue-600'
+          }`}
         >
-          Add to Basket
+          {isInBasket ? 'Remove from Basket' : 'Add to Basket'}
         </button>
       </div>
     </div>

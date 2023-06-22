@@ -4,7 +4,7 @@ function Categories() {
   return (
     <div className="lg:mt-44 lg:flex flex-row items-center justify-evenly">
                     <div className="flex flex-row mx-1 mt-2 justify-evenly items-center">
-                        <div className="relative flex-col items-center bg-white rounded-md p-2 lg:mx-4">
+                        <div className="flex flex-col items-center bg-white rounded-md p-2 lg:mx-4">
                         <AdjustmentsIcon className="h-8 w-8 lg:h-12 lg:w-12 text-blue-500" />
                         <p className="text-xs lg:text-sm">Filtration Systems</p>
                         </div>
