@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { StarIcon } from "@heroicons/react/solid";
 import { useDispatch } from "react-redux";
 import { addToBasket } from "../slices/basketSlice";
@@ -37,7 +37,22 @@ function Product({ id, title, price, description, category, image }) {
     }
   };
 
-  const handleWhatsAppClick = () => {
+
+  const imageRef = useRef();
+  const titleRef = useRef();
+
+  const handleImageClick = (e) => {
+    e.stopPropagation();
+    handleProductClick();
+  };
+
+  const handleTitleClick = (e) => {
+    e.stopPropagation();
+    handleProductClick();
+  };
+
+
+  {/*const handleWhatsAppClick = () => {
     // Replace the '1234567890' with your actual WhatsApp number
     const phoneNumber = "1234567890";
     const message = `Hello, I'm interested in the product "${title}".`;
@@ -49,7 +64,7 @@ function Product({ id, title, price, description, category, image }) {
 
     // Open WhatsApp in a new window or tab
     window.open(whatsappURL, "_blank");
-  };
+  };*/}
 
   return (
     <div className="w-full bg-white z-20 rounded shadow-lg m-4">
@@ -58,10 +73,18 @@ function Product({ id, title, price, description, category, image }) {
           src={image.src}
           alt={title}
           className="rounded-md h-24 w-full"
+          ref={imageRef}
+          onClick={handleImageClick}
         />
       </div>
-      <div onClick={() => handleProductClick(id)}>
-        <h4 className="my-2 mx-2 font-semibold text-xs">{title}</h4>
+      <div>
+        <h4
+          className="my-2 mx-2 font-semibold text-xs"
+          onClick={handleTitleClick}
+          ref={titleRef}
+        >
+          {title}
+        </h4>
       </div>
 
       <div className="flex mx-1 -mt-1">
@@ -77,8 +100,6 @@ function Product({ id, title, price, description, category, image }) {
       </p>
 
       <div className="text-xs mx-1">KSH{price}</div>
-
-     
 
       <div className="flex justify-center -mt-3">
         <button
