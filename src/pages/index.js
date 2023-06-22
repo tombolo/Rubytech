@@ -10,6 +10,7 @@ import Control from "../components/Control";
 import About from "../components/About";
 import Categories from "../components/Categories";
 import { getSession } from "next-auth/react";
+import Cookies from 'js-cookie';
 
 
 export default function Home() {
@@ -75,6 +76,9 @@ export default function Home() {
 
 export async function getServerSideProps(context) {
   const session = await getSession(context);
+
+  
+  Cookies.set('session', JSON.stringify(session));
   
 
   return { 

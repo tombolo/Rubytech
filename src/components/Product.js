@@ -3,6 +3,7 @@ import { StarIcon } from "@heroicons/react/solid";
 import { useDispatch, useSelector } from "react-redux";
 import { addToBasket, removeFromBasket } from "../slices/basketSlice";
 import { useRouter } from 'next/router';
+import Cookies from 'js-cookie';
 
 const MAX_RATING = 5;
 const MIN_RATING = 1;
@@ -20,6 +21,10 @@ function Product({ id, title, price, description, category, image }) {
     const itemInBasket = basket.find(item => item.id === id);
     setIsInBasket(!!itemInBasket);
   }, [basket, id]);
+
+  useEffect(() => {
+    Cookies.set('basket', JSON.stringify(basket)); // Save basket data to cookies
+  }, [basket]);
 
   const addItemToBasket = () => {
     const product = {
@@ -102,7 +107,7 @@ function Product({ id, title, price, description, category, image }) {
       <div className="flex justify-center -mt-3">
         <button
           onClick={isInBasket ? removeItemFromBasket : addItemToBasket}
-          className={`flex-grow-0 flex-shrink-0 w-auto sm:w-auto rounded-md transition duration-200 m-5 text-xs px-2 py-1 ${
+          className={`flex-grow-0 flex-shrink-0 w-auto sm:w-auto rounded-md transition duration-200 m-5 text-xs px-1 py-1 ${
             isInBasket ? 'bg-gray-600 text-white hover:bg-gray-400' : 'bg-blue-900 text-white hover:bg-blue-600'
           }`}
         >

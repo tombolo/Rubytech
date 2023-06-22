@@ -40,7 +40,7 @@ export const MyShop = [
   },
   {
     id: 2,
-    title: 'UF Water Purification System',
+    title: 'Water Purification System',
     price: 19.99,
     description: 'GET THIS Water Purification System UF 3in 1 Water Purification System In Kenya at a very discounted rate from the accredited sellers of water purification machines in Kenya.',
     category: 'pLumbing',
