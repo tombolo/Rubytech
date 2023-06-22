@@ -8,6 +8,7 @@ import Services from "../components/Services";
 import Footer from "../components/Footer";
 import Control from "../components/Control";
 import About from "../components/About";
+import Categories from "../components/Categories";
 import { getSession } from "next-auth/react";
 
 
@@ -30,11 +31,23 @@ export default function Home() {
         {/*Banner*/}
         <Banner />
 
+        <ProgressBar />
+
+
+        <div className="lg:block">
+         <Categories />
+        </div>
+          
+          <Services />
+          
+         
+
+
         <div className="mb-4">
           {/* Progress Bar */}
-          <ProgressBar />
+          
+      
 
-          <Services />
 
           {/* Product Feed */}
           <div className="">

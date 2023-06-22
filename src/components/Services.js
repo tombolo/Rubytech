@@ -32,7 +32,7 @@ function Services() {
   
 
   return (
-    <div className="lg:mt-36 shadow-md m-6 bg-gray-100 text-center rounded-md">
+    <div className="lg:mt-5 shadow-md m-6 bg-gray-100 text-center rounded-md">
 
       <h2 className="text-xl font-bold ">Our Services</h2>
       <div className="flex flex-wrap justify-center my-2">
