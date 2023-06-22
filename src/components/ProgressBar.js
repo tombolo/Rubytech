@@ -30,7 +30,7 @@ const ProgressBar = () => {
   };
 
   return (
-    <div className="mt-2 py-6 sm:-mb-36 relative flex items-center justify-center bg-gray-200">
+    <div className="-mt-7 z-40 py-6 sm:-mb-36 relative flex items-center justify-center bg-gray-200">
       <div className="flex space-x-8 sm:space-x-36">
         {[0, 1, 2].map((index) => (
           <div
