@@ -33,10 +33,12 @@ function CheckoutProduct({
         dispatch(removeFromBasket({ id }));
     };
 
+  
+
   return (
-    <div className="grid grid-cols-5 lg:grid-cols-5 flex-grow items-center border-b-2 border-yellow-700">
+    <div className="grid grid-cols-5 lg:grid-cols-5 flex-grow items-center border-b-2 border-yellow-700 lg:mt-26 lg:border-t-2 lg:border-gray-200">
       <div className="lg:block flex">
-        <Image src={image} height={250} width={250} objectFit="contain" className="rounded" />
+        <Image src={image} height={250} width={250} objectFit="contain" className="rounded-md" />
       </div>
 
       {/*Middle*/}

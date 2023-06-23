@@ -1,9 +1,9 @@
 import { useEffect, useState, useRef } from "react";
 import { StarIcon } from "@heroicons/react/solid";
 import { useDispatch, useSelector } from "react-redux";
-import { addToBasket, removeFromBasket } from "../slices/basketSlice";
+import { addToBasket, removeFromBasket, setBasket } from "../slices/basketSlice";
+
 import { useRouter } from 'next/router';
-import Cookies from 'js-cookie';
 
 const MAX_RATING = 5;
 const MIN_RATING = 1;
@@ -23,8 +23,12 @@ function Product({ id, title, price, description, category, image }) {
   }, [basket, id]);
 
   useEffect(() => {
-    Cookies.set('basket', JSON.stringify(basket)); // Save basket data to cookies
-  }, [basket]);
+    if (typeof window !== 'undefined') {
+      const storedBasketItems = localStorage.getItem("basketItems");
+      const storedBasket = storedBasketItems ? JSON.parse(storedBasketItems) : [];
+      dispatch(setBasket(storedBasket));
+    }
+  }, [dispatch]);
 
   const addItemToBasket = () => {
     const product = {
@@ -39,13 +43,24 @@ function Product({ id, title, price, description, category, image }) {
     };
     dispatch(addToBasket(product));
     setIsInBasket(true);
+    if (typeof window !== 'undefined') {
+      const storedBasketItems = localStorage.getItem("basketItems");
+      const storedBasket = storedBasketItems ? JSON.parse(storedBasketItems) : [];
+      const updatedBasket = [...storedBasket, product];
+      localStorage.setItem("basketItems", JSON.stringify(updatedBasket));
+    }
   };
-
-  
 
   const removeItemFromBasket = () => {
     dispatch(removeFromBasket({ id }));
-};
+    setIsInBasket(false);
+    if (typeof window !== 'undefined') {
+      const storedBasketItems = localStorage.getItem("basketItems");
+      const storedBasket = storedBasketItems ? JSON.parse(storedBasketItems) : [];
+      const updatedBasket = storedBasket.filter(item => item.id !== id);
+      localStorage.setItem("basketItems", JSON.stringify(updatedBasket));
+    }
+  };
 
   const router = useRouter();
 
