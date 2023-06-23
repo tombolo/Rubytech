@@ -38,7 +38,7 @@ function Banner() {
           <h2
             data-aos="fade-in"
             data-aos-duration="3000"
-            className="absolute lg:ml-28 lg:top-56 ml-10 transform -translate-x-1/2 -translate-y-1/2 lg:text-4xl text-lg top-1/2 font-bold text-blue-900"
+            className="absolute lg:ml-28 lg:top-60 ml-10 transform -translate-x-1/2 -translate-y-1/2 lg:text-4xl text-lg top-1/2 font-bold text-blue-900"
             style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}
           >
             to
@@ -47,7 +47,7 @@ function Banner() {
           <h2
             data-aos="fade-in"
             data-aos-duration="3000"
-            className="absolute lg:ml-44 ml-16 transform -translate-x-1/2 -translate-y-1/2 lg:text-4xl text-lg top-3/4 font-bold text-blue-900"
+            className="absolute lg:ml-44 ml-16 transform -translate-x-1/2 -translate-y-1/2 lg:text-4xl text-lg lg:top-72 top-3/4 mb-4 font-bold text-blue-900"
             style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}
           >
             Rubytech

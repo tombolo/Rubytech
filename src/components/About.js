@@ -5,12 +5,15 @@ function About() {
   return (
     <div className="flex flex-col mx-3 bg-white rounded-md mt-4 lg:flex-row lg:items-center lg:justify-between flex-grow">
 
-        <div className=" m-2 border-b-2 border-gray-200 lg:w-1/4">
+        <div data-aos="fade-right"
+             data-aos-duration="2000" 
+           className=" m-2 border-b-2 border-gray-200 lg:w-1/4">
             <h1 className="flex lg:justify-center text-sm font-bold text-blue-900 p-1">About Us</h1>
             <p className=" flex lg:justify-center text-xs p-1">Rubytech Limited is a dealer of Cooking/Salad Oil ATMs, Milk ATMs, Water Purifiers, Food Grade Pumps, Automatic Bell Systems, Programmable Logic Controller, and Water Stations based in Buruburu Kenya.</p>
         </div>
 
-        <div className="m-2 border-b-2 border-gray-200 lg:w-1/4">
+        <div data-aos="fade-left"
+             data-aos-duration="2000" className="m-2 border-b-2 border-gray-200 lg:w-1/4">
             <h1 className=" flex lg:justify-center text-sm font-bold text-blue-900 p-1">Quick Links</h1>
             <p className="text-xs p-1 flex lg:justify-center">Home</p>
             <p className="text-xs p-1 flex lg:justify-center">Our Services</p>
@@ -18,7 +21,8 @@ function About() {
             <p className="text-xs p-1 flex lg:justify-center">Buy Again</p>
         </div>
 
-        <div className="m-2 border-b-2 border-gray-200 lg:w-1/4">
+        <div data-aos="fade-right"
+             data-aos-duration="2000" className="m-2 border-b-2 border-gray-200 lg:w-1/4">
             <h1 className="text-sm font-bold text-blue-900 p-1 flex lg:justify-center">Our Location & Contact Details</h1>
             <div className=" flex lg:justify-center flex-row p-1">
                 <LocationMarkerIcon className="h-6 w-6 text-red-500" />
