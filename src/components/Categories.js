@@ -2,7 +2,7 @@ import { AdjustmentsIcon, ScaleIcon, FilterIcon, GlobeAltIcon, CogIcon, BeakerIc
 
 function Categories() {
   return (
-    <div className="lg:mt-44 lg:flex flex-row items-center justify-evenly">
+    <div className="lg:mt-2 -mt-2 z-50 lg:flex flex-row items-center justify-evenly">
                     <div className="flex flex-row mx-1 mt-2 justify-evenly items-center">
                         <div className="flex flex-col items-center bg-white rounded-md p-2 lg:mx-4">
                         <AdjustmentsIcon className="h-8 w-8 lg:h-12 lg:w-12 text-blue-500" />

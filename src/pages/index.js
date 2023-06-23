@@ -32,10 +32,10 @@ export default function Home() {
         {/*Banner*/}
         <Banner />
 
-        <ProgressBar />
+        
 
 
-        <div className="lg:block">
+        <div className="lg:block z-50">
          <Categories />
         </div>
           
