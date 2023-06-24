@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import React from 'react';
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -6,6 +7,10 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 function CategoryPage() {
+
+useEffect(() => {
+    AOS.init(); // Initialize AOS
+}, []);
   return (
     <div>
 
@@ -17,6 +22,12 @@ function CategoryPage() {
          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 lg:flex lg:flex-row lg:items-center lg:justify-between">
         {/* Example category item */}
         <div 
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-once="true"
+        data-aos-delay="500"
+        data-aos-anchor-placement="center-bottom"
+        data-aos-easing="ease-in-out"
         className="bg-white p-4 rounded shadow flex flex-col items-center">
           <AdjustmentsIcon className="h-8 w-8 lg:h-12 lg:w-12 text-blue-500" />
           <h2 className="text-sm font-bold mb-2">Filtration Systems</h2>
@@ -28,7 +39,13 @@ function CategoryPage() {
         </div>
 
         {/* Example category item */}
-        <div className="bg-white p-4 rounded shadow flex flex-col items-center">
+        <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-once="true"
+        data-aos-delay="500"
+        data-aos-anchor-placement="center-bottom"
+        data-aos-easing="ease-in-out" className="bg-white p-4 rounded shadow flex flex-col items-center">
           <ScaleIcon className="h-8 w-8 lg:h-12 lg:w-12 text-red-500" />
           <h2 className="text-sm font-bold mb-2">Water Softeners</h2>
           <p className="text-xs">Water softeners are devices used in water treatment to remove minerals like calcium and magnesium ions,
@@ -37,7 +54,12 @@ function CategoryPage() {
         </div>
 
         {/* Example category item */}
-        <div className="bg-white p-4 rounded shadow flex flex-col items-center">
+        <div data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-once="true"
+        data-aos-delay="500"
+        data-aos-anchor-placement="center-bottom"
+        data-aos-easing="ease-in-out" className="bg-white p-4 rounded shadow flex flex-col items-center">
           <FilterIcon className="h-8 w-8 lg:h-12 lg:w-12 text-green-500" />
           <h2 className="text-sm font-bold mb-2">Reverse Osmosis</h2>
           <p className="text-xs">Reverse osmosis (RO) is a water treatment process that involves the removal of impurities from water by applying pressure to force it 
@@ -48,7 +70,12 @@ function CategoryPage() {
 
 
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 lg:flex lg:flex-row lg:items-center lg:justify-between mt-9">
+      <div data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-once="true"
+        data-aos-delay="200"
+        data-aos-anchor-placement="center-bottom"
+        data-aos-easing="ease-in-out" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 lg:flex lg:flex-row lg:items-center lg:justify-between mt-9">
         {/* Example category item */}
         <div className="bg-white p-4 rounded shadow flex flex-col items-center">
         <GlobeAltIcon className="h-8 w-8 lg:h-12 lg:w-12 text-yellow-500" />
@@ -60,7 +87,12 @@ function CategoryPage() {
         </div>
 
         {/* Example category item */}
-        <div className="bg-white p-4 rounded shadow flex flex-col items-center">
+        <div data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-once="true"
+        data-aos-delay="200"
+        data-aos-anchor-placement="center-bottom"
+        data-aos-easing="ease-in-out" className="bg-white p-4 rounded shadow flex flex-col items-center">
         <CogIcon className="h-8 w-8 lg:h-12 lg:w-12 text-purple-500" />
           <h2 className="text-sm font-bold mb-2">Treatment Plants</h2>
           <p className="text-xs">Treatment plants in water treatment are facilities designed to purify and clean water from various sources, 
@@ -70,7 +102,12 @@ function CategoryPage() {
         </div>
 
         {/* Example category item */}
-        <div className="bg-white p-4 rounded shadow flex flex-col items-center">
+        <div data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-once="true"
+        data-aos-delay="200"
+        data-aos-anchor-placement="center-bottom"
+        data-aos-easing="ease-in-out" className="bg-white p-4 rounded shadow flex flex-col items-center">
         <BeakerIcon className="h-8 w-8 lg:h-12 lg:w-12 text-pink-500" />
           <h2 className="text-sm font-bold mb-2">Chemical Dosing</h2>
           <p className="text-xs">Chemical dosing in water treatment refers to the process of adding specific chemicals to water in order to remove impurities, 
