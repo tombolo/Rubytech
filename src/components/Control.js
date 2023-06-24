@@ -18,7 +18,10 @@ const Control = () => {
       </div>
 
       <div data-aos="fade-left"
-           data-aos-duration="2000"
+          data-aos-duration="2000"
+          data-aos-once="false"
+          data-aos-delay="100"
+          data-aos-easing="ease-in-out"
            className="flex flex-col items-center">
         <ClockIcon className="h-6 w-6 md:h-12 md:w-12 text-purple-500" />
         <p className="text-xs mt-1 md:text-sm text-blue-900 font-semibold">Online Support</p>
