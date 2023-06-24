@@ -24,8 +24,8 @@ useEffect(() => {
         <div 
         data-aos="fade-up"
         data-aos-duration="1000"
-        data-aos-once="true"
-        data-aos-delay="500"
+        data-aos-once="false"
+        data-aos-delay="300"
         data-aos-anchor-placement="center-bottom"
         data-aos-easing="ease-in-out"
         className="bg-white p-4 rounded shadow flex flex-col items-center">
@@ -42,8 +42,8 @@ useEffect(() => {
         <div
         data-aos="fade-up"
         data-aos-duration="1000"
-        data-aos-once="true"
-        data-aos-delay="500"
+        data-aos-once="false"
+        data-aos-delay="300"
         data-aos-anchor-placement="center-bottom"
         data-aos-easing="ease-in-out" className="bg-white p-4 rounded shadow flex flex-col items-center">
           <ScaleIcon className="h-8 w-8 lg:h-12 lg:w-12 text-red-500" />
@@ -56,8 +56,8 @@ useEffect(() => {
         {/* Example category item */}
         <div data-aos="fade-up"
         data-aos-duration="1000"
-        data-aos-once="true"
-        data-aos-delay="500"
+        data-aos-once="false"
+        data-aos-delay="300"
         data-aos-anchor-placement="center-bottom"
         data-aos-easing="ease-in-out" className="bg-white p-4 rounded shadow flex flex-col items-center">
           <FilterIcon className="h-8 w-8 lg:h-12 lg:w-12 text-green-500" />
@@ -72,8 +72,8 @@ useEffect(() => {
 
       <div data-aos="fade-up"
         data-aos-duration="1000"
-        data-aos-once="true"
-        data-aos-delay="200"
+        data-aos-once="false"
+        data-aos-delay="100"
         data-aos-anchor-placement="center-bottom"
         data-aos-easing="ease-in-out" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 lg:flex lg:flex-row lg:items-center lg:justify-between mt-9">
         {/* Example category item */}
@@ -88,9 +88,9 @@ useEffect(() => {
 
         {/* Example category item */}
         <div data-aos="fade-up"
-        data-aos-duration="1000"
-        data-aos-once="true"
-        data-aos-delay="200"
+        data-aos-duration="800"
+        data-aos-once="false"
+        data-aos-delay="100"
         data-aos-anchor-placement="center-bottom"
         data-aos-easing="ease-in-out" className="bg-white p-4 rounded shadow flex flex-col items-center">
         <CogIcon className="h-8 w-8 lg:h-12 lg:w-12 text-purple-500" />
@@ -103,9 +103,9 @@ useEffect(() => {
 
         {/* Example category item */}
         <div data-aos="fade-up"
-        data-aos-duration="1000"
-        data-aos-once="true"
-        data-aos-delay="200"
+        data-aos-duration="800"
+        data-aos-once="false"
+        data-aos-delay="100"
         data-aos-anchor-placement="center-bottom"
         data-aos-easing="ease-in-out" className="bg-white p-4 rounded shadow flex flex-col items-center">
         <BeakerIcon className="h-8 w-8 lg:h-12 lg:w-12 text-pink-500" />

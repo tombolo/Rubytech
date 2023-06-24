@@ -1,5 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
+import Link from 'next/link';
 
 
 
@@ -35,6 +36,8 @@ function Services() {
     <div className="lg:mt-5 shadow-md m-6 bg-gray-100 text-center rounded-md">
 
       <h2 className="text-xl font-bold ">Our Services</h2>
+
+
       <div className="flex flex-wrap justify-center my-2">
         {services.map((service, index) => (
           <div
@@ -55,10 +58,17 @@ function Services() {
             <div className="bg-white rounded-lg shadow p-3">
               <h3 className="text-lg font-bold mb-2">{service.title}</h3>
               <p className="text-gray-700 mb-4">{service.description}</p>
-              <button className="bg-blue-500 hover:bg-blue-600 text-white rounded px-4 py-2">
-                Read More
-              </button>
+
+              <Link href="/ServicesPage">
+                <a className="bg-blue-500 hover:bg-blue-600 text-white rounded px-4 py-2">
+                  Read More
+                </a>
+              </Link>
+
+
             </div>
+
+
           </div>
         ))}
       </div>
