@@ -44,7 +44,7 @@ function CheckoutProduct({
       {/*Middle*/}
 
       <div className="col-span-3 mx-5">
-        <p className="text-xs font-semibold">{title}</p>
+        <p className="text-xs font-semibold lg:text-sm">{title}</p>
         <div className="flex">
         {Array(rating)
                 .fill()
@@ -53,7 +53,7 @@ function CheckoutProduct({
             ))}
         </div>
 
-        <p className="text-xs my-2 line-clamp-3">{description}</p>
+        <p className="text-xs my-2 line-clamp-3 lg:text-sm">{description}</p>
         <h6> {price}  </h6>
 
         {hasPrime && (
@@ -72,7 +72,7 @@ function CheckoutProduct({
 
       <div className="flex flex-col space-y-2 my-auto justify-self-end">
       
-      <button className="bg-blue-900 rounded-md flex-shrink-0 w-auto sm:w-auto py-1.5 px-2 hover:bg-blue-600 transition duration-200 m-1 text-white text-xs" onClick={removeItemFromBasket}>Remove from Basket</button>
+      <button className="bg-blue-900 rounded-md flex-shrink-0 w-auto sm:w-auto py-1.5 px-2 hover:bg-blue-600 transition duration-200 m-1 text-white text-xs lg:text-sm" onClick={removeItemFromBasket}>Remove from Basket</button>
       </div>
 
 
