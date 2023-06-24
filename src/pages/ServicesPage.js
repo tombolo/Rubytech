@@ -15,12 +15,12 @@ useEffect(() => {
     <div>
         <Header />
 
-        <div className="md:mt-36 mt-28 lg:flex lg:flex-row lg:items-center lg:justify-evenly">
+        <div className="md:mt-36 mt-32 lg:flex lg:flex-row lg:items-center lg:justify-evenly">
 
 
             <div
             data-aos="fade-up"
-            data-aos-duration="1000"
+            data-aos-duration="500"
             data-aos-once="false"
             data-aos-delay="300"
             data-aos-anchor-placement="center-bottom"
@@ -35,7 +35,7 @@ useEffect(() => {
             </div>
 
             <div data-aos="fade-up"
-            data-aos-duration="1000"
+            data-aos-duration="500"
             data-aos-once="false"
             data-aos-delay="300"
             data-aos-anchor-placement="center-bottom"
@@ -60,7 +60,7 @@ useEffect(() => {
 
 <div
 data-aos="fade-up"
-data-aos-duration="1000"
+data-aos-duration="500"
 data-aos-once="false"
 data-aos-delay="300"
 data-aos-anchor-placement="center-bottom"
@@ -77,7 +77,7 @@ data-aos-easing="ease-in-out" className="px-6  bg-gray-200 shadow-md m-4 rounded
 </div>
 
 <div data-aos="fade-up"
-data-aos-duration="1000"
+data-aos-duration="500"
 data-aos-once="false"
 data-aos-delay="300"
 data-aos-anchor-placement="center-bottom"
