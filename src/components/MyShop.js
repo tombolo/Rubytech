@@ -9,15 +9,15 @@ import Final4 from '../components/Myimages/final4.jpg';
 import Final5 from '../components/Myimages/final5.jpg';
 import Final6 from '../components/Myimages/final6.jpg';
 import Final7 from '../components/Myimages/final7.jpg';
-import Image11 from '../components/Myimages/image11.webp';
-import Image12 from '../components/Myimages/image12.webp';
-import Image13 from '../components/Myimages/image13.webp';
-import Image14 from '../components/Myimages/image14.webp';
-import Image15 from '../components/Myimages/image15.webp';
-import Image16 from '../components/Myimages/image16.webp';
+import Final8 from '../components/Myimages/final8.jpg';
+import Final9 from '../components/Myimages/final9.jpg';
+import Final10 from '../components/Myimages/final10.jpg';
+import Final11 from '../components/Myimages/final11.jpg';
+import Final12 from '../components/Myimages/final12.jpg';
+import Final13 from '../components/Myimages/final13.jpg';
+import Final14 from '../components/Myimages/final14.jpg';
 
-import pipe1 from '../components/Myimages/pipe1.jpg';
-import pipe2 from '../components/Myimages/pipe2.webp';
+import Final15 from '../components/Myimages/final15.jpg';
 import pipe3 from '../components/Myimages/pipe3.jpg';
 import pipe4 from '../components/Myimages/pipe4.jpg';
 import pipe5 from '../components/Myimages/pipe5.jpg';
@@ -152,66 +152,66 @@ export const MyShop = [
   },
   {
     id: 12,
-    title: 'Water Purification Systems',
+    title: 'SUBMERSIBLE BILGE PUMP',
     price: 19.99,
-    description: 'Phynetech drinking water purifier & treatment machines are the leading drinking water treatment machines in Kenya. We use innovative solutions that make use of reliable filters to treat water. Our design is simple but effective. Hence, you can smoothly run the machine without any technical knowledge background.',
+    description: 'A submersible bilge pump is a device designed to remove water or other liquids from the bilge, which is the lowest compartment on a ship or boat. It is specifically engineered to operate while submerged in water, making it suitable for removing accumulated water in the bilge area. The pump typically consists of an electric motor and an impeller that generates centrifugal force to draw in and expel water. ',
     category: 'Category 2',
-    image: Image11,
+    image: Final8,
     rating: 3.8,
     reviews: 5,
     isNew: true,
   },
   {
     id: 13,
-    title: 'Water Purification Systems',
+    title: 'DOMESTIC RO PURIFIER',
     price: 19.99,
-    description: 'Phynetech drinking water purifier & treatment machines are the leading drinking water treatment machines in Kenya. We use innovative solutions that make use of reliable filters to treat water. Our design is simple but effective. Hence, you can smoothly run the machine without any technical knowledge background.',
+    description: 'A domestic RO (Reverse Osmosis) water purifier is a household appliance designed to improve the quality of tap water by removing impurities and contaminants. It utilizes a multi-stage filtration process that includes a semipermeable membrane to effectively eliminate various substances, including dissolved solids, heavy metals, bacteria, viruses, and chemicals from the water.',
     category: 'Category 2',
-    image: Image12,
+    image: Final9,
     rating: 3.8,
     reviews: 5,
     isNew: true,
   },
   {
     id: 14,
-    title: 'Water Purification Systems',
+    title: 'Evergush V460',
     price: 19.99,
-    description: 'Phynetech drinking water purifier & treatment machines are the leading drinking water treatment machines in Kenya. We use innovative solutions that make use of reliable filters to treat water. Our design is simple but effective. Hence, you can smoothly run the machine without any technical knowledge background.',
+    description: 'The Evergush V460 is a self-priming, automatic booster pump that is used to increase water pressure in homes and businesses. It has a maximum head of 45 meters and a maximum capacity of 70 liters per minute. The pump is powered by a single-phase motor and has a built-in thermal overload protector to prevent burnout. It also features a pre-pressure one-piece forming diaphragm pressure tank that is corrosion-resistant. The Evergush V460 is available in both 110V and 220V models.',
     category: 'Category 2',
-    image: Image13,
+    image: Final10,
     rating: 3.8,
     reviews: 5,
     isNew: true,
   },
   {
     id: 15,
-    title: 'Water Purification Systems',
+    title: 'Pro Self Priming Jet Pump',
     price: 19.99,
-    description: 'Phynetech drinking water purifier & treatment machines are the leading drinking water treatment machines in Kenya. We use innovative solutions that make use of reliable filters to treat water. Our design is simple but effective. Hence, you can smoothly run the machine without any technical knowledge background.',
-    category: 'Category 2',
-    image: Image14,
+    description: 'The Pro Self Priming Jet Pump is a versatile and efficient water pump designed for various applications, including residential, commercial, and agricultural use. It is specifically engineered to handle the task of pumping water from a well, tank, or other water sources.',
+    category: 'Pumps',
+    image: Final11,
     rating: 3.8,
     reviews: 5,
     isNew: true,
   },
   {
     id: 16,
-    title: 'Water Purification Systems',
+    title: 'LCM Dosing Pump',
     price: 19.99,
-    description: 'Phynetech drinking water purifier & treatment machines are the leading drinking water treatment machines in Kenya. We use innovative solutions that make use of reliable filters to treat water. Our design is simple but effective. Hence, you can smoothly run the machine without any technical knowledge background.',
+    description: 'LCM dosing pumps are positive displacement pumps that are designed to inject a chemical or any other substance into the flow of water, gas or steam. They are typically used in water treatment applications, but can also be used in other industries such as food and beverage, pharmaceutical, and manufacturing.',
     category: 'Category 2',
-    image: Image15,
+    image: Final12,
     rating: 3.8,
     reviews: 5,
     isNew: true,
   },
   {
     id: 17,
-    title: 'Water Purification Systems',
+    title: '110 Watts UV Sterilizer',
     price: 19.99,
-    description: 'Phynetech drinking water purifier & treatment machines are the leading drinking water treatment machines in Kenya. We use innovative solutions that make use of reliable filters to treat water. Our design is simple but effective. Hence, you can smoothly run the machine without any technical knowledge background.',
+    description: 'Ultraviolet or UV water sterilizer are used in water purification and treatment to make water healthier and prolong the life of water that has been treated and processed. The word “sterile” is defined as being free from living germs or microorganisms. An Ultraviolet sterilizer extraordinarily cleans water and kills bacteria and microorganisms that can be able to infest water even after it has been treated.',
     category: 'Category 2',
-    image: Image16,
+    image: Final13,
     rating: 3.8,
     reviews: 5,
     isNew: true,
@@ -221,22 +221,22 @@ export const MyShop = [
 
   {
     id: 18,
-    title: 'Reverse Osmosis Water Purifier',
+    title: '20″ Big Blue Water Filter ',
     price: 19.99,
-    description: 'GET THIS 500LPH Water Purification System In Kenya at a very discounted rate from the accredited sellers of water purification machines in Kenya.',
+    description: '20″ Big Blue and Big Black Heavy Duty Filter Housings offer the versatility to meet all of your large-capacity filtration needs, including high-flow and heavy-sediment applications. The extra-large housing allows for greater cartridge capacity, reducing the number of vessels required for high flow-rate applications.',
     category: 'Water treatment',
-    image: pipe1,
+    image: Final14,
     rating: 3.8,
     reviews: 5,
     isNew: true,
   },
   {
     id: 19,
-    title: 'Reverse Osmosis Water Purifier',
+    title: 'Paddle Float Switch',
     price: 19.99,
-    description: 'GET THIS 500LPH Water Purification System In Kenya at a very discounted rate from the accredited sellers of water purification machines in Kenya.',
+    description: 'A paddle float switch is a type of level switch that uses a paddle to detect the level of a liquid or solid in a tank or container. The paddle is typically made of plastic or stainless steel and is mounted on a float. As the level of the liquid or solid rises, the float rises and the paddle moves up. When the paddle reaches a predetermined point, it activates a switch that can control a pump, valve, or other device.',
     category: 'Water treatment',
-    image: pipe2,
+    image: Final15,
     rating: 3.8,
     reviews: 5,
     isNew: true,

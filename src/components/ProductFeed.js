@@ -6,8 +6,8 @@ import Kioko4 from "./Myimages/kioko4.jpg";
 import Image from "next/image";
 
 function ProductFeed({ products }) {
-  const firstRowProducts = products.slice(4, 10);
-  const secondRowProducts = products.slice(11, 18);
+  const firstRowProducts = products.slice(4, 11);
+  const secondRowProducts = products.slice(12, 19);
 
   return (
     <div className="flex flex-wrap">

@@ -111,11 +111,9 @@ function Product({ id, title, price, description, category, image }) {
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}>
 
-      {isHovered && (
-        <div className={`absolute flex flex-col items-end justify-end top-8 right-4 transform -translate-y-1/2
-        transition-opacity ${
-          isHovered ? 'opacity-100' : 'opacity-0'
-        }`}>
+      
+        <div className="absolute flex flex-col items-end justify-end top-8 right-4 transform -translate-y-1/2
+        transition-opacity">
 
 
          <div className="rounded-full bg-gray-200 my-1">
@@ -126,7 +124,7 @@ function Product({ id, title, price, description, category, image }) {
           </div>
         </div>
         
-      )}
+    
 
 
       {isHovered && (
