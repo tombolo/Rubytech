@@ -4,12 +4,12 @@ import Link from 'next/link';
 
 function Categories() {
   return (
-    <div className="lg:mt-2 -mt-2 z-50 lg:flex flex-row items-center justify-evenly mx-6">
-      <div className="flex flex-row justify-evenly mx-1 mt-5 lg:mt-0 items-center">
+    <div className="lg:mt-2 -mt-2 z-50 lg:flex flex-row items-center justify-between mx-6">
+      <div className="flex flex-row justify-between mx-1 mt-5 lg:mt-0 items-center">
         <Link href="/CategoryPage">
           <a className="flex flex-col items-center rounded-md p-2 lg:mx-4">
             <AdjustmentsIcon className="h-8 w-8 lg:h-12 lg:w-12 text-blue-500" />
-            <p className="text-xs lg:text-sm">Filtration Systems</p>
+            <p className="text-xs lg:text-sm">Filtration</p>
           </a>
         </Link>
         <Link href="/CategoryPage">
@@ -26,7 +26,7 @@ function Categories() {
         </Link>
       </div>
 
-      <div className="flex flex-row justify-evenly mx-1 mt-5 lg:mt-0 items-center">
+      <div className="flex flex-row justify-between mx-1 mt-5 lg:mt-0 items-center">
         <Link href="/CategoryPage">
           <a className="flex flex-col items-center rounded-md p-2 lg:mx-4">
             <GlobeAltIcon className="h-8 w-8 lg:h-12 lg:w-12 text-yellow-500" />
