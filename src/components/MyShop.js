@@ -14,7 +14,6 @@ import Final9 from '../components/Myimages/final9.jpg';
 import Final10 from '../components/Myimages/final10.jpg';
 import Final11 from '../components/Myimages/final11.jpg';
 import Final12 from '../components/Myimages/final12.jpg';
-import Final13 from '../components/Myimages/final13.jpg';
 import Final14 from '../components/Myimages/final14.jpg';
 
 import Final15 from '../components/Myimages/final15.jpg';
@@ -212,7 +211,7 @@ export const MyShop = [
     price: 19.99,
     description: 'Ultraviolet or UV water sterilizer are used in water purification and treatment to make water healthier and prolong the life of water that has been treated and processed. The word “sterile” is defined as being free from living germs or microorganisms. An Ultraviolet sterilizer extraordinarily cleans water and kills bacteria and microorganisms that can be able to infest water even after it has been treated.',
     category: 'Category 2',
-    image: Final13,
+    image: Final16,
     rating: 3.8,
     reviews: 5,
     isNew: true,
