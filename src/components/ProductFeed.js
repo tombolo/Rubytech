@@ -6,12 +6,12 @@ import Kioko4 from "./Myimages/kioko4.jpg";
 import Image from "next/image";
 
 function ProductFeed({ products }) {
-  const firstRowProducts = products.slice(1, 17);
-  const secondRowProducts = products.slice(18, 26);
+  const firstRowProducts = products.slice(4, 10);
+  const secondRowProducts = products.slice(11, 18);
 
   return (
     <div className="flex flex-wrap">
-      <div className="mx-auto flex overflow-x-auto bg-gray-100 mr-3">
+      <div className="mx-auto flex justify-between overflow-x-auto bg-gray-100 mr-3">
         {/* First Row */}
         {firstRowProducts.map((product, index) => (
           <div className="m-2" key={product.id}>
@@ -46,7 +46,7 @@ function ProductFeed({ products }) {
         </div>
       </div>
 
-      <div className="mx-auto flex overflow-x-auto bg-gray-100 mr-3">
+      <div className="mx-auto flex justify-between overflow-x-auto bg-gray-100 mr-3">
         {/* Second Row */}
         {secondRowProducts.map((product, index) => (
           <div className="m-2" key={product.id}>
@@ -59,4 +59,5 @@ function ProductFeed({ products }) {
 }
 
 export default ProductFeed;
+
 

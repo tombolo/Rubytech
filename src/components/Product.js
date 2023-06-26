@@ -2,8 +2,10 @@ import { useEffect, useState, useRef } from "react";
 import { StarIcon } from "@heroicons/react/solid";
 import { useDispatch, useSelector } from "react-redux";
 import { addToBasket, removeFromBasket, setBasket } from "../slices/basketSlice";
-
 import { useRouter } from 'next/router';
+import { HeartIcon } from "@heroicons/react/outline";
+import { FaExchangeAlt } from "react-icons/fa";
+
 
 const MAX_RATING = 5;
 const MIN_RATING = 1;
@@ -84,13 +86,64 @@ function Product({ id, title, price, description, category, image }) {
     handleProductClick();
   };
 
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  const handleTouchStart = () => {
+    setIsHovered(true);
+  };
+
+  const handleTouchEnd = () => {
+    setIsHovered(false);
+  };
+
   return (
-    <div className="w-full bg-white z-20 rounded shadow-lg m-4">
-      <div className="overflow-hidden transition duration-500 transform hover:scale-105 m-1 h-24 bg-gray-500 rounded-md">
+    <div className="relative w-full bg-white z-20 rounded shadow-lg m-4 transition duration-700 transform hover:scale-105"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}>
+
+      {isHovered && (
+        <div className={`absolute flex flex-col items-end justify-end top-8 right-4 transform -translate-y-1/2
+        transition-opacity ${
+          isHovered ? 'opacity-100' : 'opacity-0'
+        }`}>
+
+
+         <div className="rounded-full bg-gray-200 my-1">
+          <HeartIcon className="h-5 w-5 p-1" />
+          </div>
+          <div className="rounded-full bg-gray-100">
+          <FaExchangeAlt className="h-5 w-5 p-1" />
+          </div>
+        </div>
+        
+      )}
+
+
+      {isHovered && (
+        
+        <div className="absolute flex-row top-20 z-50 bg-gray-400 w-full items-center py-3 bg-opacity-25">
+          <div>
+            <h1 className="text-sm flex flex-row justify-center w-full">Quick view</h1>
+          </div>
+      </div>
+      )}
+
+
+      <div className="overflow-hidden transition duration-700 transform hover:scale-110 m-2 p-2 rounded-md aspect-w-1 aspect-h-1" style={{ width: '120px', height: '120px' }}>
         <img
           src={image.src}
           alt={title}
-          className="rounded-md h-24 w-full"
+          className="rounded-md h-full w-full object-cover border-none"
           ref={imageRef}
           onClick={handleImageClick}
         />
@@ -129,6 +182,8 @@ function Product({ id, title, price, description, category, image }) {
           {isInBasket ? 'Remove from Basket' : 'Add to Basket'}
         </button>
       </div>
+
+      
     </div>
   );
 }

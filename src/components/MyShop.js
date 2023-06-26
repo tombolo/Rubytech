@@ -1,14 +1,14 @@
 import Image1 from '../components/Myimages/image1.jpg';
 import Image2 from '../components/Myimages/image2.jpg';
 import Image3 from '../components/Myimages/image3.jpg';
-import Image4 from '../components/Myimages/image4.webp';
+import Final1 from '../components/Myimages/final1.png';
 import Banner2 from '../components/Myimages/banner2.jpg';
-import Banner1 from '../components/Myimages/banner1.jpg';
-import Image6 from '../components/Myimages/image6.jpg';
-import Image7 from '../components/Myimages/image7.webp';
-import Image8 from '../components/Myimages/image8.webp';
-import Image9 from '../components/Myimages/image9.webp';
-import Image10 from '../components/Myimages/image10.webp';
+import Final2 from '../components/Myimages/final2.jpg';
+import Final3 from '../components/Myimages/final3.jpg';
+import Final4 from '../components/Myimages/final4.jpg';
+import Final5 from '../components/Myimages/final5.jpg';
+import Final6 from '../components/Myimages/final6.jpg';
+import Final7 from '../components/Myimages/final7.jpg';
 import Image11 from '../components/Myimages/image11.webp';
 import Image12 from '../components/Myimages/image12.webp';
 import Image13 from '../components/Myimages/image13.webp';
@@ -62,22 +62,22 @@ export const MyShop = [
   },
   {
     id: 4,
-    title: 'Undersink Water Purifier',
+    title: 'Humidity Sensors',
     price: 19.99,
     description: 'Reverse Osmosis, commonly referred to as RO, is a process where you demineralize or deionize water by pushing it under pressure through a semi-permeable Reverse Osmosis Membrane. .',
     category: 'Category 2',
-    image: Image4,
+    image: Final1,
     rating: 3.8,
     reviews: 5,
     isNew: true,
   },
   {
     id: 5,
-    title: 'Water Purification Systems',
+    title: 'Himidity Sensors',
     price: 19.99,
-    description: 'Phynetech drinking water purifier & treatment machines are the leading drinking water treatment machines in Kenya. We use innovative solutions that make use of reliable filters to treat water. Our design is simple but effective. Hence, you can smoothly run the machine without any technical knowledge background.',
+    description: 'This is a low-cost digital Temperature and Humidity Sensor Module. It uses a thermistor sensor and a capacitive humidity to measure the surrounding air temperature. The output showing in digital signal on the data pin no analog input pins needed, Its fairly simple to use but requires proper timing to grab data.',
     category: 'Category 2',
-    image: Banner2,
+    image: Final1,
     rating: 3.8,
     reviews: 5,
     isNew: true,
@@ -85,11 +85,11 @@ export const MyShop = [
 
   {
     id: 6,
-    title: 'Water Purification Systems',
-    price: 19.99,
-    description: 'Phynetech drinking water purifier & treatment machines are the leading drinking water treatment machines in Kenya. We use innovative solutions that make use of reliable filters to treat water. Our design is simple but effective. Hence, you can smoothly run the machine without any technical knowledge background.',
+    title: 'Milk Atm pump',
+    price: 3744,
+    description: 'The Generic preassure DC 12V-24V 60W Motor 3.6L/min High Pressure Diaphragm Water Self Priming Pump is a compact and versatile pump designed for pumping water at high pressure. It operates with a power supply of 12V to 24V and has a motor power rating of 60W',
     category: 'Category 2',
-    image: Banner1,
+    image: Final2,
     rating: 3.8,
     reviews: 5,
     isNew: true,
@@ -97,55 +97,55 @@ export const MyShop = [
 
   {
     id: 7,
-    title: 'Water Purification Systems',
+    title: 'Chemical Dosing pumps',
     price: 19.99,
-    description: 'Phynetech drinking water purifier & treatment machines are the leading drinking water treatment machines in Kenya. We use innovative solutions that make use of reliable filters to treat water. Our design is simple but effective. Hence, you can smoothly run the machine without any technical knowledge background.',
+    description: 'Suitable for use with clean water and with liquids that are not chemically aggressive towards the materials from which the pump is made. Because they are reliable and easy to use these pumps are widely used in domestic and civil applications such as the distribution of water in combination with small and medium-sized pressure tanks, transferring liquids, and irrigating gardens and orchards.',
     category: 'Category 2',
-    image: Image6,
+    image: Final3,
     rating: 3.8,
     reviews: 5,
     isNew: true,
   },
   {
     id: 8,
-    title: 'Water Purification Systems',
+    title: 'Shimge Pump 230v/50hz',
     price: 19.99,
-    description: 'Phynetech drinking water purifier & treatment machines are the leading drinking water treatment machines in Kenya. We use innovative solutions that make use of reliable filters to treat water. Our design is simple but effective. Hence, you can smoothly run the machine without any technical knowledge background.',
+    description: 'The Shimge Pump 230V/50Hz 1.1kW is an electric pump designed for various water pumping applications. It operates at a voltage of 230V and a frequency of 50Hz, and it has a motor power rating of 1.1kW. This pump is suitable for tasks such as water supply, irrigation, drainage, and other fluid transfer needs. It is known for its reliability and efficiency in delivering consistent water flow.',
     category: 'Category 2',
-    image: Image7,
+    image: Final4,
     rating: 3.8,
     reviews: 5,
     isNew: true,
   },
   {
     id: 9,
-    title: 'Water Purification Systems',
+    title: 'Shimge Water Pump BWI',
     price: 19.99,
-    description: 'Phynetech drinking water purifier & treatment machines are the leading drinking water treatment machines in Kenya. We use innovative solutions that make use of reliable filters to treat water. Our design is simple but effective. Hence, you can smoothly run the machine without any technical knowledge background.',
+    description: 'The Shimge Water Pump BWI 1-6 is a compact and reliable water pump designed for various water pumping applications. This particular model is part of the BWI series produced by Shimge, a reputable manufacturer of water pumps. It is designed to handle a maximum flow rate of 1 cubic meter per hour (1m³/h) and a maximum head of 6 meters, indicating its capability to pump water to a certain height or distance.',
     category: 'Category 2',
-    image: Image8,
+    image: Final5,
     rating: 3.8,
     reviews: 5,
     isNew: true,
   },
   {
     id: 10,
-    title: 'Water Purification Systems',
+    title: 'Steam Bath Generators',
     price: 19.99,
-    description: 'Phynetech drinking water purifier & treatment machines are the leading drinking water treatment machines in Kenya. We use innovative solutions that make use of reliable filters to treat water. Our design is simple but effective. Hence, you can smoothly run the machine without any technical knowledge background.',
+    description: 'The steam bath generator has built-in water protection toprevent dry burning. Overvoltage protection, vapor outlet pressure relief valve to prevent clogging, the expansion tank. We are responsible for the products and are more concerned about your safety.',
     category: 'Category 2',
-    image: Image9,
+    image: Final7,
     rating: 3.8,
     reviews: 5,
     isNew: true,
   },
   {
     id: 11,
-    title: 'Water Purification Systems',
+    title: 'Steam Bath Generators',
     price: 19.99,
-    description: 'Phynetech drinking water purifier & treatment machines are the leading drinking water treatment machines in Kenya. We use innovative solutions that make use of reliable filters to treat water. Our design is simple but effective. Hence, you can smoothly run the machine without any technical knowledge background.',
+    description: 'The steam bath generator has built-in water protection toprevent dry burning. Overvoltage protection, vapor outlet pressure relief valve to prevent clogging, the expansion tank. We are responsible for the products and are more concerned about your safety.',
     category: 'Category 2',
-    image: Image10,
+    image: Final7,
     rating: 3.8,
     reviews: 5,
     isNew: true,
