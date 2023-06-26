@@ -1,89 +1,47 @@
-
-import React, { useEffect, useState } from 'react';
-import Link from 'next/link';
-
-
+import React from 'react';
+import { FaHeadset, FaCreditCard, FaUndo, FaTags } from 'react-icons/fa';
 
 function Services() {
-  const services = [
-    {
-      title: 'Cleaning In Place',
-      description: 'We offer CIP Services for RO Membranes.',
-    },
-    {
-      title: 'Replacement',
-      description: 'Membrane, Media, Cartridges Replacement.',
-    },
-    {
-      title: 'Pump Repair',
-      description: 'We can get your pump repaired, Cartridges Replacement..',
-    },
-    {
-      title: 'AMC',
-      description: 'We take up Annual Maintenance Contracts.',
-    },
-  ];
-
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    setIsVisible(true);
-  }, []);
-
-  
-
   return (
-    <div className="lg:mt-5 shadow-md m-6 bg-gray-100 text-center rounded-md">
+    <div className="lg:mt-10 mx-8 flex md:flex-row overflow-hidden flex-col bg-gray-200 mt-5">
 
-      <h2 className="text-xl font-bold ">Our Services</h2>
-
-
-      <div className="flex flex-wrap justify-center my-2">
-        {services.map((service, index) => (
-          <div
-            key={index}
-            className={`w-full md:w-1/2 lg:w-1/4 mb-2 p-2 ${
-              isVisible ? 'opacity-0' : 'opacity-1'
-            } transform transition-opacity duration-1000`}
-            style={{
-              animationDelay: `${index * 200}ms`,
-              animationFillMode: 'forwards',
-              animationName: isVisible ? 'fadeIn' : '',
-            }}
-
-
-            
-
-          >
-            <div className="bg-white rounded-lg shadow p-3">
-              <h3 className="text-lg font-bold mb-2">{service.title}</h3>
-              <p className="text-gray-700 mb-4">{service.description}</p>
-
-              <Link href="/ServicesPage">
-                <a className="bg-blue-500 hover:bg-blue-600 text-white rounded px-4 py-2">
-                  Read More
-                </a>
-              </Link>
-
-
+      <div className="flex flex-row justify-between items-center">
+          <div className="flex flex-row p-7">
+            <FaHeadset className="h-10 w-10 p-1 text-blue-700" />
+            <div className="px-2">
+              <h1 className="font-bold  lg:text-sm text-xs">Support</h1>
+              <p className="lg:text-sm text-xs">We offer quality support Mon - Fri</p>
             </div>
-
-
           </div>
-        ))}
+
+          <div className="flex flex-row p-3">
+            <FaCreditCard className="h-10 w-10 p-1 text-blue-700 text-xs" />
+            <div className="px-2">
+              <h1 className="font-bold lg:text-sm text-xs">Payments</h1>
+              <p className="lg:text-sm text-xs">Delivered, When you receive.</p>
+            </div>
+          </div>
       </div>
-      <style jsx>{`
-        @keyframes fadeIn {
-          from {
-            opacity: 0;
-            transform: translateY(30px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-      `}</style>
+
+      <div className="flex flex-row justify-between items-center">
+
+          <div className="flex flex-row p-3">
+            <FaUndo className="h-10 w-10 p-1 text-blue-700" />
+            <div className="px-2">
+              <h1 className="font-bold lg:text-sm text-xs">Returns</h1>
+              <p className="lg:text-sm text-xs">Retail, A product return process.</p>
+            </div>
+          </div>
+
+          <div className="flex flex-row p-3">
+            <FaTags className="h-10 w-10 p-1 text-blue-700" />
+            <div className="px-2">
+              <h1 className="font-bold lg:text-sm text-xs">Discounts</h1>
+              <p className="lg:text-sm text-xs">We offer discounts on Bulk orders.</p>
+            </div>
+          </div>
+
+      </div>
     </div>
   );
 }

@@ -6,6 +6,7 @@ import ProductFeed from "../components/ProductFeed";
 import ProgressBar from "../components/ProgressBar";
 import Services from "../components/Services";
 import Footer from "../components/Footer";
+import Banaca from "../components/Banaca";
 import Control from "../components/Control";
 import About from "../components/About";
 import Categories from "../components/Categories";
@@ -46,6 +47,8 @@ export default function Home() {
 
         <div className="mb-4">
           {/* Progress Bar */}
+
+          <Banaca />
           
       
 

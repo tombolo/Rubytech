@@ -26,7 +26,6 @@ function Banner() {
       >
         <div>
           <Image src={Kioko5} loading="lazy" className="w-full h-auto" alt="Banner" />
-          
         </div>
       </Carousel>
     </div>
