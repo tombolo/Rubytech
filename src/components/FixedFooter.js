@@ -17,8 +17,7 @@ const Footer = () => {
           }`}
           onClick={handleLikeClick}
         >
-          <HeartIcon className="w-8 h-8 mt-2" />
-          <span className="text-xs">Wish wish</span>
+          
         </button>
         <button className="mr-2 focus:outline-none text-blue-900">
           <ChatIcon className="w-8 h-8 mt-2" />

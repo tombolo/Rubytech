@@ -18,7 +18,6 @@ function Footer() {
             <p className="text-gray-400 text-sm">Login / Register</p>
             <p className="text-gray-400 text-sm">My Orders</p>
             <p className="text-gray-400 text-sm">Wishlist</p>
-            <p className="text-gray-400 text-sm">Wishlist</p>
           </div>
 
           <div className="text-center md:text-left border-b-2 border-blue-900 lg:border-b-0">

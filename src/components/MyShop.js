@@ -18,7 +18,8 @@ import Final13 from '../components/Myimages/final13.jpg';
 import Final14 from '../components/Myimages/final14.jpg';
 
 import Final15 from '../components/Myimages/final15.jpg';
-import pipe3 from '../components/Myimages/pipe3.jpg';
+import Final16 from '../components/Myimages/final16.jpg';
+
 import pipe4 from '../components/Myimages/pipe4.jpg';
 import pipe5 from '../components/Myimages/pipe5.jpg';
 import pipe6 from '../components/Myimages/pipe6.jpg';
@@ -207,7 +208,7 @@ export const MyShop = [
   },
   {
     id: 17,
-    title: '110 Watts UV Sterilizer',
+    title: '25L Blue Square Bottle',
     price: 19.99,
     description: 'Ultraviolet or UV water sterilizer are used in water purification and treatment to make water healthier and prolong the life of water that has been treated and processed. The word “sterile” is defined as being free from living germs or microorganisms. An Ultraviolet sterilizer extraordinarily cleans water and kills bacteria and microorganisms that can be able to infest water even after it has been treated.',
     category: 'Category 2',
@@ -221,7 +222,7 @@ export const MyShop = [
 
   {
     id: 18,
-    title: '20″ Big Blue Water Filter ',
+    title: '20 Big Blue Water Filter ',
     price: 19.99,
     description: '20″ Big Blue and Big Black Heavy Duty Filter Housings offer the versatility to meet all of your large-capacity filtration needs, including high-flow and heavy-sediment applications. The extra-large housing allows for greater cartridge capacity, reducing the number of vessels required for high flow-rate applications.',
     category: 'Water treatment',
@@ -247,7 +248,7 @@ export const MyShop = [
     price: 19.99,
     description: 'GET THIS 500LPH Water Purification System In Kenya at a very discounted rate from the accredited sellers of water purification machines in Kenya.',
     category: 'Water treatment',
-    image: pipe3,
+    image: Final16,
     rating: 3.8,
     reviews: 5,
     isNew: true,
@@ -308,17 +309,7 @@ export const MyShop = [
     reviews: 5,
     isNew: true,
   },
-  {
-    id: 26,
-    title: 'Reverse Osmosis Water Purifier',
-    price: 19.99,
-    description: 'GET THIS 500LPH Water Purification System In Kenya at a very discounted rate from the accredited sellers of water purification machines in Kenya.',
-    category: 'Water treatment',
-    image: pipe10,
-    rating: 3.8,
-    reviews: 5,
-    isNew: true,
-  },
+  
   // Add more products as needed
 ];
  
