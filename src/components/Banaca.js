@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 function Banaca() {
   return (
-    <div className="md:relative flex md:flex-row md:justify-evenly mx-6 flex-col mt-5">
+    <div className="md:relative flex md:flex-row md:justify-evenly mx-4 flex-col mt-5">
 
         <div className="bg-white md:w-1/2 h-56 m-2 p-3 rounded-md flex flex-row justify-between opacity-100 hover:opacity-70 shadow-md">
             <div className="p-5 mt-6">
