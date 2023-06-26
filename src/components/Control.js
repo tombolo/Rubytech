@@ -2,7 +2,7 @@ import { TruckIcon, CurrencyDollarIcon, ClockIcon } from '@heroicons/react/solid
 
 const Control = () => {
   return (
-    <div className="flex flex-row justify-between lg:justify-evenly items-center bg-gray-100 p-4 rounded-lg mx-6 flex-grow">
+    <div className="flex flex-row justify-between lg:justify-evenly items-center bg-gray-200 p-4 rounded-lg mx-6 flex-grow mt-3 shadow-md">
       <div  
            className="flex flex-col items-center">
         <TruckIcon className="h-6 w-6 md:h-12 md:w-12 text-blue-500" />

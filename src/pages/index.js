@@ -40,7 +40,7 @@ export default function Home() {
          <Categories />
         </div>
           
-          <Services />
+          
           
          
 
@@ -58,6 +58,8 @@ export default function Home() {
             <h1 className="flex mx-6 text-xl font-bold justify-center">Our Products</h1>
           <ProductFeed products={MyShop} />
           </div>
+
+          <Services />
 
 
 
