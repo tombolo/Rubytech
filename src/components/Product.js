@@ -5,6 +5,9 @@ import { addToBasket, removeFromBasket, setBasket } from "../slices/basketSlice"
 import { useRouter } from 'next/router';
 import { HeartIcon } from "@heroicons/react/outline";
 import { FaExchangeAlt } from "react-icons/fa";
+import { FaChartBar } from 'react-icons/fa';
+import { FaShieldAlt } from 'react-icons/fa';
+
 
 
 const MAX_RATING = 5;
@@ -105,22 +108,25 @@ function Product({ id, title, price, description, category, image }) {
   };
 
   return (
-    <div className="relative w-full bg-white z-20 rounded shadow-lg m-4 transition duration-700 transform hover:scale-105"
+    <div className="relative w-full bg-white z-20 rounded shadow-lg m-3 transition duration-700 transform hover:scale-105"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}>
 
+        
+
       
-        <div className="absolute flex flex-col items-end justify-end top-8 right-4 transform -translate-y-1/2
+        <div className="absolute flex flex-col items-end justify-end top-10 right-4 transform -translate-y-1/2
         transition-opacity">
-
-
          <div className="rounded-full bg-gray-200 my-1">
           <HeartIcon className="h-5 w-5 p-1" />
           </div>
           <div className="rounded-full bg-gray-100">
           <FaExchangeAlt className="h-5 w-5 p-1" />
+          </div>
+          <div className="rounded-full bg-gray-100 my-1">
+          <FaChartBar className="h-5 w-5 p-1" />
           </div>
         </div>
         

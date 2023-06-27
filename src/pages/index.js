@@ -59,7 +59,7 @@ export default function Home() {
           <ProductFeed products={MyShop} />
           </div>
 
-          <Services />
+      
 
 
 
