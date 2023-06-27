@@ -28,7 +28,7 @@ function Banner() {
           </div>
         </div>
 
-        <div className="mt-8">
+        <div className="mt-12">
           <div className="h-[110px]">
             <Image src={Newbanner5} loading="lazy" className="w-full h-full object-cover" alt="Banner" />
           </div>
