@@ -12,7 +12,7 @@ function Banner() {
   }, []);
 
   return (
-    <div className="relative lg:mt-36">
+    <div className="relative lg:mt-28">
       <div className="absolute w-full h-auto" />
       <Carousel
         autoPlay={true}
@@ -22,14 +22,14 @@ function Banner() {
         showThumbs={false}
         interval={3000}
       >
-        <div className="mt-20">
-          <div className="h-[110px]">
+        <div className="mt-20 bg-white">
+          <div className="h-[110px] lg:h-[300px] lg:-mt-14">
             <Image src={Kioko5} loading="lazy" className="w-full h-full object-cover" alt="Banner" />
           </div>
         </div>
 
-        <div className="mt-12">
-          <div className="h-[110px]">
+        <div className="mt-12 lg:mt-0">
+          <div className="h-[110px] lg:h-[300px]">
             <Image src={Newbanner5} loading="lazy" className="w-full h-full object-cover" alt="Banner" />
           </div>
         </div>

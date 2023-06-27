@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 function Categories() {
   return (
-    <div className="lg:mt-2 -mt-2 z-50 lg:flex flex-row items-center justify-evenly mx-6">
+    <div className="lg:mt-4 -mt-2 z-70 lg:flex flex-row items-center justify-evenly mx-6">
       <div className="flex flex-row justify-evenly mx-1 mt-5 lg:mt-0 items-center">
         <Link href="/CategoryPage">
           <a className="flex flex-col items-center rounded-md p-2 lg:mx-4">
