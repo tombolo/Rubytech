@@ -87,7 +87,7 @@ function Header() {
             <p className="link border-b border-white p-2" onClick={() => router.push("/")}>
               Home
             </p>
-            <p className="link border-b border-white p-2" onClick={handleMenuClick}>
+            <p className="link border-b border-white p-2" onClick={() => router.push("/Shop")}>
               Shops
             </p>
             <p className="link border-b border-white p-2" onClick={handleMenuClick}>
@@ -112,7 +112,7 @@ function Header() {
               <p className="link hidden" onClick={() => router.push("/")}>
                 Home
               </p>
-              <p className="link hidden" onClick={handleMenuClick}>
+              <p className="link hidden" onClick={() => router.push("/Shop")}>
                 Shops
               </p>
               <p className="link hidden" onClick={handleMenuClick}>
@@ -127,7 +127,7 @@ function Header() {
             </>
           )}
           <p className="link hidden lg:inline-flex" onClick={() => router.push("/")}>Home</p>
-          <p className="link hidden lg:inline-flex">Shops</p>
+          <p className="link hidden lg:inline-flex" onClick={() => router.push("/Shop")}>Shops</p>
           <p className="link hidden lg:inline-flex">Info</p>
           <p className="link hidden lg:inline-flex">Blog</p>
           <p className="link hidden lg:inline-flex" onClick={() => router.push("/Contact")}>Contact Us</p>
