@@ -7,20 +7,20 @@ function Contact() {
     <div>
 
         <Header />
-    <div className="bg-gray-100 py-12 mt-20 md:mt-24">
+    <div className="bg-gray-100 py-12 mt-16 md:mt-24">
       <div className="container mx-auto px-4">
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Map Location */}
-          <div className="bg-white rounded shadow-md p-6">
-            <h2 className="text-xl font-bold mb-4">Our Location</h2>
+          <div className="bg-white rounded shadow-md p-4">
+            <h2 className="text-sm md:text-xl font-bold mb-2 flex justify-center text-blue-900">Our Location</h2>
             <div className="flex items-start mb-4">
               <div className="mr-4">
                 <FaMapMarkerAlt className="text-yellow-700 h-7 w-7" />
               </div>
               <div>
-                <p>Mumias South rd Outering</p>
-                <p>Nairobi, Buruburu Junction</p>
+                <p className="text-xs font-semibold">Mumias South rd Outering</p>
+                <p className="text-xs font-semibold">Nairobi, Buruburu Junction</p>
               </div>
             </div>
             {/* Embed your map here */}
@@ -28,9 +28,9 @@ function Contact() {
           </div>
 
           {/* Contact Information */}
-          <div className="bg-white rounded shadow-md p-6">
-            <h2 className="text-xl font-bold mb-4">Contact Information</h2>
-            <div className="flex items-start mb-4">
+          <div className="bg-white rounded shadow-md p-4 -mt-5 md:mt-0">
+            <h2 className="md:text-xl text-sm flex justify-center text-blue-900 font-bold mb-2">Contact Information</h2>
+            <div className="flex items-start mb-2">
               <div className="mr-4">
                 <FaEnvelope className="text-yellow-700 h-5 w-5" />
               </div>
@@ -56,8 +56,8 @@ function Contact() {
         </div>
 
         {/* Contact Form */}
-        <div className="mt-12 bg-white rounded shadow-md p-6">
-          <h2 className="text-xl font-bold mb-4">Send us a Message</h2>
+        <div className="mt-4 bg-white rounded shadow-md p-6">
+          <h2 className="md:text-xl text-sm flex justify-center text-blue-900 font-bold mb-4">Send us a Message</h2>
           <form>
             <div className="mb-4">
               <label htmlFor="name" className="block text-gray-700 font-medium mb-2">
