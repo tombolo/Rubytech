@@ -13,10 +13,10 @@ function ProductFeed({ products }) {
 
   return (
     <div className="flex flex-wrap">
-      <div className="mx-auto flex justify-between overflow-x-auto bg-gray-100 mr-3">
+      <div className="mx-auto flex justify-between overflow-x-auto bg-gray-100 mr-2">
         {/* First Row */}
         {firstRowProducts.map((product, index) => (
-          <div className="m-2" key={product.id}>
+          <div className="m-1" key={product.id}>
             <Product {...product} />
           </div>
         ))}
@@ -48,10 +48,10 @@ function ProductFeed({ products }) {
         </div>
       </div>
 
-      <div className="mx-auto flex justify-between overflow-x-auto bg-gray-100 mr-3">
+      <div className="mx-auto flex justify-between overflow-x-auto bg-gray-100 mr-2">
         {/* Second Row */}
         {secondRowProducts.map((product, index) => (
-          <div className="m-2" key={product.id}>
+          <div className="m-1" key={product.id}>
             <Product {...product} />
           </div>
         ))}
@@ -65,7 +65,7 @@ function ProductFeed({ products }) {
 
 
 
-      <div className="lg:mt-2 mx-6 flex md:flex-row overflow-hidden flex-col bg-gray-200 mt-5 rounded-md shadow-md">
+      <div className="lg:mt-2 mx-6 flex md:flex-row overflow-hidden flex-col bg-gray-200 mt-5 rounded-md shadow-md w-full">
 
       <div className="flex flex-row justify-between items-center">
           <div className="flex flex-row p-3">

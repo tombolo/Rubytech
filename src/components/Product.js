@@ -108,7 +108,7 @@ function Product({ id, title, price, description, category, image }) {
   };
 
   return (
-    <div className="relative w-full bg-white z-20 rounded shadow-lg m-3 transition duration-700 transform hover:scale-105"
+    <div className="relative w-full bg-white z-20 rounded shadow-lg m-3 transition duration-700 transform hover:scale-102"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       onTouchStart={handleTouchStart}
