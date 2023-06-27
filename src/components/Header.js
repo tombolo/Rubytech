@@ -84,7 +84,7 @@ function Header() {
         {/*bottom nav*/}
         {isSmallScreen && isMenuOpen && (
           <div className="flex flex-col text-center text-white text-sm bg-blue-500 transition-all duration-5000">
-            <p className="link border-b border-white p-2" onClick={handleMenuClick}>
+            <p className="link border-b border-white p-2" onClick={() => router.push("/")}>
               Home
             </p>
             <p className="link border-b border-white p-2" onClick={handleMenuClick}>
@@ -96,7 +96,7 @@ function Header() {
             <p className="link border-b border-white p-2" onClick={handleMenuClick}>
               Blog
             </p>
-            <p className="link border-b border-white p-2" onClick={handleMenuClick}>
+            <p className="link border-b border-white p-2" onClick={() => router.push("/Contact")}>
               Contact Us
             </p>
           </div>
@@ -109,7 +109,7 @@ function Header() {
           </p>
           {isSmallScreen && !isMenuOpen && (
             <>
-              <p className="link hidden" onClick={handleMenuClick}>
+              <p className="link hidden" onClick={() => router.push("/")}>
                 Home
               </p>
               <p className="link hidden" onClick={handleMenuClick}>
@@ -121,16 +121,16 @@ function Header() {
               <p className="link hidden" onClick={handleMenuClick}>
                 Blog
               </p>
-              <p className="link hidden" onClick={handleMenuClick}>
+              <p className="link hidden" onClick={() => router.push("/Contact")}>
                 Contact Us
               </p>
             </>
           )}
-          <p className="link hidden lg:inline-flex">Home</p>
+          <p className="link hidden lg:inline-flex" onClick={() => router.push("/")}>Home</p>
           <p className="link hidden lg:inline-flex">Shops</p>
           <p className="link hidden lg:inline-flex">Info</p>
           <p className="link hidden lg:inline-flex">Blog</p>
-          <p className="link hidden lg:inline-flex">Contact Us</p>
+          <p className="link hidden lg:inline-flex" onClick={() => router.push("/Contact")}>Contact Us</p>
 
         <p className="text-sm text-yellow-600">
            Up to 20% Discount For Ressellers
