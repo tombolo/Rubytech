@@ -3,7 +3,7 @@ import { FaHeadset, FaCreditCard, FaUndo, FaTags } from 'react-icons/fa';
 
 function Services() {
   return (
-    <div className="lg:mt-2 mx-6 flex md:flex-row overflow-hidden flex-col bg-gray-200 mt-5 rounded-md shadow-md">
+    <div className="lg:mt-2 mx-4 flex md:flex-row overflow-hidden flex-col bg-gray-200 mt-5 rounded-md shadow-md">
 
       <div className="flex flex-row justify-between items-center">
           <div className="flex flex-row p-3">

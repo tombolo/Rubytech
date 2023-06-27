@@ -10,6 +10,7 @@ import { FaHeadset, FaCreditCard, FaUndo, FaTags } from 'react-icons/fa';
 function ProductFeed({ products }) {
   const firstRowProducts = products.slice(4, 11);
   const secondRowProducts = products.slice(12, 19);
+  const thirdRowProducts = products.slice(19, 26);
 
   return (
     <div className="flex flex-wrap">
@@ -69,7 +70,7 @@ function ProductFeed({ products }) {
 
       <div className="flex flex-row justify-between items-center">
           <div className="flex flex-row p-3">
-            <FaHeadset className="h-10 w-10 p-1 text-blue-700" />
+            <FaHeadset className="h-10 w-10 p-1 text-blue-900" />
             <div className="px-2">
               <h1 className="font-bold text-sm">Support</h1>
               <p className="lg:text-sm text-xs hidden md:block">We offer quality support Mon - Fri</p>
@@ -77,7 +78,7 @@ function ProductFeed({ products }) {
           </div>
 
           <div className="flex flex-row p-3">
-            <FaCreditCard className="h-10 w-10 p-1 text-blue-700 text-xs" />
+            <FaCreditCard className="h-10 w-10 p-1 text-blue-900 text-xs" />
             <div className="px-2">
               <h1 className="font-bold text-sm">Payments</h1>
               <p className="lg:text-sm text-xs hidden md:block">Delivered, When you receive.</p>
@@ -88,7 +89,7 @@ function ProductFeed({ products }) {
       <div className="flex flex-row justify-between items-center">
 
           <div className="flex flex-row p-3">
-            <FaUndo className="h-10 w-10 p-1 text-blue-700" />
+            <FaUndo className="h-10 w-10 p-1 text-blue-900" />
             <div className="px-2">
               <h1 className="font-bold text-sm">Returns</h1>
               <p className="lg:text-sm text-xs hidden md:block">Retail, A product return process.</p>
@@ -96,7 +97,7 @@ function ProductFeed({ products }) {
           </div>
 
           <div className="flex flex-row p-3">
-            <FaTags className="h-10 w-10 p-1 text-blue-700" />
+            <FaTags className="h-10 w-10 p-1 text-blue-900" />
             <div className="px-2">
               <h1 className="font-bold text-sm">Discounts</h1>
               <p className="lg:text-sm text-xs hidden md:block">We offer discounts on Bulk orders.</p>
@@ -105,6 +106,17 @@ function ProductFeed({ products }) {
 
       </div>
     </div>
+
+
+
+    <div className="mx-auto flex justify-between overflow-x-auto bg-gray-100 mr-2">
+        {/* Second Row */}
+        {thirdRowProducts.map((product, index) => (
+          <div className="m-1" key={product.id}>
+            <Product {...product} />
+          </div>
+        ))}
+      </div>
 
 
 

@@ -6,6 +6,7 @@ import { signIn, signOut, useSession } from "next-auth/react";
 import { useRouter } from "next/router";
 import { useSelector } from "react-redux";
 import { selectItems } from "../slices/basketSlice";
+import { FaPercent } from 'react-icons/fa';
 
 function Header() {
   const { data: session } = useSession();
@@ -87,13 +88,16 @@ function Header() {
               Home
             </p>
             <p className="link border-b border-white p-2" onClick={handleMenuClick}>
-              Our Services
+              Shops
             </p>
             <p className="link border-b border-white p-2" onClick={handleMenuClick}>
-              Electronics
+              Info
             </p>
             <p className="link border-b border-white p-2" onClick={handleMenuClick}>
-              Buy Again
+              Blog
+            </p>
+            <p className="link border-b border-white p-2" onClick={handleMenuClick}>
+              Contact Us
             </p>
           </div>
         )}
@@ -103,30 +107,35 @@ function Header() {
             <MenuIcon className="h-6 mr-1" />
             All
           </p>
-          <p className="link">Ruby Shops</p>
-          <p className="link">Ruby Business</p>
-          <p className="link">Today's Deals</p>
           {isSmallScreen && !isMenuOpen && (
             <>
               <p className="link hidden" onClick={handleMenuClick}>
                 Home
               </p>
               <p className="link hidden" onClick={handleMenuClick}>
-                Our Services
+                Shops
               </p>
               <p className="link hidden" onClick={handleMenuClick}>
-                Electronics
+                Info
               </p>
               <p className="link hidden" onClick={handleMenuClick}>
-                Buy Again
+                Blog
+              </p>
+              <p className="link hidden" onClick={handleMenuClick}>
+                Contact Us
               </p>
             </>
           )}
-          <p className="link hidden lg:inline-flex">Our Services</p>
-          <p className="link hidden lg:inline-flex">Prime</p>
-          <p className="link hidden lg:inline-flex">Buy Again</p>
-          <p className="link hidden lg:inline-flex">Shopper Toolkit</p>
-          <p className="link hidden lg:inline-flex">Health & Personal Care</p>
+          <p className="link hidden lg:inline-flex">Home</p>
+          <p className="link hidden lg:inline-flex">Shops</p>
+          <p className="link hidden lg:inline-flex">Info</p>
+          <p className="link hidden lg:inline-flex">Blog</p>
+          <p className="link hidden lg:inline-flex">Contact Us</p>
+
+        <p className="text-sm text-yellow-600">
+           Up to 20% Discount For Ressellers
+          </p>
+
         </div>
       </header>
     </div>

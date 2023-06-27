@@ -19,6 +19,14 @@ import Final14 from '../components/Myimages/final14.jpg';
 import Final15 from '../components/Myimages/final15.jpg';
 import Final16 from '../components/Myimages/final16.jpg';
 
+import Final17 from '../components/Myimages/final17.jpg';
+import Final18 from '../components/Myimages/final18.jpg';
+import Final19 from '../components/Myimages/final19.jpg';
+import Final20 from '../components/Myimages/final20.jpg';
+import Final21 from '../components/Myimages/final21.jpg';
+import Final22 from '../components/Myimages/final22.jpg';
+import Final23 from '../components/Myimages/final23.jpg';
+
 import pipe4 from '../components/Myimages/pipe4.jpg';
 import pipe5 from '../components/Myimages/pipe5.jpg';
 import pipe6 from '../components/Myimages/pipe6.jpg';
@@ -243,33 +251,33 @@ export const MyShop = [
   },
   {
     id: 20,
-    title: 'Reverse Osmosis Water Purifier',
-    price: 19.99,
-    description: 'GET THIS 500LPH Water Purification System In Kenya at a very discounted rate from the accredited sellers of water purification machines in Kenya.',
+    title: '125LPH RO Machine',
+    price: 125000,
+    description: 'A 125LPH RO machine in water purification refers to a Reverse Osmosis (RO) system that has a processing capacity of 125 liters per hour. RO is a water purification technology that uses a semi-permeable membrane to remove impurities and contaminants from water. The RO process works by applying pressure to the water, forcing it through the membrane. The membrane has very tiny pores that allow water molecules to pass through while blocking larger particles, such as dissolved salts, minerals, bacteria, viruses, and other impurities. As a result, the water that comes out of the RO system is typically cleaner and safer for consumption.',
     category: 'Water treatment',
-    image: Final16,
+    image: Final17,
     rating: 3.8,
     reviews: 5,
     isNew: true,
   },
   {
     id: 21,
-    title: 'Reverse Osmosis Water Purifier',
+    title: 'Coin Operated Machine',
     price: 19.99,
-    description: 'GET THIS 500LPH Water Purification System In Kenya at a very discounted rate from the accredited sellers of water purification machines in Kenya.',
+    description: 'Coin operated vending machine is equipped with a water purification system, which may include various filters and treatment methods such as activated carbon filters, sediment filters, reverse osmosis, or ultraviolet (UV) sterilization. These mechanisms help remove impurities and contaminants from the water, ensuring its safety and quality.',
     category: 'Water treatment',
-    image: pipe4,
+    image: Final18,
     rating: 3.8,
     reviews: 5,
     isNew: true,
   },
   {
     id: 22,
-    title: 'Reverse Osmosis Water Purifier',
+    title: 'Reverse Osmosis Plant',
     price: 19.99,
-    description: 'GET THIS 500LPH Water Purification System In Kenya at a very discounted rate from the accredited sellers of water purification machines in Kenya.',
+    description: 'A Reverse Osmosis (RO) plant with a capacity of 250 liters per hour (LPH) is a water purification system that uses a semi-permeable membrane to remove impurities from water. The process involves applying pressure to the water, forcing it through the membrane while leaving behind contaminants such as salts, minerals, bacteria, and viruses.',
     category: 'Water treatment',
-    image: pipe5,
+    image: Final19,
     rating: 3.8,
     reviews: 5,
     isNew: true,
@@ -277,33 +285,44 @@ export const MyShop = [
 
   {
     id: 23,
-    title: 'Reverse Osmosis Water Purifier',
+    title: 'Dispenser YLR',
     price: 19.99,
-    description: 'GET THIS 500LPH Water Purification System In Kenya at a very discounted rate from the accredited sellers of water purification machines in Kenya.',
+    description: 'The dispenser utilizes a multi-stage filtration system to remove impurities and improve water quality. Typically, it includes a combination of filters such as sediment filter, activated carbon filter, and sometimes even a reverse osmosis membrane. These filters work together to remove various contaminants, including sediment, chlorine, bacteria, viruses, and heavy metals, resulting in cleaner and safer drinking water.',
     category: 'Water treatment',
-    image: pipe6,
+    image: Final20,
     rating: 3.8,
     reviews: 5,
     isNew: true,
   },
   {
     id: 24,
-    title: 'Reverse Osmosis Water Purifier',
+    title: 'Idose Dosing Pump',
     price: 19.99,
-    description: 'GET THIS 500LPH Water Purification System In Kenya at a very discounted rate from the accredited sellers of water purification machines in Kenya.',
+    description: 'iDose Dosing Pump E0701AA11 Cap 1 L/H 7 Bar is used to introduce chemicals or additives into the water in order to achieve specific treatment goals. These treatment goals can vary depending on the water source and the desired water quality standards.',
     category: 'Water treatment',
-    image: pipe8,
+    image: Final21,
     rating: 3.8,
     reviews: 5,
     isNew: true,
   },
   {
     id: 25,
-    title: 'Reverse Osmosis Water Purifier',
+    title: 'SS304 Faucet(300-310G)',
     price: 19.99,
-    description: 'GET THIS 500LPH Water Purification System In Kenya at a very discounted rate from the accredited sellers of water purification machines in Kenya.',
+    description: 'The faucet is designed to provide a controlled flow of purified water. It usually includes a lever or handle for easy operation, allowing users to turn the water on or off as needed. The specific model, labeled as 300-310G, may refer to its design, style, or additional features that differentiate it from other faucets.',
     category: 'Water treatment',
-    image: pipe9,
+    image: Final23,
+    rating: 3.8,
+    reviews: 5,
+    isNew: true,
+  },
+  {
+    id: 26,
+    title: '5-Stage UF System',
+    price: 19.99,
+    description: 'The 5-Stage Compact Domestic UF System purifies water using sediment and activated carbon filtration, a UF membrane to remove microorganisms, post-carbon filtration for taste and odor, and mineralization to replenish essential minerals. It eliminates impurities, contaminants, bacteria, and viruses, ensuring clean and safe drinking water for domestic use.',
+    category: 'Water treatment',
+    image: Final22,
     rating: 3.8,
     reviews: 5,
     isNew: true,
