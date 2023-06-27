@@ -16,7 +16,7 @@ function Shop() {
             <div className="absolute"></div>
             <Image src={Banner2} className="w-full h-full inset-0 bg-black opacity-30" alt="Banner" />
             <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-                <h1 className="lg:text-4xl text-sm shadow-lg font-bold">SHOP</h1>
+                <h1 className="lg:text-4xl text-2xl mt-16 shadow-lg font-bold">SHOP</h1>
             </div>
         </div>
 
