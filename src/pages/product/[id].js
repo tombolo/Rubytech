@@ -13,75 +13,32 @@ import { useDispatch, useSelector } from "react-redux";
 const MAX_RATING = 5;
 const MIN_RATING = 1;
 
-const Product = ({title, price, description, category, image }) => {
+const Product = ({ title, price, description, category, image }) => {
   const router = useRouter();
   const { id } = router.query;
   const [product, setProduct] = useState({});
-  console.log(id);
-
-  const [rating] = useState(
-    Math.floor(Math.random() * (MAX_RATING - MIN_RATING + 1)) + MIN_RATING,
-  );
-
-  useEffect(() => {
-    const loadedProd = MyShop.find((prod) => {
-      console.log('prod.id:', prod.id);
-      console.log('id:', id);
-      return prod.id === Number(id);
-    });
-    setProduct(loadedProd);
-    console.log('loadedProd,,,,:', loadedProd);
-  }, [id]);
-  const basket = useSelector(state => state.basket.items);
+  
   const dispatch = useDispatch();
-
+  const basket = useSelector(state => state.basket.items);
   const [hasPrime] = useState(Math.random() < 0.5);
   const [isInBasket, setIsInBasket] = useState(false);
 
+  const [rating] = useState(
+    Math.floor(Math.random() * (MAX_RATING - MIN_RATING + 1)) + MIN_RATING
+  );
+
   useEffect(() => {
-    const itemInBasket = basket.find(item => item.id === router.query);
-    setIsInBasket(!!itemInBasket);
-  }, [basket, id]);
-
-
-  const addItemToBasket = () => {
-    const product = {
-      id,
-      title,
-      price,
-      rating,
-      description,
-      category,
-      image,
-      hasPrime,
-    };
-    dispatch(addToBasket(product));
-    setIsInBasket(true);
-    if (typeof window !== 'undefined') {
-      const storedBasketItems = localStorage.getItem("basketItems");
-      const storedBasket = storedBasketItems ? JSON.parse(storedBasketItems) : [];
-      const updatedBasket = [...storedBasket, product];
-      localStorage.setItem("basketItems", JSON.stringify(updatedBasket));
-    }
-  };
-
-  const removeItemFromBasket = () => {
-    dispatch(removeFromBasket({ id }));
-    setIsInBasket(false);
-    if (typeof window !== 'undefined') {
-      const storedBasketItems = localStorage.getItem("basketItems");
-      const storedBasket = storedBasketItems ? JSON.parse(storedBasketItems) : [];
-      const updatedBasket = storedBasket.filter(item => item.id !== id);
-      localStorage.setItem("basketItems", JSON.stringify(updatedBasket));
-    }
-  };
+    const loadedProd = MyShop.find((prod) => prod.id === Number(id));
+    setProduct(loadedProd);
+  }, [id]);
 
   
-
+ 
 
   if (!id || !product || Object.keys(product).length === 0) {
     return <p>Loading...</p>;
   }
+
 
   return (
     <div>
@@ -89,7 +46,7 @@ const Product = ({title, price, description, category, image }) => {
 
     <div className="lg:flex lg:flex-row lg:mt-36 mt-28">
       {/*Product Part*/}
-                <div className="relative m-2 bg-white z-20 p-2 rounded-md shadow-lg md:w-1/2 border-2 border-yellow-900">
+                <div className="relative m-2 bg-white z-20 p-2 rounded-md shadow-lg md:w-1/2 border-yellow-900">
                             <p className="absolute top-2 right-2 text-gray-400 text-xs">{product.category}</p>
 
                                   <div className="relative overflow-hidden top-1 flex items-center justify-center rounded-md md:flex md:justify-start ">
@@ -108,19 +65,8 @@ const Product = ({title, price, description, category, image }) => {
                                     .map((_, i) => (
                                       <StarIcon key={i} className="h-4 w-4 text-yellow-500" />
                                     ))}
-                                </div>
+                                    </div>
                                 <p className="text-xs">KSH{product.price}</p>
-                            </div>
-
-                            <div>
-                                <button
-                                      onClick={isInBasket ? removeItemFromBasket : addItemToBasket}
-                                      className={`flex-grow-0 flex-shrink-0 w-auto sm:w-auto rounded-md transition duration-200 m-5 text-xs px-1 py-1 ${
-                                        isInBasket ? 'bg-gray-600 text-white hover:bg-gray-400' : 'bg-blue-900 text-white hover:bg-blue-600'
-                                      }`}
-                                    >
-                                      {isInBasket ? 'Remove from Basket' : 'Add to Basket'}
-                                </button>
                             </div>
 
                         </div>
@@ -130,7 +76,7 @@ const Product = ({title, price, description, category, image }) => {
 
 
      {/*Description Part*/}
-      <div className="relative m-2 bg-white border-t-2 border-yellow-900 p-2 rounded shadow-lg transition lg:w-full">
+      <div className="relative m-2 bg-white border-yellow-900 p-2 rounded shadow-lg transition lg:w-full">
           <div className="flex flex-row justify-between items-center">
             <p className="text-xs font-bold">Shipping to</p>
             <select className="text-xs bg-transparent border-none focus:outline-none">

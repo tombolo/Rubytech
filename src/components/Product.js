@@ -13,7 +13,7 @@ import { FaShieldAlt } from 'react-icons/fa';
 const MAX_RATING = 5;
 const MIN_RATING = 1;
 
-function Product({ id, title, price, description, category, image }) {
+function Product({ id, title, price, description, category, image, }) {
   const dispatch = useDispatch();
   const basket = useSelector(state => state.basket.items);
   const [rating] = useState(
@@ -35,7 +35,7 @@ function Product({ id, title, price, description, category, image }) {
     }
   }, [dispatch]);
 
-  const addItemToBasket = () => {
+  const addItemToBasket = (productId) => {
     const product = {
       id,
       title,
@@ -56,7 +56,7 @@ function Product({ id, title, price, description, category, image }) {
     }
   };
 
-  const removeItemFromBasket = () => {
+  const removeItemFromBasket = (productId) => {
     dispatch(removeFromBasket({ id }));
     setIsInBasket(false);
     if (typeof window !== 'undefined') {

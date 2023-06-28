@@ -45,13 +45,14 @@ function CheckoutProduct({
 
       <div className="col-span-3 mx-5">
         <p className="text-xs font-semibold lg:text-sm">{title}</p>
-        <div className="flex">
+
+        {/*<div className="flex">
         {Array(rating)
                 .fill()
                 .map((_, i) => (
                 <StarIcon key={i} className="h-5 text-yellow-500" />
             ))}
-        </div>
+        </div>*/}
 
         <p className="text-xs my-2 line-clamp-3 lg:text-sm">{description}</p>
         <h6> {price}  </h6>
