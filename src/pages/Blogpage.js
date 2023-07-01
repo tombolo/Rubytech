@@ -29,7 +29,7 @@ function Blogpage() {
 
         <div className="-mt-20 md:-mt-60 flex md:flex-row flex-col items-center justify-evenly">
 
-                    <div className="border-2 border-gray-100 m-3 w-80">
+                    <div className="border-2 border-gray-100 m-3 w-80 bg-white z-30">
 
                         <div className="relative group">
                         <Image src={Blog1} className="w-full h-full" alt="Banner" />
@@ -52,7 +52,7 @@ function Blogpage() {
 
 
 
-                    <div className="border-2 border-gray-100 m-3 w-80">
+                    <div className="border-2 border-gray-100 m-3 w-80 bg-white z-30">
 
                         <div className="relative group">
                         <Image src={Blog2} className="w-full h-full" alt="Banner" />
@@ -70,7 +70,7 @@ function Blogpage() {
                     </div>
 
 
-                    <div className="border-2 border-gray-100 m-3 w-80">
+                    <div className="border-2 border-gray-100 m-3 w-80 bg-white z-30">
 
                         <div className="relative group">
                         <Image src={Blog3} className="w-full h-full" alt="Banner" />
