@@ -93,7 +93,7 @@ function Header() {
             <p className="link border-b border-white p-2" onClick={handleMenuClick}>
               Info
             </p>
-            <p className="link border-b border-white p-2" onClick={handleMenuClick}>
+            <p className="link border-b border-white p-2" onClick={() => router.push("/Blogpage")}>
               Blog
             </p>
             <p className="link border-b border-white p-2" onClick={() => router.push("/Contact")}>
@@ -118,7 +118,7 @@ function Header() {
               <p className="link hidden" onClick={handleMenuClick}>
                 Info
               </p>
-              <p className="link hidden" onClick={handleMenuClick}>
+              <p className="link hidden" onClick={() => router.push("/Blogpage")}>
                 Blog
               </p>
               <p className="link hidden" onClick={() => router.push("/Contact")}>
@@ -174,7 +174,7 @@ function Header() {
 
 
 
-          <p className="link hidden lg:inline-flex">Blog</p>
+          <p className="link hidden lg:inline-flex" onClick={() => router.push("/Blogpage")}>Blog</p>
           <p className="link hidden lg:inline-flex" onClick={() => router.push("/Contact")}>Contact Us</p>
 
         <p className="text-sm text-yellow-600">
