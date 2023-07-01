@@ -135,7 +135,7 @@ function Header() {
                 <p className="link hidden lg:inline-flex">Info</p>
 
 
-                <div className="dropdown-content opacity-0 group-hover:opacity-100 transition duration-200 ease-in-out z-50 bg-amazon_blue-light shadow-lg absolute mt-2.5 bg-opacity-60">
+                {/*<div className="dropdown-content opacity-0 group-hover:opacity-100 transition duration-200 ease-in-out z-50 bg-amazon_blue-light shadow-lg absolute mt-2.5 bg-opacity-60">
 
                         <div className="flex flex-row">
 
@@ -168,7 +168,7 @@ function Header() {
 
                         </div>
 
-                </div>
+          </div>*/}
 
               </div>
 

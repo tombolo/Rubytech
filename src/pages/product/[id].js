@@ -103,8 +103,8 @@ const Product = () => {
 
     <div className="lg:flex lg:flex-row lg:mt-36 mt-28">
       {/*Product Part*/}
-                <div className="relative m-2 bg-white z-20 p-2 rounded-md shadow-lg md:w-1/2 border-yellow-900">
-                            <p className="absolute top-2 right-2 text-gray-400 text-xs">{product.category}</p>
+                <div className="relative m-2 bg-white z-20 p-2 rounded-md shadow-lg md:w-1/2 border-yellow-900 mx-4">
+                            <p className="absolute top-2 right-2 text-gray-400 text-xs z-50">{product.category}</p>
 
                                   <div className="relative overflow-hidden top-1 flex items-center justify-center rounded-md md:flex md:justify-start ">
                                   <Image src={product.image} height={170} width={170} objectfit="contain" />
