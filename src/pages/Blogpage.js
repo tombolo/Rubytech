@@ -22,7 +22,7 @@ function Blogpage() {
             <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
                 <h1 className="lg:text-4xl text-2xl mt-16 shadow-lg font-bold">BLOGS</h1>
             </div>
-            <div className="absolute inset-0 group-opacity-10 opacity-60 bg-black transition-opacity duration-300"></div>
+            <div className="absolute inset-0 group-opacity-10 opacity-50 bg-black transition-opacity duration-300"></div>
         </div>
 
         

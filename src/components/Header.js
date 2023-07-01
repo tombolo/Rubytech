@@ -90,9 +90,6 @@ function Header() {
             <p className="link border-b border-white p-2" onClick={() => router.push("/Shop")}>
               Shops
             </p>
-            <p className="link border-b border-white p-2" onClick={handleMenuClick}>
-              Info
-            </p>
             <p className="link border-b border-white p-2" onClick={() => router.push("/Blogpage")}>
               Blog
             </p>
@@ -115,9 +112,6 @@ function Header() {
               <p className="link hidden" onClick={() => router.push("/Shop")}>
                 Shops
               </p>
-              <p className="link hidden" onClick={handleMenuClick}>
-                Info
-              </p>
               <p className="link hidden" onClick={() => router.push("/Blogpage")}>
                 Blog
               </p>
@@ -128,52 +122,6 @@ function Header() {
           )}
           <p className="link hidden lg:inline-flex" onClick={() => router.push("/")}>Home</p>
           <p className="link hidden lg:inline-flex" onClick={() => router.push("/Shop")}>Shops</p>
-
-
-
-              <div className="group">
-                <p className="link hidden lg:inline-flex">Info</p>
-
-
-                {/*<div className="dropdown-content opacity-0 group-hover:opacity-100 transition duration-200 ease-in-out z-50 bg-amazon_blue-light shadow-lg absolute mt-2.5 bg-opacity-60">
-
-                        <div className="flex flex-row">
-
-                          <div>
-                          <a href="#" className="block px-4 py-2 text-xs font-semibold text-white">BUSINESS OPPORTUNITIES</a>
-                          <a href="#" className="block px-4 py-2 text-xs text-white hover:text-gray-400">Reverse Osmosis</a>
-                          <a href="#" className="block px-4 py-2 text-xs text-white hover:text-gray-400">Water Bar</a>
-                          <a href="#" className="block px-4 py-2 text-xs text-white hover:text-gray-400">Bottle Blowing Machine</a>
-                          <a href="#" className="block px-4 py-2 text-xs text-white hover:text-gray-400">Sediment Removal Filters</a>
-                          <a href="#" className="block px-4 py-2 text-xs text-white hover:text-gray-400">Water Dispensers</a>
-                          </div>
-
-                          <div>
-                          <a href="#" className="block px-4 py-2 text-xs font-semibold text-white">PRODUCTS INFO ONE</a>
-                          <a href="#" className="block px-4 py-2 text-xs text-white hover:text-gray-400">Water Shop Setup</a>
-                          <a href="#" className="block px-4 py-2 text-xs text-white hover:text-gray-400">Water Bar</a>
-                          <a href="#" className="block px-4 py-2 text-xs text-white hover:text-gray-400">Bottle Blowing Machine</a>
-                          <a href="#" className="block px-4 py-2 text-xs text-white hover:text-gray-400">Water filling Line</a>
-                          <a href="#" className="block px-4 py-2 text-xs text-white hover:text-gray-400">Water Bottling Plant</a>
-                          </div>
-
-                          <div>
-                          <a href="#" className="block px-4 py-2 text-xs font-semibold text-white">PRODUCT INFO TWO</a>
-                          <a href="#" className="block px-4 py-2 text-xs text-white hover:text-gray-400">Water Shop Setup</a>
-                          <a href="#" className="block px-4 py-2 text-xs text-white hover:text-gray-400">Water Bar</a>
-                          <a href="#" className="block px-4 py-2 text-xs text-white hover:text-gray-400">Bottle Blowing Machine</a>
-                          <a href="#" className="block px-4 py-2 text-xs text-white hover:text-gray-400">Water filling Line</a>
-                          <a href="#" className="block px-4 py-2 text-xs text-white hover:text-gray-400">Water Bottling Plant</a>
-                          </div>
-
-                        </div>
-
-          </div>*/}
-
-              </div>
-
-
-
           <p className="link hidden lg:inline-flex" onClick={() => router.push("/Blogpage")}>Blog</p>
           <p className="link hidden lg:inline-flex" onClick={() => router.push("/Contact")}>Contact Us</p>
 
