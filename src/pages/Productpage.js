@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import { useEffect, useState, useRef } from 'react';
-import { MyShop } from '../../components/MyShop';
+import { MyShop } from '../components/MyShop';
 import Image from "next/image";
 
 const ProductPage = () => {
