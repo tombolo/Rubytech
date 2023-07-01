@@ -48,6 +48,8 @@ function Product({ id, title, price, description, category, image, }) {
     };
     dispatch(addToBasket(product));
     setIsInBasket(true);
+
+    
     if (typeof window !== 'undefined') {
       const storedBasketItems = localStorage.getItem("basketItems");
       const storedBasket = storedBasketItems ? JSON.parse(storedBasketItems) : [];
@@ -113,10 +115,6 @@ function Product({ id, title, price, description, category, image, }) {
       onMouseLeave={handleMouseLeave}
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}>
-
-        
-
-      
         <div className="absolute flex flex-col items-end justify-end top-10 right-4 transform -translate-y-1/2
         transition-opacity">
          <div className="rounded-full bg-gray-200 my-1">

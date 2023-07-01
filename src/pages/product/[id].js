@@ -1,5 +1,7 @@
 import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
+import { useDispatch, useSelector } from "react-redux";
+import { addToBasket, removeFromBasket, setBasket } from "../../slices/basketSlice";
 import { MyShop } from '../../components/MyShop';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -7,21 +9,39 @@ import FixedFooter from '../../components/FixedFooter';
 import ProductFeed from '../../components/ProductFeed';
 import Image from "next/image";
 import { StarIcon } from "@heroicons/react/solid";
-import { addToBasket, removeFromBasket, setBasket } from "../../slices/basketSlice";
-import { useDispatch, useSelector } from "react-redux";
+
+
 
 const MAX_RATING = 5;
 const MIN_RATING = 1;
 
-const Product = ({ title, price, description, category, image }) => {
+const Product = () => {
+
   const router = useRouter();
   const { id } = router.query;
   const [product, setProduct] = useState({});
-  
+
   const dispatch = useDispatch();
   const basket = useSelector(state => state.basket.items);
+  
+
   const [hasPrime] = useState(Math.random() < 0.5);
   const [isInBasket, setIsInBasket] = useState(false);
+
+  useEffect(() => {
+    const itemInBasket = basket.find(item => item.id === product.id);
+    setIsInBasket(!!itemInBasket);
+  }, [basket, product]);
+
+  
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const storedBasketItems = localStorage.getItem("basketItems");
+      const storedBasket = storedBasketItems ? JSON.parse(storedBasketItems) : [];
+      dispatch(setBasket(storedBasket));
+    }
+  }, [dispatch]);
+
 
   const [rating] = useState(
     Math.floor(Math.random() * (MAX_RATING - MIN_RATING + 1)) + MIN_RATING
@@ -29,11 +49,48 @@ const Product = ({ title, price, description, category, image }) => {
 
   useEffect(() => {
     const loadedProd = MyShop.find((prod) => prod.id === Number(id));
-    setProduct(loadedProd);
+    if (loadedProd) {
+      setProduct(loadedProd);
+    }
   }, [id]);
 
+
+
+
+  const addItemToBasket = (productId) => {
+    const productToAdd = {
+      id: product.id,
+      title: product.title,
+      price: product.price,
+      description: product.description,
+      category: product.category,
+      image: product.image,
+      hasPrime: product.hasPrime,
+    };
   
- 
+      const storedBasketItems = localStorage.getItem("basketItems");
+      const storedBasket = storedBasketItems ? JSON.parse(storedBasketItems) : [];
+      const updatedBasket = [...storedBasket, productToAdd];
+      localStorage.setItem("basketItems", JSON.stringify(updatedBasket));
+    
+  
+    dispatch(addToBasket(productToAdd));
+    setIsInBasket(true);
+  };
+
+
+  const removeItemFromBasket = (productId) => {
+    dispatch(removeFromBasket(product));
+  
+    const storedBasketItems = localStorage.getItem("basketItems");
+    const storedBasket = storedBasketItems ? JSON.parse(storedBasketItems) : [];
+    const updatedBasket = storedBasket.filter(item => item.id !== productId);
+    localStorage.setItem("basketItems", JSON.stringify(updatedBasket));
+  
+    setIsInBasket(false);
+  };
+  
+  
 
   if (!id || !product || Object.keys(product).length === 0) {
     return <p>Loading...</p>;
@@ -50,7 +107,7 @@ const Product = ({ title, price, description, category, image }) => {
                             <p className="absolute top-2 right-2 text-gray-400 text-xs">{product.category}</p>
 
                                   <div className="relative overflow-hidden top-1 flex items-center justify-center rounded-md md:flex md:justify-start ">
-                                  <Image src={product.image} height={200} width={200} objectfit="contain" />
+                                  <Image src={product.image} height={170} width={170} objectfit="contain" />
                                   </div>
                             <h1 className="font-bold text-blue-900 text-xs mt-3">{product.title}</h1>
                   
@@ -66,8 +123,22 @@ const Product = ({ title, price, description, category, image }) => {
                                       <StarIcon key={i} className="h-4 w-4 text-yellow-500" />
                                     ))}
                                     </div>
-                                <p className="text-xs">KSH{product.price}</p>
-                            </div>
+                                  <p className="text-xs">KSH{product.price}</p>
+                                </div>
+
+                                <div>
+                                <button
+                                    onClick={() => (isInBasket ? removeItemFromBasket(product.id) : addItemToBasket(product.id))}
+                                    className={`flex-grow-0 flex-shrink-0 w-auto sm:w-auto rounded-md transition duration-200 m-5 text-xs px-1 py-1 ${
+                                      isInBasket ? 'bg-gray-600 text-white hover:bg-gray-400' : 'bg-blue-900 text-white hover:bg-blue-600'
+                                    }`}
+                                  >
+                                    {isInBasket ? 'Remove from Basket' : 'Add to Basket'}
+                                  </button>
+
+                                  </div>
+
+                                
 
                         </div>
 

@@ -38,23 +38,15 @@ function CheckoutProduct({
   return (
     <div className="grid grid-cols-5 lg:grid-cols-5 flex-grow items-center border-b-2 border-yellow-700 lg:mt-26 lg:border-t-2 lg:border-gray-200">
       <div className="lg:block flex">
-        <Image src={image} height={250} width={250} objectFit="contain" className="rounded-md" />
+        <Image src={image} height={110} width={110} objectFit="contain" className="rounded-md" />
       </div>
 
       {/*Middle*/}
 
       <div className="col-span-3 mx-5">
-        <p className="text-xs font-semibold lg:text-sm">{title}</p>
+        <p className="text-xs font-bold">{title}</p>
 
-        {/*<div className="flex">
-        {Array(rating)
-                .fill()
-                .map((_, i) => (
-                <StarIcon key={i} className="h-5 text-yellow-500" />
-            ))}
-        </div>*/}
-
-        <p className="text-xs my-2 line-clamp-3 lg:text-sm">{description}</p>
+        <p className="text-xs my-2 line-clamp-3">{description}</p>
         <h6> {price}  </h6>
 
         {hasPrime && (
@@ -73,7 +65,7 @@ function CheckoutProduct({
 
       <div className="flex flex-col space-y-2 my-auto justify-self-end">
       
-      <button className="bg-blue-900 rounded-md flex-shrink-0 w-auto sm:w-auto py-1.5 px-2 hover:bg-blue-600 transition duration-200 m-1 text-white text-xs lg:text-sm" onClick={removeItemFromBasket}>Remove from Basket</button>
+      <button className="bg-blue-900 rounded-md flex-shrink-0 w-auto sm:w-auto py-1.5 px-2 hover:bg-blue-600 transition duration-200 m-1 text-white text-xs" onClick={removeItemFromBasket}>Remove from Basket</button>
       </div>
 
 

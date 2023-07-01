@@ -19,7 +19,7 @@ const ProductPage = () => {
   }, [id]);
 
   return (
-    <div className="relative flex flex-col m-5 bg-white z-20 p-6 rounded-lg shadow-lg transition duration-300 hover:bg-gray-300 transform hover:scale-95 xl:mt-10">
+    <div className="mt-36 relative flex flex-col m-5 bg-white z-20 p-6 rounded-lg shadow-lg transition duration-300 hover:bg-gray-300 transform hover:scale-95 xl:mt-10">
       <p className="">{product.category}</p>
       <Image src={product.image} height={200} width={200} objectFit="contain" />
       <h1>{product.title}</h1>

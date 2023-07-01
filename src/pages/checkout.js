@@ -44,14 +44,14 @@ function Checkout() {
   }, [items]);
 
   return (
-    <div className="bg-gray-100">
+    <div className="bg-gray-100 -mt-9 md:mt-0">
       <Header />
 
       <main className="lg:flex max-w-screen-2xl mx-auto mt-32 lg:-mt-26 z-10">
         {/*Left*/}
         <div className="flex-grow shadow-sm items-center">
         <div className="border-b-2 border-yellow-900 flex items-center mx-3">
-            <h1 className="flex text-xl font-bold py-2">
+            <h1 className="flex text-md md:text-xl font-bold py-2">
               {items.length === 0
                 ? "Your Rubytech Basket is empty."
                 : "Shopping Basket"}
