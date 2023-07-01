@@ -17,17 +17,17 @@ function Blogpage() {
         <Header />
 
 
-        <div className="relative group w-1000 h-500 mt-24">
+        <div className="relative group w-1000 h-500 mt-16">
             <Image src={Banner2} className="w-full h-full inset-0 opacity-30" alt="Banner" />
             <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
                 <h1 className="lg:text-4xl text-2xl mt-16 shadow-lg font-bold">BLOGS</h1>
             </div>
-            <div className="absolute inset-0 group-opacity-10 opacity-30 bg-black transition-opacity duration-300"></div>
+            <div className="absolute inset-0 group-opacity-10 opacity-60 bg-black transition-opacity duration-300"></div>
         </div>
 
         
 
-        <div className="-mt-10 md:-mt-60 flex md:flex-row flex-col items-center justify-evenly">
+        <div className="-mt-20 md:-mt-60 flex md:flex-row flex-col items-center justify-evenly">
 
                     <div className="border-2 border-gray-100 m-3 w-80">
 
