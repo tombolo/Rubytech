@@ -1,35 +1,24 @@
-import stripe from 'stripe';
+import InstaSend from 'instasend';
 
-const stripeInstance = stripe(process.env.STRIPE_SECRET_KEY);
+const instasendInstance = new InstaSend({
+  merchantId: 'YOUR_MERCHANT_ID',
+  secretKey: 'YOUR_SECRET_KEY',
+});
 
 export default async (req, res) => {
   const { items, email } = req.body;
 
-  const transformedItems = items.map((item) => ({
-    price_data: {
-      currency: 'usd',
-      unit_amount: item.price * 100,
-      product_data: {
-        name: item.title,
-        images: [item.image],
-      },
-    },
-    quantity: 1,
-  }));
+  const transformedItems = {
+    amount: items.reduce((total, item) => total + item.price, 0),
+    customerPhone: email,
+  };
 
-  const session = await stripeInstance.checkout.sessions.create({
-    payment_method_types: ['card'],
-    shipping_address_collection: {
-      allowed_countries: ['US'],
-    },
-    line_items: transformedItems,
-    mode: 'payment',
-    success_url: `${process.env.HOST}/success`,
-    cancel_url: `${process.env.HOST}/checkout`,
-    metadata: {
-      email,
-      images: JSON.stringify(items.map((item) => item.image)),
-    },
+  const session = await instasendInstance.openCheckout(transformedItems, (response) => {
+    if (response.status === 'success') {
+      console.log('Payment successful!');
+    } else if (response.status === 'failed') {
+      console.log('Payment failed!');
+    }
   });
 
   res.status(200).json({ id: session.id });
