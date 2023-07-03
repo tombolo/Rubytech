@@ -96,6 +96,9 @@ function Header() {
             <p className="link border-b border-white p-2" onClick={() => router.push("/Contact")}>
               Contact Us
             </p>
+            <p className="link border-b border-white p-2" onClick={signOut}>
+                Logout
+              </p>
           </div>
         )}
 
@@ -118,12 +121,21 @@ function Header() {
               <p className="link hidden" onClick={() => router.push("/Contact")}>
                 Contact Us
               </p>
+              <p className="link hidden" onClick={signOut}>
+                Logout
+              </p>
+  
             </>
           )}
           <p className="link hidden lg:inline-flex" onClick={() => router.push("/")}>Home</p>
           <p className="link hidden lg:inline-flex" onClick={() => router.push("/Shop")}>Shops</p>
           <p className="link hidden lg:inline-flex" onClick={() => router.push("/Blogpage")}>Blog</p>
           <p className="link hidden lg:inline-flex" onClick={() => router.push("/Contact")}>Contact Us</p>
+          <div onClick={signOut} className="cursor-pointer link">
+              <p className="link hidden lg:inline-flex">
+                Logout
+              </p>
+              </div>
 
         <p className="text-sm text-yellow-600">
            Up to 20% Discount For Ressellers
