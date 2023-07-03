@@ -1,20 +1,23 @@
 import React, { useState, useEffect } from "react";
+import { useRouter } from "next/router";
+import { useSession } from "next-auth/react";
+import { useSelector } from "react-redux";
+import { MenuIcon, SearchIcon, ShoppingCartIcon } from "@heroicons/react/outline";
+import { signIn, signOut } from "next-auth/react";
+import { selectItems } from "../slices/basketSlice";
 import rubytech1 from './Myimages/rubytech1.png';
 import Image from "next/image";
-import { MenuIcon, SearchIcon, ShoppingCartIcon } from "@heroicons/react/outline";
-import { signIn, signOut, useSession } from "next-auth/react";
-import { useRouter } from "next/router";
-import { useSelector } from "react-redux";
-import { selectItems } from "../slices/basketSlice";
-import { FaPercent } from 'react-icons/fa';
+import { MyShop } from './MyShop';
+import Product from './Product';
 
-function Header() {
+function Header({products}) {
   const { data: session } = useSession();
   const router = useRouter();
   const items = useSelector(selectItems);
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
     const handleResize = () => {
@@ -35,6 +38,27 @@ function Header() {
     setIsMenuOpen((prevValue) => !prevValue);
   };
 
+  const handleSearchInputChange = (event) => {
+    setSearchQuery(event.target.value);
+  };
+
+  const handleSearch = (event) => {
+    event.preventDefault();
+    
+    // Perform the search logic here based on the searchQuery state
+    // For example, you can filter the products based on the searchQuery
+    const filteredProducts = products.filter((product) =>
+      product.title.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+    
+    // Pass the filtered products to the search results page
+    router.push({
+      pathname: "/search",
+      query: { query: searchQuery },
+      state: { products: filteredProducts },
+    });
+  };
+
   return (
     <div className="fixed top-0 left-0 w-full z-50 bg-white">
       <header>
@@ -52,14 +76,22 @@ function Header() {
           </div>
 
           {/*search*/}
-          <div className="hidden sm:flex items-center h-10 rounded-md flex-grow cursor-pointer bg-yellow-400 hover:bg-yellow-500">
-            <input className="p-2 h-full w-6 flex-grow flex-shrink rounded-l-md focus:outline-none px-4 bg-gray-400" type="text" />
-            <SearchIcon className="h-12 p-4" />
-          </div>
+          <form className="hidden sm:flex items-center h-10 rounded-md flex-grow cursor-pointer bg-yellow-400 hover:bg-yellow-500" onSubmit={handleSearch}>
+            <input
+              className="p-2 h-full w-6 flex-grow flex-shrink rounded-l-md focus:outline-none px-4 bg-gray-200"
+              type="text"
+              value={searchQuery}
+              onChange={handleSearchInputChange}
+              placeholder="Search for products"
+            />
+            <button type="submit" className="h-12 p-4">
+              <SearchIcon className="h-6" />
+            </button>
+          </form>
 
           {/*right*/}
           <div className="text-blue-900 flex items-center text-xs space-x-6 mx-6 whitespace-nowrap">
-            <div onClick={!session ? signIn : signOut} className="cursor-pointer link">
+            <div onClick={!session ? signIn: undefined} className="cursor-pointer link">
               <p className="hover:underline">
                 {session ? `Hello, ${session.user.name}` : "Sign In"}
               </p>
@@ -97,8 +129,8 @@ function Header() {
               Contact Us
             </p>
             <p className="link border-b border-white p-2" onClick={signOut}>
-                Logout
-              </p>
+              Logout
+            </p>
           </div>
         )}
 
@@ -124,7 +156,6 @@ function Header() {
               <p className="link hidden" onClick={signOut}>
                 Logout
               </p>
-  
             </>
           )}
           <p className="link hidden lg:inline-flex" onClick={() => router.push("/")}>Home</p>
@@ -135,12 +166,10 @@ function Header() {
               <p className="link hidden lg:inline-flex">
                 Logout
               </p>
-              </div>
-
-        <p className="text-sm text-yellow-600">
-           Up to 20% Discount For Ressellers
+          </div>
+          <p className="text-sm text-yellow-600">
+            Up to 20% Discount For Resellers
           </p>
-
         </div>
       </header>
     </div>
@@ -148,3 +177,4 @@ function Header() {
 }
 
 export default Header;
+

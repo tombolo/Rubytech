@@ -1,60 +1,136 @@
 import React from 'react';
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 function Footer() {
   return (
     <footer className="bg-gray-800 text-white z-50">
+
+      <div className="bg-gray-700 flex lg:flex-row lg:items-center lg:justify-between flex-col">
+
+
+
+            
+
+            <div className="py-2 lg:mx-12 flex lg:flex-row flex-col items-center">
+
+              <div className="flex flex-row">
+                  <div className="mx-4">
+                    <FaEnvelope size={40} className="icon" />
+                  </div>
+                  <div>
+                    <h1 className="text-sm font-semibold text-black">JOIN OUR NEWSLETTER</h1>
+                    <p className="text-xs">Get The Lates Deals, Updates $ More</p>
+                  </div>
+                </div>
+
+              <div className="flex items-center justify-center lg:p-2  py-5 lg:mx-5">
+                <form className="border-none hover:border-none flex">
+                  <input className="bg-gray-300 p-1 focus:outline-none"
+                  type="text"
+                  placeholder="Enter your Email"  />
+                  <button type="submit" className="h-9 px-3 bg-blue-900 text-xs font-semibold">Join Now</button>
+                </form>
+              </div>
+
+            </div>
+
+
+            <div className="flex lg:py-10 md:mt-0 lg:mx-12 py-2 justify-center">
+      <div className="icon-wrapper px-2">
+        <a
+          href="#"
+          className="icon-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="icon-circle border-white">
+            <FaFacebook size={25} className="icon" />
+          </div>
+        </a>
+      </div>
+      <div className="icon-wrapper px-2">
+        <a
+          href="#"
+          className="icon-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="icon-circle">
+            <FaTwitter size={25} className="icon text-blue-400" />
+          </div>
+        </a>
+      </div>
+      <div className="icon-wrapper px-2">
+        <a
+          href="#"
+          className="icon-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="icon-circle bg-gradient-to-r from-pink-600 to-purple-600 border-white">
+            <FaInstagram size={25} className="icon" />
+          </div>
+        </a>
+      </div>
+      <div className="icon-wrapper px-2">
+        <a
+          href="#"
+          className="icon-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="icon-circle bg-blue-700">
+            <FaLinkedin size={25} className="icon" />
+          </div>
+        </a>
+      </div>
+    </div>
+
+      </div>
+
+
       <div>
-        <div className="container mx-auto py-4 px-6 flex flex-col justify-between text-center lg:flex lg:flex-row">
+        <div className="container py-4 px-4 flex flex-col justify-between text-center lg:flex lg:flex-row">
           <div className="text-center md:text-left border-b-2 border-blue-900 lg:border-b-0">
-            <h3 className="text-sm font-bold my-2">Rubytech Company</h3>
-            <p className="text-gray-400 text-sm">Buruburu, Nairobi</p>
-            <p className="text-gray-400 text-sm">Phone: 123-456-7890</p>
-            <p className="text-gray-400 text-sm">Email: info@example.com</p>
+            <h3 className="text-xs font-bold my-2">Rubytech Company</h3>
+            <p className="text-gray-400 text-xs">Buruburu, Nairobi</p>
+            <p className="text-gray-400 text-xs my-2">Phone: 123-456-7890</p>
+            <p className="text-gray-400 text-xs">Email: info@example.com</p>
+          </div>
+
+          <div className="text-center md:text-left border-b-2 border-blue-900 lg:border-b-0 hidden lg:block">
+            <h3 className="text-xs font-bold my-2">MY ACCOUNT</h3>
+            <p className="text-gray-400 text-xs">Login / Register</p>
+            <p className="text-gray-400 text-xs my-2">My Orders</p>
+            <p className="text-gray-400 text-xs">Wishlist</p>
+            <p className="text-gray-400 text-xs my-2">Contact</p>
+            <p className="text-gray-400 text-xs">Return Policy</p>
           </div>
 
           <div className="text-center md:text-left border-b-2 border-blue-900 lg:border-b-0">
-            <h3 className="text-sm font-bold my-2">MY ACCOUNT</h3>
-            <p className="text-gray-400 text-sm">Login / Register</p>
-            <p className="text-gray-400 text-sm">My Orders</p>
-            <p className="text-gray-400 text-sm">Wishlist</p>
+            <h3 className="text-xs font-bold my-2">Our Services</h3>
+            <p className="text-gray-400 text-xs">Shipping $ Returns</p>
+            <p className="text-gray-400 text-xs my-2">Affiliates</p>
+            <p className="text-gray-400 text-xs">Advanced Search</p>
+            <p className="text-gray-400 text-xs my-2">Terms $ Conditions</p>
+            <p className="text-gray-400 text-xs">Advanced Search</p>
           </div>
 
           <div className="text-center md:text-left border-b-2 border-blue-900 lg:border-b-0">
-            <h3 className="text-sm font-bold my-2">SUPPORT</h3>
-            <p className="text-gray-400 text-sm">General Support</p>
-            <p className="text-gray-400 text-sm">Terms & Conditions</p>
+            <h3 className="text-xs font-bold my-2">SUPPORT</h3>
+            <p className="text-gray-400 text-xs my-2">General Support</p>
+            <p className="text-gray-400 text-xs">Terms & Conditions</p>
           </div>
 
-          <div className="flex text-center justify-center mt-4 md:mt-0">
-            <a
-              href="#"
-              className="mx-2 hover:text-blue-400"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaFacebook size={25} className="text-blue-600" />
-            </a>
-            <a
-              href="#"
-              className="mx-2 hover:text-blue-400"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaTwitter size={25} className="text-blue-400" />
-            </a>
-            <a
-              href="#"
-              className="mx-2 hover:text-blue-400"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaInstagram size={25} className="text-pink-600" />
-            </a>
-          </div>
+          
+
+
+
+
         </div>
 
-        <div className="text-center mt-4 p-6">
+        <div className="text-center mt-2 p-3">
           <p className="text-gray-300 text-sm">&copy; 2023 Rubytech. All rights reserved.</p>
         </div>
       </div>

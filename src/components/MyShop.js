@@ -38,7 +38,7 @@ export const MyShop = [
   {
     id: 1,
     title: 'Water Purification System RO',
-    price: 10.99,
+    price: 200000.00,
     description: 'Water purifiers (depending on type) remove viruses, bacteria and other organic and inorganic particles/contaminants found in our water supply. Purifying your water means no more stomach bugs and unforeseen illnesses you will also get that fresh water taste and smell. Tassmatt Agencies offers Some of the most effective water purification machines available in Kenya including a variety of Domestic Reverse Osmosis and Ultra Filtration machines as well as Reverse Osmosis Plants..',
     category: 'Electronics',
     image: Image1,
@@ -49,7 +49,7 @@ export const MyShop = [
   {
     id: 2,
     title: 'Water Purification System',
-    price: 19.99,
+    price: 200000,
     description: 'GET THIS Water Purification System UF 3in 1 Water Purification System In Kenya at a very discounted rate from the accredited sellers of water purification machines in Kenya.',
     category: 'pLumbing',
     image: Image2,
@@ -60,7 +60,7 @@ export const MyShop = [
   {
     id: 3,
     title: 'Reverse Osmosis Water Purifier',
-    price: 19.99,
+    price: 200000,
     description: 'GET THIS 500LPH Water Purification System In Kenya at a very discounted rate from the accredited sellers of water purification machines in Kenya.',
     category: 'Water treatment',
     image: Image3,
@@ -71,7 +71,7 @@ export const MyShop = [
   {
     id: 4,
     title: 'Humidity Sensors',
-    price: 19.99,
+    price: 3500,
     description: 'Reverse Osmosis, commonly referred to as RO, is a process where you demineralize or deionize water by pushing it under pressure through a semi-permeable Reverse Osmosis Membrane. .',
     category: 'Category 2',
     image: Final1,
@@ -82,7 +82,7 @@ export const MyShop = [
   {
     id: 5,
     title: 'Himidity Sensors',
-    price: 19.99,
+    price: 3500,
     description: 'This is a low-cost digital Temperature and Humidity Sensor Module. It uses a thermistor sensor and a capacitive humidity to measure the surrounding air temperature. The output showing in digital signal on the data pin no analog input pins needed, Its fairly simple to use but requires proper timing to grab data.',
     category: 'Category 2',
     image: Final1,
@@ -94,7 +94,7 @@ export const MyShop = [
   {
     id: 6,
     title: 'Milk Atm pump',
-    price: 3744,
+    price: 4500,
     description: 'The Generic preassure DC 12V-24V 60W Motor 3.6L/min High Pressure Diaphragm Water Self Priming Pump is a compact and versatile pump designed for pumping water at high pressure. It operates with a power supply of 12V to 24V and has a motor power rating of 60W',
     category: 'Category 2',
     image: Final2,
@@ -106,7 +106,7 @@ export const MyShop = [
   {
     id: 7,
     title: 'Chemical Dosing pumps',
-    price: 19.99,
+    price: 9000.00,
     description: 'Suitable for use with clean water and with liquids that are not chemically aggressive towards the materials from which the pump is made. Because they are reliable and easy to use these pumps are widely used in domestic and civil applications such as the distribution of water in combination with small and medium-sized pressure tanks, transferring liquids, and irrigating gardens and orchards.',
     category: 'Category 2',
     image: Final3,
@@ -117,7 +117,7 @@ export const MyShop = [
   {
     id: 8,
     title: 'Shimge Pump 230v/50hz',
-    price: 19.99,
+    price: 11000,
     description: 'The Shimge Pump 230V/50Hz 1.1kW is an electric pump designed for various water pumping applications. It operates at a voltage of 230V and a frequency of 50Hz, and it has a motor power rating of 1.1kW. This pump is suitable for tasks such as water supply, irrigation, drainage, and other fluid transfer needs. It is known for its reliability and efficiency in delivering consistent water flow.',
     category: 'Category 2',
     image: Final4,
@@ -128,7 +128,7 @@ export const MyShop = [
   {
     id: 9,
     title: 'Shimge Water Pump BWI',
-    price: 19.99,
+    price: 8000,
     description: 'The Shimge Water Pump BWI 1-6 is a compact and reliable water pump designed for various water pumping applications. This particular model is part of the BWI series produced by Shimge, a reputable manufacturer of water pumps. It is designed to handle a maximum flow rate of 1 cubic meter per hour (1m³/h) and a maximum head of 6 meters, indicating its capability to pump water to a certain height or distance.',
     category: 'Category 2',
     image: Final5,
@@ -139,7 +139,7 @@ export const MyShop = [
   {
     id: 10,
     title: 'Steam Bath Generators',
-    price: 19.99,
+    price: 105000,
     description: 'The steam bath generator has built-in water protection toprevent dry burning. Overvoltage protection, vapor outlet pressure relief valve to prevent clogging, the expansion tank. We are responsible for the products and are more concerned about your safety.',
     category: 'Category 2',
     image: Final7,
@@ -150,7 +150,7 @@ export const MyShop = [
   {
     id: 11,
     title: 'Steam Bath Generators',
-    price: 19.99,
+    price: 105000,
     description: 'The steam bath generator has built-in water protection toprevent dry burning. Overvoltage protection, vapor outlet pressure relief valve to prevent clogging, the expansion tank. We are responsible for the products and are more concerned about your safety.',
     category: 'Category 2',
     image: Final7,
@@ -161,7 +161,7 @@ export const MyShop = [
   {
     id: 12,
     title: 'SUBMERSIBLE BILGE PUMP',
-    price: 19.99,
+    price: 20000,
     description: 'A submersible bilge pump is a device designed to remove water or other liquids from the bilge, which is the lowest compartment on a ship or boat. It is specifically engineered to operate while submerged in water, making it suitable for removing accumulated water in the bilge area. The pump typically consists of an electric motor and an impeller that generates centrifugal force to draw in and expel water. ',
     category: 'Category 2',
     image: Final8,
@@ -172,7 +172,7 @@ export const MyShop = [
   {
     id: 13,
     title: 'DOMESTIC RO PURIFIER',
-    price: 19.99,
+    price: 27000,
     description: 'A domestic RO (Reverse Osmosis) water purifier is a household appliance designed to improve the quality of tap water by removing impurities and contaminants. It utilizes a multi-stage filtration process that includes a semipermeable membrane to effectively eliminate various substances, including dissolved solids, heavy metals, bacteria, viruses, and chemicals from the water.',
     category: 'Category 2',
     image: Final9,
@@ -183,7 +183,7 @@ export const MyShop = [
   {
     id: 14,
     title: 'Evergush V460',
-    price: 19.99,
+    price: 4000,
     description: 'The Evergush V460 is a self-priming, automatic booster pump that is used to increase water pressure in homes and businesses. It has a maximum head of 45 meters and a maximum capacity of 70 liters per minute. The pump is powered by a single-phase motor and has a built-in thermal overload protector to prevent burnout. It also features a pre-pressure one-piece forming diaphragm pressure tank that is corrosion-resistant. The Evergush V460 is available in both 110V and 220V models.',
     category: 'Category 2',
     image: Final10,
@@ -194,7 +194,7 @@ export const MyShop = [
   {
     id: 15,
     title: 'Pro Self Priming Jet Pump',
-    price: 19.99,
+    price: 6000,
     description: 'The Pro Self Priming Jet Pump is a versatile and efficient water pump designed for various applications, including residential, commercial, and agricultural use. It is specifically engineered to handle the task of pumping water from a well, tank, or other water sources.',
     category: 'Pumps',
     image: Final11,
@@ -205,7 +205,7 @@ export const MyShop = [
   {
     id: 16,
     title: 'LCM Dosing Pump',
-    price: 19.99,
+    price: 5000,
     description: 'LCM dosing pumps are positive displacement pumps that are designed to inject a chemical or any other substance into the flow of water, gas or steam. They are typically used in water treatment applications, but can also be used in other industries such as food and beverage, pharmaceutical, and manufacturing.',
     category: 'Category 2',
     image: Final12,
@@ -215,8 +215,8 @@ export const MyShop = [
   },
   {
     id: 17,
-    title: '25L Blue Square Bottle',
-    price: 19.99,
+    title: '1000LPH Manual Control',
+    price: 15000,
     description: 'Ultraviolet or UV water sterilizer are used in water purification and treatment to make water healthier and prolong the life of water that has been treated and processed. The word “sterile” is defined as being free from living germs or microorganisms. An Ultraviolet sterilizer extraordinarily cleans water and kills bacteria and microorganisms that can be able to infest water even after it has been treated.',
     category: 'Category 2',
     image: Final16,
@@ -230,7 +230,7 @@ export const MyShop = [
   {
     id: 18,
     title: '20 Big Blue Water Filter ',
-    price: 19.99,
+    price: 2000,
     description: '20″ Big Blue and Big Black Heavy Duty Filter Housings offer the versatility to meet all of your large-capacity filtration needs, including high-flow and heavy-sediment applications. The extra-large housing allows for greater cartridge capacity, reducing the number of vessels required for high flow-rate applications.',
     category: 'Water treatment',
     image: Final14,
@@ -241,7 +241,7 @@ export const MyShop = [
   {
     id: 19,
     title: 'Paddle Float Switch',
-    price: 19.99,
+    price: 26000,
     description: 'A paddle float switch is a type of level switch that uses a paddle to detect the level of a liquid or solid in a tank or container. The paddle is typically made of plastic or stainless steel and is mounted on a float. As the level of the liquid or solid rises, the float rises and the paddle moves up. When the paddle reaches a predetermined point, it activates a switch that can control a pump, valve, or other device.',
     category: 'Water treatment',
     image: Final15,
@@ -263,7 +263,7 @@ export const MyShop = [
   {
     id: 21,
     title: 'Coin Operated Machine',
-    price: 19.99,
+    price: 250000,
     description: 'Coin operated vending machine is equipped with a water purification system, which may include various filters and treatment methods such as activated carbon filters, sediment filters, reverse osmosis, or ultraviolet (UV) sterilization. These mechanisms help remove impurities and contaminants from the water, ensuring its safety and quality.',
     category: 'Water treatment',
     image: Final18,
@@ -274,7 +274,7 @@ export const MyShop = [
   {
     id: 22,
     title: 'Reverse Osmosis Plant',
-    price: 19.99,
+    price: 200000,
     description: 'A Reverse Osmosis (RO) plant with a capacity of 250 liters per hour (LPH) is a water purification system that uses a semi-permeable membrane to remove impurities from water. The process involves applying pressure to the water, forcing it through the membrane while leaving behind contaminants such as salts, minerals, bacteria, and viruses.',
     category: 'Water treatment',
     image: Final19,
@@ -286,7 +286,7 @@ export const MyShop = [
   {
     id: 23,
     title: 'Dispenser YLR',
-    price: 19.99,
+    price: 2000,
     description: 'The dispenser utilizes a multi-stage filtration system to remove impurities and improve water quality. Typically, it includes a combination of filters such as sediment filter, activated carbon filter, and sometimes even a reverse osmosis membrane. These filters work together to remove various contaminants, including sediment, chlorine, bacteria, viruses, and heavy metals, resulting in cleaner and safer drinking water.',
     category: 'Water treatment',
     image: Final20,
@@ -297,7 +297,7 @@ export const MyShop = [
   {
     id: 24,
     title: 'Idose Dosing Pump',
-    price: 19.99,
+    price: 7000,
     description: 'iDose Dosing Pump E0701AA11 Cap 1 L/H 7 Bar is used to introduce chemicals or additives into the water in order to achieve specific treatment goals. These treatment goals can vary depending on the water source and the desired water quality standards.',
     category: 'Water treatment',
     image: Final21,
@@ -308,7 +308,7 @@ export const MyShop = [
   {
     id: 25,
     title: 'SS304 Faucet(300-310G)',
-    price: 19.99,
+    price: 8000,
     description: 'The faucet is designed to provide a controlled flow of purified water. It usually includes a lever or handle for easy operation, allowing users to turn the water on or off as needed. The specific model, labeled as 300-310G, may refer to its design, style, or additional features that differentiate it from other faucets.',
     category: 'Water treatment',
     image: Final23,
@@ -319,7 +319,7 @@ export const MyShop = [
   {
     id: 26,
     title: '5-Stage UF System',
-    price: 19.99,
+    price: 4000,
     description: 'The 5-Stage Compact Domestic UF System purifies water using sediment and activated carbon filtration, a UF membrane to remove microorganisms, post-carbon filtration for taste and odor, and mineralization to replenish essential minerals. It eliminates impurities, contaminants, bacteria, and viruses, ensuring clean and safe drinking water for domestic use.',
     category: 'Water treatment',
     image: Final22,
@@ -330,4 +330,7 @@ export const MyShop = [
   
   // Add more products as needed
 ];
+MyShop.forEach(item => {
+  item.price = item.price.toLocaleString();
+});
  
