@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className="bg-gray-800 text-white z-50">
 
-      <div className="bg-gray-500 flex lg:flex-row lg:items-center lg:justify-between flex-col">
+      <div className="bg-gray-200 flex lg:flex-row lg:items-center lg:justify-between flex-col">
 
 
 
@@ -16,17 +16,17 @@ function Footer() {
 
               <div className="flex flex-row">
                   <div className="mx-4">
-                    <FaEnvelope size={40} className="icon" />
+                    <FaEnvelope size={40} className="icon text-blue-900" />
                   </div>
                   <div>
                     <h1 className="text-sm font-semibold text-black">JOIN OUR NEWSLETTER</h1>
-                    <p className="text-xs">Get The Lates Deals, Updates $ More</p>
+                    <p className="text-xs text-black">Get The Lates Deals, Updates $ More</p>
                   </div>
                 </div>
 
               <div className="flex items-center justify-center lg:p-2  py-5 lg:mx-5">
                 <form className="border-none hover:border-none flex">
-                  <input className="bg-gray-300 p-1 focus:outline-none"
+                  <input className="bg-gray-400 p-1 focus:outline-none"
                   type="text"
                   placeholder="Enter your Email"  />
                   <button type="submit" className="h-9 px-3 bg-blue-900 text-xs font-semibold">Join Now</button>
@@ -36,7 +36,7 @@ function Footer() {
             </div>
 
 
-            <div className="flex lg:py-10 md:mt-0 lg:mx-12 py-2 justify-center">
+            <div className="flex lg:py-10 md:mt-0 lg:mx-12 py-2 justify-center -mt-5">
       <div className="icon-wrapper px-2">
         <a
           href="#"
@@ -44,8 +44,8 @@ function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="icon-circle border-white">
-            <FaFacebook size={25} className="icon" />
+          <div className="icon-circle bg-blue-700 rounded-full">
+            <FaFacebook size={25} className="icon p-1" />
           </div>
         </a>
       </div>
@@ -56,8 +56,8 @@ function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="icon-circle">
-            <FaTwitter size={25} className="icon text-blue-400" />
+          <div className="icon-circle bg-blue-400 rounded-full">
+            <FaTwitter size={25} className="icon p-1" />
           </div>
         </a>
       </div>
@@ -68,8 +68,8 @@ function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="icon-circle bg-gradient-to-r from-pink-600 to-purple-600 border-white">
-            <FaInstagram size={25} className="icon" />
+          <div className="icon-circle bg-gradient-to-r from-pink-600 to-purple-600 border-white rounded-full">
+            <FaInstagram size={25} className="icon p-1" />
           </div>
         </a>
       </div>
@@ -80,8 +80,8 @@ function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="icon-circle bg-blue-700">
-            <FaLinkedin size={25} className="icon" />
+          <div className="icon-circle bg-blue-700 rounded-full">
+            <FaLinkedin size={25} className="icon p-1" />
           </div>
         </a>
       </div>
