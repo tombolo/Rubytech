@@ -25,7 +25,7 @@ function Checkout() {
     // Open WhatsApp with the products in the basket
     const productNames = items.map(item => item.title).join("%0A");
     const message = `I want to purchase the following items:%0A%0A${productNames}`;
-    const whatsappLink = `https://wa.me/254757351475?text=${message}`;
+    const whatsappLink = `https://wa.me/254741905066?text=${message}`;
 
     window.open(whatsappLink, "_blank");
   };
