@@ -1,8 +1,36 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
+import { useEffect } from 'react';
+import { useSelector, useDispatch } from "react-redux";
+import { selectItems, selectTotal, setBasket } from "../slices/basketSlice";
+import { useSession } from "next-auth/react";
+import { useRouter } from 'next/router';
+
+
+
+
+  
 
 function Contact() {
+
+  const dispatch = useDispatch();
+  const items = useSelector(selectItems);
+  const total = useSelector(selectTotal);
+  const { data: session } = useSession();
+  const router = useRouter();
+
+
+useEffect(() => {
+  const storedBasketItems = localStorage.getItem("basketItems");
+  const storedBasket = storedBasketItems ? JSON.parse(storedBasketItems) : [];
+  dispatch(setBasket(storedBasket));
+}, [dispatch]);
+
+useEffect(() => {
+  localStorage.setItem("basketItems", JSON.stringify(items));
+}, [items]);
+
   return (
     <div>
 
