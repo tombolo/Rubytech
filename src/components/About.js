@@ -5,7 +5,7 @@ import Banner2 from '../components/Myimages/banner2.jpg';
 function About() {
   return (
 
-    <div className="flex flex-col mx-6 bg-transparent rounded-md mt-4 lg:flex-row lg:items-center lg:justify-between flex-grow">
+    <div className="flex flex-col lg:mx-6 mx-2 bg-transparent rounded-md mt-4 lg:flex-row lg:items-center lg:justify-between flex-grow">
 
         <div  
            className=" m-2 border-b-2 border-gray-200 lg:w-1/4 lg:justify-center lg:border-b-0">
@@ -24,18 +24,24 @@ function About() {
         <div className="m-2 border-b-2 border-gray-200 lg:w-1/4 lg:border-b-0">
             <h1 className=" font-bold text-blue-900 p-1 flex lg:justify-center">Our Location & Contact Details</h1>
             <div className=" flex lg:justify-center flex-row p-1">
-                <LocationMarkerIcon className="h-6 w-6 text-red-500" />
+                <div className="bg-blue-300 rounded-full">
+                   <LocationMarkerIcon className="h-6 w-6 text-red-500 p-1" />
+                </div>
                 <p className="text-xs mx-2">Visit us Today in Buruburu near Outering</p>
             </div>
 
             <div className="flex flex-row p-1 lg:justify-center">
-                <PhoneIcon className="h-6 w-6 text-yellow-500" /> 
-                <p className="text-xs mx-2">Phone: +254757351475</p>
+                <div className="bg-blue-300 rounded-full">
+                    <PhoneIcon className="h-6 w-6 text-yellow-700 p-1" />
+                </div> 
+                <p className="text-xs mx-2">Phone: +254720171501</p>
             </div>
 
             <div className="flex lg:justify-center flex-row p-1">
-                <MailIcon className="h-6 w-6 text-indigo-500" />
-                <p className="text-xs mx-2">ndanumumo93@gmail.com</p>
+                <div className="bg-blue-300 rounded-full">
+                    <MailIcon className="h-6 w-6 text-indigo-700 p-1" />
+                </div>
+                <p className="text-xs mx-2">sales@rubytech.co.ke</p>
             </div>
         </div>
 
