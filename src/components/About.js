@@ -15,18 +15,36 @@ function About() {
             <p className=" flex lg:justify-center text-xs p-1 lg:items-center">Rubytech Limited is a dealer of Cooking/Salad Oil ATMs, Milk ATMs, Water Purifiers, Food Grade Pumps, Automatic Bell Systems, Programmable Logic Controller, and Water Stations based in Buruburu Kenya.</p>
         </div>
 
+        
+
         <div className="m-2 lg:w-1/4 lg:border-b-0 md:hidden -mt-3">
-        <div className="relative group rounded-md">
-            <Image src={Blog3} className="w-full h-full rounded-md" alt="Banner" />
-            <div className="absolute inset-0 rounded-md">
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white opacity-10 rounded-md"></div>
-            </div>
-        </div>
-        </div>
+  <div className="relative group rounded-md">
+    <Image src={Blog3} className="w-full h-full rounded-md" alt="Banner" />
+    <div className="absolute inset-0 rounded-md">
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white opacity-10 rounded-md"></div>
+      <div className="absolute bottom-0 left-0 right-0 py-3 px-4 flex items-center justify-center bg-gradient-to-t from-white via-white to-transparent rounded-b-md transition-transform duration-300 transform group-hover:translate-x-2">
+        <p className="text-blue-700 text-xs font-semibold animate-slide-horizontal">Read More</p>
+        <svg
+          className="animate-slide-horizontal w-6 h-6 ml-2 text-blue-700"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
-        <div className="m-2 border-b-2 border-gray-200 lg:w-1/4 lg:border-b-0 -mt-2 z-50 md:mt-0">
+
+
+
+
+        <div className="m-2 border-b-2 border-gray-200 lg:w-1/4 lg:border-b-0 -mt-2 md:mt-0">
             <h1 className=" font-bold text-blue-900 p-1 flex lg:justify-center">Our Location & Contact Details</h1>
             <div className=" flex lg:justify-center flex-row p-1">
                 <div className="bg-blue-300 rounded-full">
