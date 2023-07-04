@@ -47,7 +47,7 @@ function CheckoutProduct({
         <p className="text-xs font-bold">{title}</p>
 
         <p className="text-xs my-2 line-clamp-3">{description}</p>
-        <h6> {price}  </h6>
+        <h6 className="text-sm font-semibold">KSH{price}  </h6>
 
         {hasPrime && (
             <div className="flex items-center space-x-2">

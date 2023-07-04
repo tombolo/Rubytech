@@ -330,7 +330,10 @@ export const MyShop = [
   
   // Add more products as needed
 ];
-MyShop.forEach(item => {
-  item.price = item.price.toLocaleString();
+
+
+MyShop.forEach((item) => {
+  item.price = Number(item.price);
 });
+
  
