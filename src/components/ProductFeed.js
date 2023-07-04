@@ -32,7 +32,7 @@ function ProductFeed({ products }) {
           />
         </div>
 
-        <div className="hidden md:block m-2 w-full -ml-2">
+        <div className="hidden md:block w-full">
           <Image
             src={Kioko3}
             height={100}
@@ -40,7 +40,7 @@ function ProductFeed({ products }) {
           />
         </div>
 
-        <div className="hidden md:block m-2 w-full -ml-2">
+        <div className="hidden md:block w-full">
           <Image
             src={Kioko4}
             height={100}
