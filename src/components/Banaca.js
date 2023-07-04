@@ -6,11 +6,11 @@ import Link from 'next/link';
 
 function Banaca() {
   return (
-    <div className="md:relative flex md:flex-row md:justify-evenly mx-4 flex-col mt-5">
+    <div className="md:relative flex md:flex-row md:justify-evenly flex-col mt-5">
 
       {/*BANACA 1 */}
 
-        <div className="bg-white md:w-1/2 m-2 p-3 rounded-md flex flex-row items-center justify-between opacity-100 hover:opacity-70 shadow-md">
+        <div className="bg-white md:w-1/2 p-3 m-1 rounded-md flex flex-row items-center justify-between opacity-100 hover:opacity-70 shadow-md">
             <div className="p-2">
                 <h1>NEW ARRIVALS</h1>
                 <h1 className="text-xl font-bold py-2 mb-6"> ECO 200 GPD RO Systems</h1>
@@ -29,7 +29,7 @@ function Banaca() {
 
          {/*BANACA 2 */}
 
-        <div className="bg-white md:w-1/2 m-2 p-3 rounded-md flex flex-row items-center justify-between opacity-100 hover:opacity-70 shadow-md">
+        <div className="bg-white md:w-1/2 p-3 m-1 rounded-md flex flex-row items-center justify-between opacity-100 hover:opacity-70 shadow-md">
 
            <div style={{ width: '170px', height: '170px' }}>
               <Image src={Baca1} className="w-full h-full" />

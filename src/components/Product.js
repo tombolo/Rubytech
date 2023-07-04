@@ -110,7 +110,7 @@ function Product({ id, title, price, description, category, image, }) {
   };
 
   return (
-    <div className="relative w-full bg-white z-20 rounded shadow-lg m-3 transition duration-700 transform hover:scale-102"
+    <div className="relative bg-white z-20 rounded shadow-lg transition duration-700 transform hover:scale-102 w-44"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       onTouchStart={handleTouchStart}
@@ -152,7 +152,7 @@ function Product({ id, title, price, description, category, image, }) {
       </div>
       <div>
         <h4
-          className="my-2 mx-2 font-semibold text-xs"
+          className="my-2 mx-2 font-semibold text-xs line-clamp-1"
           onClick={handleTitleClick}
           ref={titleRef}
         >

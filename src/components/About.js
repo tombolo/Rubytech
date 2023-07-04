@@ -7,7 +7,7 @@ import Blog3 from '../components/Myimages/blog3.jpg';
 function About() {
   return (
 
-    <div className="flex flex-col lg:mx-6 mx-2 rounded-md mt-4 lg:flex-row lg:items-center lg:justify-evenly bg-white flex-grow">
+    <div className="flex flex-col lg:mx-2 rounded-md mt-4 lg:flex-row lg:items-center lg:justify-evenly bg-white flex-grow">
 
         <div  
            className=" m-2 border-gray-200 lg:w-1/4 lg:justify-center lg:border-b-0">
