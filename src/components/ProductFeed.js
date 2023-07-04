@@ -28,7 +28,7 @@ function ProductFeed({ products }) {
           <Image
             src={Kioko2}
             height={100}
-            width={400}
+            width={410}
           />
         </div>
 
@@ -36,7 +36,7 @@ function ProductFeed({ products }) {
           <Image
             src={Kioko3}
             height={100}
-            width={400}
+            width={410}
           />
         </div>
 
@@ -44,7 +44,7 @@ function ProductFeed({ products }) {
           <Image
             src={Kioko4}
             height={100}
-            width={400}
+            width={410}
           />
         </div>
       </div>
