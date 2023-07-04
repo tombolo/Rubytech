@@ -46,7 +46,7 @@ function About() {
 
 
         <div className="m-2 border-b-2 border-gray-200 lg:w-1/4 lg:border-b-0 -mt-2 md:mt-0">
-            <h1 className=" font-bold text-blue-900 p-1 flex lg:justify-center">Our Location & Contact Details</h1>
+            <h1 className=" font-bold text-blue-900 p-1 flex lg:justify-center text-sm">Our Location & Contact Details</h1>
             <div className=" flex lg:justify-center flex-row p-1">
                 <div className="bg-blue-300 rounded-full">
                    <LocationMarkerIcon className="h-6 w-6 text-red-500 p-1" />
@@ -70,7 +70,7 @@ function About() {
         </div>
 
         <div className="m-2 border-b-2 border-gray-200 lg:w-1/4 lg:border-b-0">
-        <h1 className="font-bold text-blue-900 p-1 flex lg:justify-center">Business Hours</h1>
+        <h1 className="font-bold text-blue-900 p-1 flex lg:justify-center text-sm">Business Hours</h1>
 
                     <div className="flex flex-row items-center justify-between p-1 lg:flex-col lg:justify-center">
 

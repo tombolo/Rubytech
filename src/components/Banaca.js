@@ -13,7 +13,7 @@ function Banaca() {
         <div className="bg-white md:w-1/2 p-3 m-1 rounded-md flex flex-row items-center justify-between opacity-100 hover:opacity-70 shadow-md">
             <div className="p-2">
                 <h1>NEW ARRIVALS</h1>
-                <h1 className="text-xl font-bold py-2 mb-6"> ECO 200 GPD RO Systems</h1>
+                <h1 className="text-xl font-bold py-2 mb-6">Paddle Float Switch</h1>
                 <Link href="/product/19">
                   <a className="bg-blue-900 text-white rounded-full p-2 text-sm mt-6">
                     Shop Now
