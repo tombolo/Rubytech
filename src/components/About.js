@@ -18,25 +18,26 @@ function About() {
         
 
         <div className="m-2 lg:w-1/4 lg:border-b-0 md:hidden -mt-3">
-  <div className="relative group rounded-md">
-    <Image src={Blog3} className="w-full h-full rounded-md" alt="Banner" />
-    <div className="absolute inset-0 rounded-md">
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white opacity-10 rounded-md"></div>
-      <div className="absolute bottom-0 left-0 right-0 py-3 px-4 flex items-center justify-center bg-gradient-to-t from-white via-white to-transparent rounded-b-md transition-transform duration-300 transform group-hover:translate-x-2">
-        <p className="text-blue-700 text-xs font-semibold animate-slide-horizontal">Read More</p>
-        <svg
-          className="animate-slide-horizontal w-6 h-6 ml-2 text-blue-700"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-        </svg>
-      </div>
-    </div>
-  </div>
-</div>
+          <div className="relative group rounded-md">
+            <Image src={Blog3} className="w-full h-full rounded-md" alt="Banner" />
+            <div className="absolute inset-0 rounded-md">
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white opacity-10 rounded-md"></div>
+              <a href="https://www.water-right.com/homeowner-resources/how-does-a-water-softener-work/" className="absolute bottom-0 left-0 right-0 py-3 px-4 flex items-center justify-center bg-gradient-to-t from-white via-white to-transparent rounded-b-md transition-transform duration-300 transform group-hover:translate-x-2">
+                <p className="text-blue-700 text-xs font-semibold animate-slide-horizontal">Read More</p>
+                <svg
+                  className="animate-slide-horizontal w-6 h-6 ml-2 text-blue-700"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
 
 
 
