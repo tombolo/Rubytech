@@ -23,7 +23,7 @@ function ProductFeed({ products }) {
         ))}
       </div>
 
-      <div className="flex flex-row items-center">
+      <div className="flex flex-row items-center w-full">
         <div className=" w-full">
           <Image
             src={Kioko2}
