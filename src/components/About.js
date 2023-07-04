@@ -15,18 +15,18 @@ function About() {
             <p className=" flex lg:justify-center text-xs p-1 lg:items-center">Rubytech Limited is a dealer of Cooking/Salad Oil ATMs, Milk ATMs, Water Purifiers, Food Grade Pumps, Automatic Bell Systems, Programmable Logic Controller, and Water Stations based in Buruburu Kenya.</p>
         </div>
 
-        <div className="m-2 lg:w-1/4 lg:border-b-0 md:hidden">
+        <div className="m-2 lg:w-1/4 lg:border-b-0 md:hidden -mt-3">
         <div className="relative group rounded-md">
             <Image src={Blog3} className="w-full h-full rounded-md" alt="Banner" />
             <div className="absolute inset-0 rounded-md">
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white opacity-120 rounded-md"></div>
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white opacity-10 rounded-md"></div>
             </div>
         </div>
         </div>
 
 
 
-        <div className="m-2 border-b-2 border-gray-200 lg:w-1/4 lg:border-b-0 -mt-7 z-50 md:mt-0">
+        <div className="m-2 border-b-2 border-gray-200 lg:w-1/4 lg:border-b-0 -mt-2 z-50 md:mt-0">
             <h1 className=" font-bold text-blue-900 p-1 flex lg:justify-center">Our Location & Contact Details</h1>
             <div className=" flex lg:justify-center flex-row p-1">
                 <div className="bg-blue-300 rounded-full">
